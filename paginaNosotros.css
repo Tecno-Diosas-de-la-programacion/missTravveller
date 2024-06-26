@@ -9,6 +9,7 @@ h3{
     
 }
 
+
 @font-face {
   font-family: test-font;
   src: url(./AlexanderLettering.ttf);
@@ -76,6 +77,8 @@ body {
     margin-right: .75rem;
     margin-left: .75rem;
   }
+
+  
   /* rtl:end:ignore */
   
   
@@ -95,7 +98,13 @@ body {
     color: black;
   }
   
-  
+#valores{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
   /* RESPONSIVE CSS
   -------------------------------------------------- */
   
