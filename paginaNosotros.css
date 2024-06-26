@@ -1,28 +1,54 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+@font-face {
+  font-family: cream-cake;
+  src: url(./src/fonts/CreamCake.otf);
+}
+
+.lead {
+  font-family: inter;
+}
+
+header{
+  font-family: cream-cake;
+  
+}
+
 h3{
     
     color: black;
     text-align: center;
     border-radius: 10px;
+    font-family: travel-journal;
     
 }
 
 @font-face {
-  font-family: test-font;
-  src: url(./AlexanderLettering.ttf);
+  font-family: travel-journal;
+  src: url(./src/fonts/TravelJournal.ttf);
 }
 
 h1{
-  font-family: test-font;
+  font-family: travel-journal;
 }
 
 #contorno-h3{
     background-color: #2BD5D7;
-    width: 90%;
-    height: 15%;
+    width: 85%;
+    height: 14%;
     text-align: center;
+    padding-top: 1%;
 }
 
 body {
@@ -108,10 +134,32 @@ body {
     }
   
     .featurette-heading {
-      font-size: 50px;
+      font-size: 40px;
+    }
+  }
+
+
+  @media (max-width: 992px) {  
+    .featurette-heading {
+      font-size: 35px;
     }
   }
   
+  @media (min-width: 751px) and (max-width: 991px) {  
+    .featurette-heading {
+      font-size: 32px;
+    }
+  }
+  @media (min-width: 277px) and (max-width: 348px) {  
+    .featurette-heading {
+      font-size: 31px;
+    }
+  }
+  @media (max-width: 216px) {  
+    .featurette-heading {
+      font-size: 30px;
+    }
+  }
   @media (min-width: 62em) {
     .featurette-heading {
       margin-top: 7rem;
