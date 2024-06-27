@@ -17,9 +17,12 @@
 }
 
 .lead {
-  font-family: inter;
+  font-family: Architects;
 }
-
+@font-face {
+  font-family: Architects;
+  src: url(./src/fonts/Architects.ttf);
+}
 header{
   font-family: cream-cake;
   
