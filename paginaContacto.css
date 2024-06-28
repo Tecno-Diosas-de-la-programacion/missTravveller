@@ -126,5 +126,19 @@ body {
     text-align: justify;
     width: 40%;
     height: 70%;
+
 }
+
+  .editIcon{
+    width: 60%;
+    height: 10%;
+  }
+
+  .editCelda{
+    width: 20%;
+    text-align-last: center;
+  }
+  
+  
+
   
