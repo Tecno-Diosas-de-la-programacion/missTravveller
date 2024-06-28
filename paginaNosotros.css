@@ -61,7 +61,57 @@ body {
     background-color: #FFC132;
   }
   
-  
+#valores{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2BD5D7;
+  font-family: travel-journal;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 50px;
+  section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+
+    figure{
+      position: relative;
+      transition: all 0.4s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    &:hover{
+      background-color: #75d6d9;
+      border-radius: 10px;
+
+    }
+    &:hover figure{
+      width: 100%;
+      transform: scale(1.1);
+    }
+  }
+
+}
+
+#seccion-valores{
+  background-color: #75d6d9;
+}
+@media(max-width: 1200px){
+  #valores{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
   
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
