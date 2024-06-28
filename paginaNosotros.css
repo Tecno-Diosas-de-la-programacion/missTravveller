@@ -60,7 +60,13 @@ body {
     color: black;
     background-color: #FFC132;
   }
-  
+
+h2{
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  font-family: travel-journal;
+}
 #valores{
   display: flex;
   justify-content: center;
@@ -162,13 +168,13 @@ body {
   ------------------------- */
   
   .featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    margin: 1rem 0; /* Space out the Bootstrap <hr> more */
   }
   
   /* Thin out the marketing headings */
   .featurette-heading {
-    font-weight: 300;
-    line-height: 1;
+    font-weight: 400;
+    line-height: 2;
     /* rtl:remove */
     letter-spacing: -.05rem;
     color: black;
