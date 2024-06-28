@@ -65,14 +65,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   background-color: #2BD5D7;
   font-family: travel-journal;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   align-items: center;
   width: 100%;
-  padding: 4rem;
+  padding: 2rem;
+  border-radius: 50px;
   section{
     position: relative;
     display: flex;
@@ -104,6 +104,9 @@ body {
 
 }
 
+#seccion-valores{
+  background-color: #75d6d9;
+}
 @media(max-width: 1200px){
   #valores{
     grid-template-columns: repeat(1,1fr);
