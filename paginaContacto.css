@@ -120,15 +120,7 @@ body {
 
 /*Aqui estilos de formulario */
 
-  #formulario{
-    position: absolute;
-    background-color: #ffffff;
-    text-align: justify;
-    width: 40%;
-    height: 70%;
-
-}
-
+  
   .editIcon{
     width: 60%;
     height: 10%;
@@ -139,6 +131,10 @@ body {
     text-align-last: center;
   }
   
+  .background-form{
+    background-color: #ffffff;
+  }
+
   
 
   
