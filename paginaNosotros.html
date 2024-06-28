@@ -11,7 +11,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
 
   <!-- Bootstrap core CSS -->
@@ -36,26 +36,25 @@
     }
   </style>
 
-  <!-- Custom styles for this template -->
-  <link href="./paginaNosotros.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="./cards.css">
+  <!-- Custom styles for this template -->
 </head>
 
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light align-text-right">
+    <nav style="background: #FFFFFF;" class="navbar navbar-expand-md fixed-top bg-light align-text-right">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="./public/img/Logo_MissTravveller.png" alt="Logo" width="90" height="90"
-            class="d-inline-block align-text-center">
+                class="d-inline-block align-text-center">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img id="hamburguesa" src="./public/img/hamburguesa.png" alt="Imagen patito despliega menú">
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse navbar-expand-md" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Inicio</a>
@@ -74,9 +73,9 @@
                 Productos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Viaje1</a></li>
-                <li><a class="dropdown-item" href="#">Viaje2</a></li>
-                <li><a class="dropdown-item" href="#">Viaje3</a></li>
+                <li><a class="dropdown-item" href="#">Huatulco</a></li>
+                <li><a class="dropdown-item" href="#">Valle de Bravo</a></li>
+                <li><a class="dropdown-item" href="#">Taxco</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -96,11 +95,8 @@
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li> -->
           </ul>
-          <!-- <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-          <button class="btn" style="background-color: #F2254C; color: #FFFFFF;" type="submit">Buscar</button>
-        </form> -->
         </div>
+        
       </div>
     </nav>
 
@@ -108,9 +104,7 @@
   </header>
 
   <main>
-
-
-
+    <hr class="featurette-divider">
     <!-- Marketing messaging and featurettes
   ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -120,63 +114,92 @@
       <!-- START THE FEATURETTES -->
 
       <div class="row featurette">
-        <div class="col-md-7" align="center">
-          <h3 id="contorno-h3" style="font-size:40px;" class="featurette-heading">¿Quién es Miss Travveller?</h3>
+        <div id="contorno-MissTravveller" class="col-md-7" align="center">
+          <h3 id="contorno-h3" class="titulo">¿Quién es Miss Travveller?</h3>
           <p class="lead">Empresa dedicada a la gestión de viajes turísticos alrededor de México. Te aseguramos la mejor
             atención personalizada para hacer de tus experiencias memorables.</p>
           <img src="./public/img/tour-guide.png" alt="Icono de persona sosteniendo un mapa" width="120" height="120"
             class="d-inline-block">
         </div>
-        <div class="col-md-5">
+        <div id="contorno-Patito" class="col-md-5">
           <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
             height="500" src="./public/img/Imagen_Instagram.png"
             style="margin-top: 15%; border: #FFFFFF; border-color: #FFFFFF; border-style: solid; " role="img"
             aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
           <title>Placeholder</title>
           <rect width="100%" height="100%" fill="#eee" />
-          <p class="lead" style="text-align: center;">
-            Visitanos en instagram y descubre las experiencias de otros viajeros.</p></img>
+          <h7 style="text-align: center;">
+            Visitanos en instagram y descubre las experiencias de otros viajeros.</h7></img>
+
         </div>
       </div>
-     
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Misión, visión y valores. <span class="text-muted">See for yourself.</span>
+          </h2>
+          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
+            layout would work with some actual real-world content in place.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+            intended to be actually read, simply here to give you a better view of what this would look like with some
+            actual content. Your content.</p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
       <!-- Three columns of text below the carousel -->
 
-    <div class="row featurette">
-      <div class="col-md-12 order-md-2">
-        <h2 class="featurette-heading">Nuestra misión. </h2>
-        <br>
-        <p class="lead">Permitir que las personas logren planificar y realizar viajes inolvidables a diferentes destinos nacionales, ofreciéndoles una amplia gama de opciones y precios que se ajusten a sus necesidades y presupuesto.</p>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-12 ">
-        <h2 class="featurette-heading"> Nuestra visión.</h2>
-        <br>
-        <p class="lead">Convertirnos en la agencia de viajes online líder en México, reconocida por su excelencia en el servicio, variedad de ofertas y compromiso con la satisfacción del cliente, expandiendo su presencia y consolidando un equipo altamente calificado y apasionado por los viajes.</p>
-      </div>
-    </div>
-
-    <hr class="featurette-divider" id="seccion-valores">
-<div class="row">
-  <div class="container"> Valores</div>
-    <div class="container" id="valores" >
-      <section><figure><img src="./public/img/destination.png" alt="icono de localización" width="180" height="180"></figure><h2>Accesibilidad</h2></section>
-      <section><figure><img src="./public/img/imagenFacilidad.png" alt="icono que muestra pantalla de busqueda" width="180" height="180"></figure><h2>Facilidad</h2></section>
-      <section><figure><img src="./public/img/imagenEficiencia.png" alt="icono de dos turistas" width="180" height="180"></figure><h2>Eficiencia</h2></section>
-      <section><figure><img src="./public/img/imagentransparencia-removebg-preview.png" alt="icono de tiempo y dinero" width="200" height="200"></figure><h2>Transaprencia</h2></section>
-    </div>
-  </div>
-    <hr class="featurette-divider">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-        
-        <div class="col-md-12">
-            <h2 class="featurette-heading">Conoce al equipo...</h2>
-            
+      <!-- Inicia cards -->
+      <br>
+      <br>
+      <div class="container">
+        <div class="row mt-n1-9">
+          <div class="col-md-6 col-xl-3 mt-1-9 wow fadeInUp" data-wow-delay=".2s"
+            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+            <div class="team-style07">
+              <div class="team-thumb mb-1-9">
+                <div class="thumb"><img src="./public/img/dulce.jpg" class="rounded-circle" alt="..."></div>
+                <div class="team-social">
+                  <ul class="styled-icons">
+                    <li><a class="styled-icons-item" href="#!"><img src="./public/img/gmail.png" alt=""></a></li>
+                    <li><a class="styled-icons-item" href="#!"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="styled-icons-item" href="#!"><img src="./public/img/linkedin-logo.png" alt=""></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h3 class="h5 mb-1"><a href="#!">Dulce Camacho</a></h3>
+              <p class="mb-0">Product Owner</p>
+            </div>
           </div>
           <div class="col-md-6 col-xl-3 mt-1-9 wow fadeInUp" data-wow-delay=".3s"
             style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
@@ -300,19 +323,43 @@
     </div>
     <!-- Termina Cards -->
 
+    </div><!-- /.container -->
+
+    <hr class="featurette-divider">
+
     <!-- FOOTER -->
-    <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
-  </main>
+    <section id="container-footer" class="footer fixed-bottom ">
 
+      <div class="footer-row">
+        <div class="footer-col">
+          <a href="#">
+            <img class="float-end" src="./public/img/boton_regreso.jpeg" alt="Botón flecha" width="60" height="60">
+          </a>
+        </div>
 
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  </footer>
+        <div class="footer-col">
+          <h4>Miss Travveller</h4>
+        </div>
+
+        <div class="footer-col">
+          <a class="footer.redes" href="#">
+            <img src="./public/img/boton_facebook.png" alt="Botón Facebook" width="50" height="50">
+          </a>
+          <a class="footer.redes" href="https://www.instagram.com/misstraveler.mx?igsh=bnFjbDdsMzkybnVx">
+            <img src="./public/img/boton_instagram.png" alt="Botón Instagram" width="50" height="50">
+          </a>
+          <a class="footer.redes" href="#">
+            <img src="./public/img/boton_tiktok.png" alt="Botón Tiktok" width="50" height="50">
+          </a>
+
+        </div>
+        <div class="footer-col">
+          <h4>
+            <a href="#">Creadoras</a>
+          </h4>
+        </div>
+      </div>
+    </section>
   </main>
 
 
