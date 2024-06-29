@@ -607,6 +607,47 @@ h2{
   }
 }
 
+/*Aqui estilos de formulario */
+
+  
+.editIcon{
+  width: 60%;
+  height: 10%;
+}
+
+.editCelda{
+  width: 20%;
+  text-align-last: center;
+}
+
+.form-feauters{
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding-left: 1cm;
+  height: 600px;
+}
+
+.contacto-letras {
+  font-size: 50px;
+ }
+
+ .form-control{
+  border-radius: 5px;
+  border: 2px solid #b8babb;
+  background-color: #b8babb;
+  width: 450px;
+  height: 40px;
+ }
+
+ .form-mensaje-control{
+  border-radius: 5px;
+  border: 2px solid #b8babb;
+  background-color: #b8babb;
+  width: 450px;
+  height: 80px;
+ }
+
+
 /* 
 Footer content
 */
@@ -676,57 +717,7 @@ Footer content
   }
 }
 
-/*Aqui estilos de formulario */
 
-  
-  .editIcon{
-    width: 60%;
-    height: 10%;
-  }
-
-  .editCelda{
-    width: 20%;
-    text-align-last: center;
-  }
-  
-  .form-feauters{
-    background-color: #ffffff;
-    border-radius: 25px;
-s  }
-
-  #contorno-contact{
-    background-color: #FFC132;
-    height: auto;
-    padding: 2em;
-    
-  }
-
-  .contacto-letras {
-    font-size: 50px;
-   }
-
-   .form-control{
-
-    border-radius: 5px;
-    border: 2px solid #b8babb;
-    background-position: center;
-    background-color: #b8babb;
-    width: 500px;
-    height: 50px;
-    
-    
-   }
-
-   .form-mensaje-control{
-    border-radius: 5px;
-    border: 2px solid #b8babb;
-    background-position: center;
-    background-color: #b8babb;
-    width: 500px;
-    height: 100px;
-    
-    
-   }
 
    
   
