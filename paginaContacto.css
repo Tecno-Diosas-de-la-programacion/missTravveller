@@ -621,9 +621,12 @@ h2{
 }
 
 .form-feauters{
+  display: inline-block;
+  position: relative;
   background-color: #ffffff;
   border-radius: 25px;
   padding-left: 1cm;
+  padding-right: 1cm;
   height: 600px;
 }
 
@@ -632,17 +635,19 @@ h2{
  }
 
  .form-control{
+  position: relative;
   border-radius: 5px;
   background-color: #b8babb;
-  width: 450px;
+  width: 400px;
   height: 40px;
  }
 
  .form-mensaje-control{
+  position: relative;
   border-radius: 5px;
   border: 2px solid #b8babb;
   background-color: #b8babb;
-  width: 450px;
+  width: 400px;
   height: 80px;
  }
 
@@ -658,7 +663,6 @@ Footer content
   margin-bottom: -3em;
 }
 .footer {
-  
   width: 100%;
   height: 150px;
   background: #ffffff;
@@ -715,8 +719,3 @@ Footer content
     margin: 10px 0 0 0;
   }
 }
-
-
-
-   
-  
