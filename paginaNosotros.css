@@ -4,6 +4,11 @@
   box-sizing: border-box;/* Incluye al padding y el border en el cálculo del ancho y alto total del elemento */
 }
 
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: #FFC132 !important;
+}
+
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -43,6 +48,7 @@ nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
   font-family: cream-cake;
   font-size: 1.8em;
   margin: auto;
+  background: #FFC132;
   
 }
 
@@ -106,7 +112,7 @@ body {
     padding-top: 3rem;
     padding-bottom: 3rem;
     color: black;
-    background-color: #FFC132;
+    background-color: #fff;
   }
 
 h2{
@@ -621,7 +627,7 @@ Footer content
   
   width: 100%;
   height: 150px;
-  background: #ffffff;
+  background: #FFC132;
   border-radius: 6px;
 
   display: flex;
