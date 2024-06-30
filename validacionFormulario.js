@@ -68,3 +68,41 @@ userMessageFiled.addEventListener("blur", validateEmptyField);
 
 userEmailFiled.addEventListener("input", valiteEmailFormat);//input se ejecuta un evento
 userPhoneFiled.addEventListener("input", valitePhoneFormat);
+
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Verificar que no haya campos con la clase invalid
+    const invalidFields = document.querySelectorAll(".invalid");
+    if (invalidFields.length > 0) {
+        alert("Por favor, corrige los errores en el formulario.");
+        return;
+    }
+
+    // Recopilar datos del formulario
+    const formData = {
+        nombre: userNameFiled.value,
+        correo: userEmailFiled.value,
+        telefono: userPhoneFiled.value,
+        mensaje: userMessageFiled.value
+    };
+
+    // Enviar correo electrónico usando EmailJS
+    emailjs.send("service_3np4zfy", "template_ofvcspn", formData)
+        .then(response => {
+            console.log("Correo enviado", response.status, response.text);
+            alert("Correo enviado exitosamente.");
+        }, error => {
+            console.error("Error al enviar correo", error);
+            alert("Error al enviar correo. Inténtalo nuevamente.");
+        });
+});
+
+(function () {
+    emailjs.init({
+        publicKey: "bpYdmZh4wjxCLzdkz",
+    });
+})();
