@@ -48,3 +48,7 @@ input[type=text],[type=email],[type=tel]{
 #quieres-saber-mas{
   align-content: center;
 }
+
+.bibi-envelope-at-fill {
+  background-color: black;
+}
