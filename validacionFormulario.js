@@ -94,10 +94,10 @@ form.addEventListener("submit", function (event) {
     emailjs.send("service_3np4zfy", "template_ofvcspn", formData)
         .then(response => {
             console.log("Correo enviado", response.status, response.text);
-            alert("Correo enviado exitosamente.");
+            swal('','Tu mensaje fue enviado con éxito','success');
         }, error => {
             console.error("Error al enviar correo", error);
-            alert("Error al enviar correo. Inténtalo nuevamente.");
+            swal('','Hubo un error, inténtalo nuevamente','error');
         });
 });
 
