@@ -4,18 +4,64 @@
   box-sizing: border-box;/* Incluye al padding y el border en el cálculo del ancho y alto total del elemento */
 }
 
-.bg-light {
-  --bs-bg-opacity: 1;
-  background-color: #FFC132 !important;
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
-.inter {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
 }
 
 :root{/* Declaramos variables para reutilizar los colores */
@@ -25,48 +71,36 @@
   --color_fieldset:#ffa07a;
 }
 
-/* FONTS */
-@font-face {
-  font-family: cream-cake;
-  src: url(./src/fonts/CreamCake.otf);
-}
-
-@font-face {
-  font-family: travel-journal;
-  src: url(./src/fonts/TravelJournal.ttf);
-}
-
-@font-face {
-  font-family: alexander-lettering;
-  src: url(./src/fonts/AlexanderLettering.ttf);
-}
-
 nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
   display: flex ;/* Se aplica flex al contenedor de nav, lo que permite una distribución flexible de los */
   justify-content: space-between ;/* Permite que haya espacio entre los elementos */
   align-items: center ;/* Alineación vertical de los elementos */
-  font-family: cream-cake;
-  font-size: 1.8em;
+  font-family: lato;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3em;
   margin: auto;
   background: #FFC132;
   
 }
 
 h7{
-  font-family:alexander-lettering;
-  font-size: 2em;
-  text-align: center;  
-  align-items: center;
+  font-family:lato;
+  font-style: italic;
+  font-size: 0.9em;
+  font-weight: 400;
 }
 
 h3{
   
   align-items: center ;
   color: black;
+  
   text-align: center;
   border-radius: 10px;
-  font-family: travel-journal;
-  font-size: 1.8em;
+  font-family: lato;
+  font-size: 2.1em;
+  font-weight: 600;
 }
 
 .titulo > h3{
@@ -80,11 +114,11 @@ h3{
 }
 
 h1{
-  font-family: travel-journal;
+  font-family: lato;
 }
 
 #contorno-h3{
-  background-color: #2BD5D7;
+  background-color: #5A8A65;
   width: 85%;
   height: auto;
   text-align: center;
@@ -96,8 +130,6 @@ h1{
   background-color: #FFFFFF;
   height: auto;
   padding: 2em;
-  
-  
 }
 
 #contorno-Patito{
@@ -105,28 +137,29 @@ h1{
   height: auto;
   padding: 2em;
   text-align: center;
-  
 }
 
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
     color: black;
-    background-color: #fff;
+    background-color: #FFFFFF;
   }
 
 h2{
   color: black;
   text-align: center;
   border-radius: 10px;
-  font-family: travel-journal;
+  font-family: lato;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 #valores{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2BD5D7;
-  font-family: travel-journal;
+  background-color: #5A8A65;
+  font-family: lato;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   align-items: center;
@@ -140,7 +173,7 @@ h2{
     align-items: center;
     flex-direction: column;
     padding: 2rem;
-    cursor: pointer;
+    cursor: polato;
     overflow: hidden;
 
     figure{
@@ -149,13 +182,13 @@ h2{
       display: flex;
       justify-content: center;
       align-items: center;
-
     }
+
     &:hover{
       background-color: #75d6d9;
       border-radius: 10px;
-
     }
+
     &:hover figure{
       width: 100%;
       transform: scale(1.1);
@@ -179,7 +212,9 @@ h2{
 }
 
 .lead {
-  font-family: inter;
+  font-family: lato;
+  font-weight: 400;
+  text-align: center;
 }
 
 #hamburguesa{
@@ -187,49 +222,11 @@ h2{
   width: auto;
 }
 
-/* CUSTOMIZE THE CAROUSEL
-  -------------------------------------------------- */
-  
-  /* Carousel base class */
-  .carousel {
-    margin-bottom: 4rem;
-  }
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption > h1{
-    bottom: 3rem;
-    z-index: 10;
-    font-size: auto;
-  }
-
-  .carousel-caption > p{
-    bottom: 3rem;
-    z-index: 10;
-    font-size: auto;
-  }
-  
-  /* Declare heights because of positioning of img element */
-  .carousel-item {
-    height: 32rem;
-  }
-  .carousel-item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height:fit-content;
-  }
-  .carousel-indicators{
-    margin-bottom:auto;
-  }
-
-
  /* Featurettes
   ------------------------- */
-  
   .featurette-divider {
     margin: 1rem 0; /* Space out the Bootstrap <hr> more */
   }
-  
   /* Thin out the marketing headings */
   .featurette-heading {
     font-weight: 400;
@@ -243,6 +240,7 @@ h2{
   body{margin-top:20px;
 
   }
+
   img {
       max-width: 100%;
       height: auto;
@@ -253,6 +251,9 @@ h2{
   }
   .h5, h5 {
       font-size: 1.25rem;
+      font-family: lato;
+      font-weight: 700;
+
   }
   a {
   text-decoration:none;    
@@ -274,7 +275,7 @@ h2{
       transition: all .3s ease-in-out
   }
   .team-style07:hover {
-      background: #2BD5D7;
+      background: #5A8A65;
   }
   .team-style07:hover h3 a,
   .team-style07:hover p {
@@ -368,12 +369,9 @@ h2{
       margin-top: 0;
       padding-left: 0 !important
   }
-  @font-face {
-      font-family:Architects;
-      src: url(./src/fonts/Architects.ttf);
-  }
+
  .mb-0 {
-  font-family: Architects;
+  font-family: lato;
  }
 
 
@@ -627,7 +625,7 @@ Footer content
   
   width: 100%;
   height: 150px;
-  background: #FFC132;
+  background: #8AB9B7;
   border-radius: 6px;
 
   display: flex;
@@ -643,15 +641,16 @@ Footer content
 }
 .footer-row .footer-col h4 {
   color: #000000;
-  font-size: 2.5em;
-  font-weight: 600;
-  font-family: cream-cake;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 550;
+  font-family: lato;
 }
 .footer-col .footer-redes {
   display: flex;
   margin-top: 30px;
   gap: 30px;
-  cursor: pointer;
+  cursor: polato;
   color: #afb6c7;
   margin-left: 0.5em;
   margin-right: 0.5em;
