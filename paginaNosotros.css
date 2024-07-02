@@ -80,6 +80,8 @@ nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
   font-weight: 700;
   font-size: 1.3em;
   margin: auto;
+  background: #FFC132;
+  
 }
 
 h7{
