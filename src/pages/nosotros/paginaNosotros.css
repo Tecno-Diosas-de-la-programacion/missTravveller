@@ -1,0 +1,683 @@
+*{/* Resetear estilos */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;/* Incluye al padding y el border en el cálculo del ancho y alto total del elemento */
+}
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: #FFC132 !important;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+:root{/* Declaramos variables para reutilizar los colores */
+  --color_texto:#b564b2;
+  --color_elementis_fieldset:#4d3e6b;
+  --color_boton: #ea563f;
+  --color_fieldset:#ffa07a;
+}
+
+/* FONTS */
+@font-face {
+  font-family: cream-cake;
+  src: url(./src/fonts/CreamCake.otf);
+}
+
+@font-face {
+  font-family: travel-journal;
+  src: url(./src/fonts/TravelJournal.ttf);
+}
+
+@font-face {
+  font-family: alexander-lettering;
+  src: url(./src/fonts/AlexanderLettering.ttf);
+}
+
+nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
+  display: flex ;/* Se aplica flex al contenedor de nav, lo que permite una distribución flexible de los */
+  justify-content: space-between ;/* Permite que haya espacio entre los elementos */
+  align-items: center ;/* Alineación vertical de los elementos */
+  font-family: cream-cake;
+  font-size: 1.8em;
+  margin: auto;
+  background: #FFC132;
+  
+}
+
+h7{
+  font-family:alexander-lettering;
+  font-size: 2em;
+  text-align: center;  
+  align-items: center;
+}
+
+h3{
+  
+  align-items: center ;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  font-family: travel-journal;
+  font-size: 1.8em;
+}
+
+.titulo > h3{
+  font-size: 332px;
+}
+
+@media(max-width: 1023px){
+  .titulo > h3 {
+    font-size: 1.8em;
+  }
+}
+
+h1{
+  font-family: travel-journal;
+}
+
+#contorno-h3{
+  background-color: #2BD5D7;
+  width: 85%;
+  height: auto;
+  text-align: center;
+  padding-top: 2%;
+  margin-top: 8%;
+}
+
+#contorno-MissTravveller{
+  background-color: #FFFFFF;
+  height: auto;
+  padding: 2em;
+  
+  
+}
+
+#contorno-Patito{
+  background-color: #FFFFFF;
+  height: auto;
+  padding: 2em;
+  text-align: center;
+  
+}
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: black;
+    background-color: #fff;
+  }
+
+h2{
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  font-family: travel-journal;
+}
+#valores{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2BD5D7;
+  font-family: travel-journal;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 50px;
+  section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+
+    figure{
+      position: relative;
+      transition: all 0.4s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    &:hover{
+      background-color: #75d6d9;
+      border-radius: 10px;
+
+    }
+    &:hover figure{
+      width: 100%;
+      transform: scale(1.1);
+    }
+  }
+
+}
+@media(max-width: 1200px){
+  #valores{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+.nav-item{/* Referencia a clases */
+  margin: 20px 50px;
+  font-size: 0.9em;/* Unidad relativa */
+}
+
+.lead {
+  font-family: inter;
+}
+
+#hamburguesa{
+  height: 45px;
+  width: auto;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption > h1{
+    bottom: 3rem;
+    z-index: 10;
+    font-size: auto;
+  }
+
+  .carousel-caption > p{
+    bottom: 3rem;
+    z-index: 10;
+    font-size: auto;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height:fit-content;
+  }
+  .carousel-indicators{
+    margin-bottom:auto;
+  }
+
+
+ /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 1rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 400;
+    line-height: 2;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+    color: black;
+  }
+
+  /* CARDS CSS */
+  body{margin-top:20px;
+
+  }
+  img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: top;
+  }
+  .mb-1 {
+      margin-bottom: 0.25rem!important;
+  }
+  .h5, h5 {
+      font-size: 1.25rem;
+  }
+  a {
+  text-decoration:none;    
+  }
+  .team-style07 {
+      background: #fff;
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0px 10px 30px 0px rgb(26 29 72 / 7%);
+      border-radius: 15px;
+      transition: all .3s ease-in-out;
+  }
+  .team-style07 {
+      background: #fff;
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0px 10px 30px 0px rgba(26, 29, 72, 0.07);
+      border-radius: 15px;
+      transition: all .3s ease-in-out
+  }
+  .team-style07:hover {
+      background: #2BD5D7;
+  }
+  .team-style07:hover h3 a,
+  .team-style07:hover p {
+      color: #fff
+  }
+  .team-style07 .team-thumb {
+      position: relative
+  }
+  .team-style07 .team-thumb .team-social {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0
+  }
+  .team-style07:hover .team-thumb .team-social .styled-icons li:nth-child(1) {
+      left: 40px;
+      position: absolute;
+      bottom: 0;
+      z-index: 10;
+      opacity: 1;
+      transition: all .4s ease-in-out 0s
+  }
+  .team-style07 .team-thumb .team-social .styled-icons li:nth-child(1) {
+      position: absolute;
+      opacity: 0;
+      left: -10px;
+      bottom: -20px;
+      z-index: 10;
+      transition: all .3s ease-in-out
+  } 
+  .team-style07 .team-thumb .team-social .styled-icons li:nth-child(2) {
+      position: absolute;
+      opacity: 0;
+      left: 0;
+      right: 0;
+      bottom: -40px;
+      transition: all .3s ease-in-out
+  }
+  .team-style07 .team-thumb .team-social .styled-icons li:nth-child(3) {
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      bottom: -20px;
+      transition: all .3s ease-in-out
+  }  
+  .team-style07:hover .team-thumb .team-social .styled-icons li:nth-child(3) {
+      position: absolute;
+      right: 40px;
+      bottom: 0;
+      opacity: 1;
+      transition: all .4s ease-in-out 0s
+  }
+  .team-style07:hover .team-thumb .team-social .styled-icons li:nth-child(2) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -20px;
+      opacity: 1;
+      transition: all .5s ease-in-out 0s
+  }
+  .team-style07 .team-thumb .team-social .styled-icons li a {
+      color: #fff;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      border: none;
+      font-size: 16px;
+      transition: all .3s ease-in-out
+  }
+  .mb-1-9, .my-1-9 {
+      margin-bottom: 1.9rem;
+  }
+  .styled-icons a {
+      border: 2px solid transparent;
+      color: #333;
+      display: inline-block;
+      font-size: 16px;
+      height: 36px;
+      line-height: 2;
+      margin-right: 4px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      width: 36px;
+      transition: all .2s ease;
+      border-radius: 50%
+  }
+  .styled-icons li {
+      display: inline-block;
+      margin-bottom: 5px;
+      margin-top: 0;
+      padding-left: 0 !important
+  }
+  @font-face {
+      font-family:Architects;
+      src: url(./src/fonts/Architects.ttf);
+  }
+ .mb-0 {
+  font-family: Architects;
+ }
+
+
+/* RESPONSIVE CSS */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 40px;
+  }
+}
+
+
+@media (max-width: 992px) {  
+  .featurette-heading {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 991px) {  
+  .featurette-heading {
+    font-size: 32px;
+  }
+}
+@media (min-width: 277px) and (max-width: 348px) {  
+  .featurette-heading {
+    font-size: 31px;
+  }
+}
+@media (max-width: 216px) {  
+  .featurette-heading {
+    font-size: 30px;
+  }
+}
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 570px) {
+  /* Bump up size of carousel content */
+  .carousel-caption > h1 {
+    font-size: calc(2em + 2vw);
+    line-height: -2em;
+    padding: 1em;
+    margin: -3.3em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+  }
+  
+  .carousel-caption > p {
+    font-size: calc(0.6em + 0.6vw);
+    line-height: 1em;
+    padding: 5em;
+    margin: 2.8em;
+  }
+  #verMas1 {
+    font-size: calc(0.7em + 1vw);
+    line-height: 1em;
+    padding: 0.8em;
+    margin-top: -18em;
+  }
+  #verMas2 {
+    font-size: calc(0.7em + 1vw);
+    line-height: 1em;
+    padding: 0.8em;
+    margin-top: -18em;
+  }
+  #verMas3 {
+    font-size: calc(0.7em + 1vw);
+    line-height: 1em;
+    padding: 0.8em;
+    margin-top: -18em;
+  }
+
+  .carousel-indicators{
+    
+    line-height: 1em;
+    padding: 1em;
+    margin: 10em;
+  }
+
+  .container1{
+    margin-top: 0%;
+  }
+}
+
+@media (min-width: 570px) and (max-width: 650px) {
+  /* Bump up size of carousel content */
+  .carousel-caption > h1 {
+    font-size: calc(2.5em + 2vw);
+    line-height: 1em;
+    padding: 1em;
+    margin: -2.2em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+  }
+  
+  .carousel-caption > p {
+    font-size: calc(0.8em + 0.6vw);
+    line-height: 1em;
+    padding: 4.5em;
+    margin: 0em;
+  }
+  #verMas1 {
+    font-size: calc(0.7em + 1vw);
+    line-height: 1em;
+    padding: 0.8em;
+    margin-top: -14em;
+  }
+  #verMas2 {
+    font-size: calc(0.7em + 1vw);
+    line-height: 1em;
+    padding: 0.8em;
+    margin-top: -14em;
+  }
+  #verMas3 {
+    font-size: calc(0.7em + 1vw);
+    line-height: 1em;
+    padding: 0.8em;
+    margin-top: -14em;
+  }
+
+  .carousel-indicators{
+    
+    line-height: 1em;
+    padding: 1em;
+    margin: 10em;
+  }
+
+  .container1{
+    margin-top: 0%;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 800px) {
+  /* Bump up size of carousel content */
+  .carousel-caption > h1 {
+    font-size: calc(2.5em + 2vw);
+    line-height: 1em;
+    padding: 1em;
+    margin: -2.2em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+  }
+  
+  .carousel-caption > p {
+    font-size: calc(0.8em + 0.6vw);
+    line-height: 1em;
+    padding: 4.5em;
+    margin: 0em;
+  }
+  #verMas1 {
+    font-size: calc(0.7em + 1vw);
+    line-height: 1em;
+    padding: 0.8em;
+    margin-top: -12em;
+  }
+  #verMas2 {
+    font-size: calc(0.7em + 1vw);
+    line-height: 1em;
+    padding: 0.8em;
+    margin-top: -12em;
+  }
+  #verMas3 {
+    font-size: calc(0.7em + 1vw);
+    line-height: 1em;
+    padding: 0.8em;
+    margin-top: -12em;
+  }
+
+  .carousel-indicators{
+    
+    line-height: 1em;
+    padding: 1em;
+    margin: 10em;
+  }
+
+  .container1{
+    margin-top: 0%;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 950px) {
+  /* Bump up size of carousel content */
+  .carousel-caption > h1 {
+    font-size: calc(2.5em + 2vw);
+    line-height: 1em;
+    padding: 1em;
+    margin: -2.2em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+  }
+  
+  .carousel-caption > p {
+    font-size: calc(0.8em + 0.6vw);
+    line-height: 1em;
+    padding: 4.5em;
+    margin: 0em;
+  }
+  #verMas1 {
+    font-size: calc(0.7em + 1vw);
+    line-height: 1em;
+    padding: 0.8em;
+    margin-top: -14em;
+  }
+  #verMas2 {
+    font-size: calc(0.7em + 1vw);
+    line-height: 1em;
+    padding: 0.8em;
+    margin-top: -14em;
+  }
+  #verMas3 {
+    font-size: calc(0.7em + 1vw);
+    line-height: 1em;
+    padding: 0.8em;
+    margin-top: -14em;
+  }
+
+  .carousel-indicators{
+    
+    line-height: 1em;
+    padding: 1em;
+    margin: 10em;
+  }
+
+  .container1{
+    margin-top: 0%;
+  }
+}
+
+/* 
+Footer content
+*/
+
+#container-footer {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-bottom: -3em;
+}
+.footer {
+  
+  width: 100%;
+  height: 150px;
+  background: #FFC132;
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+}
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+.footer-row .footer-col h4 {
+  color: #000000;
+  font-size: 2.5em;
+  font-weight: 600;
+  font-family: cream-cake;
+}
+.footer-col .footer-redes {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+  color: #afb6c7;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+@media (max-width: 1370px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+    height: 6.5em;
+  }
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+  .footer-col form {
+    display: block;
+  }
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
