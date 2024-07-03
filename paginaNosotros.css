@@ -6,7 +6,7 @@
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: #8ab9b7 !important;
+  background-color: #ffc132 !important;
 }
 
 .inter {
@@ -48,7 +48,7 @@ nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
   font-family: cream-cake;
   font-size: 1.8em;
   margin: auto;
-  background: #8ab9b7;
+  background: #ffc132;
   
 }
 
@@ -84,7 +84,7 @@ h1{
 }
 
 #contorno-h3{
-  background-color: #5a8a65;
+  background-color: #2bd5d7;
   width: 85%;
   height: auto;
   text-align: center;
@@ -125,7 +125,7 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #5a8a65;
+  background-color: #2bd5d7;
   font-family: travel-journal;
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -152,7 +152,7 @@ h2{
 
     }
     &:hover{
-      background-color: #5a8a65;
+      background-color: #2bd5d7;
       border-radius: 10px;
 
     }
@@ -274,7 +274,7 @@ h2{
       transition: all .3s ease-in-out
   }
   .team-style07:hover {
-      background: #5a8a65;
+      background: #2bd5d7;
   }
   .team-style07:hover h3 a,
   .team-style07:hover p {
@@ -627,7 +627,7 @@ Footer content
   
   width: 100%;
   height: 150px;
-  background: #8ab9b7;
+  background: #ffc132;
   border-radius: 6px;
 
   display: flex;
@@ -681,3 +681,9 @@ Footer content
     margin: 10px 0 0 0;
   }
 }
+
+.iconoscards {
+  width: 25px;
+  height: 25px;
+  color: black;
+ }
