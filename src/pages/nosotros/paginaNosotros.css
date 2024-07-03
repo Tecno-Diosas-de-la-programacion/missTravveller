@@ -90,6 +90,7 @@ h7{
   font-style: italic;
   font-size: 0.9em;
   font-weight: 400;
+<<<<<<< HEAD
 }
 
 h4{
@@ -98,6 +99,8 @@ h4{
   font-weight: 700;
   font-style: italic;
   font-size: 1.2em;
+=======
+>>>>>>> d2cac1fa9896bec32f29d60ebd139f19ba7bd759
 }
 
 h3{
@@ -139,7 +142,10 @@ h1{
   background-color: #FFFFFF;
   height: auto;
   padding: 2em;
+<<<<<<< HEAD
   padding-top: 0;
+=======
+>>>>>>> d2cac1fa9896bec32f29d60ebd139f19ba7bd759
 }
 
 #contorno-Patito{
@@ -168,7 +174,11 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   background-color: #5A8A65;
+=======
+  background-color: #2BD5D7;
+>>>>>>> d2cac1fa9896bec32f29d60ebd139f19ba7bd759
   font-family: lato;
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -225,7 +235,10 @@ h2{
   font-family: lato;
   font-weight: 400;
   text-align: center;
+<<<<<<< HEAD
   margin-bottom: 0.5em;
+=======
+>>>>>>> d2cac1fa9896bec32f29d60ebd139f19ba7bd759
 }
 
 #hamburguesa{
@@ -249,6 +262,11 @@ h2{
 
   /* CARDS CSS */
 
+<<<<<<< HEAD
+=======
+  }
+
+>>>>>>> d2cac1fa9896bec32f29d60ebd139f19ba7bd759
   img {
       max-width: 100%;
       height: auto;
@@ -644,11 +662,20 @@ Footer content
   align-items: center;
   height: fit-content;
 }
+<<<<<<< HEAD
 
 .iconos-redes {
   width: 35px;
   height: 35px;
 
+=======
+.footer-row .footer-col h4 {
+  color: #000000;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 550;
+  font-family: lato;
+>>>>>>> d2cac1fa9896bec32f29d60ebd139f19ba7bd759
 }
 
 .footer-redes {
