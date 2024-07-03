@@ -141,10 +141,9 @@ body{margin-top:20px;
     }
 
     @font-face {
-        font-family:Architects;
-        src: url(./src/fonts/Architects.ttf);
+
     }
 
    .mb-0 {
-    font-family: Architects;
+
    }
