@@ -6,7 +6,7 @@ const navbarApp = () => {
 
     <nav style="background: #FFFFFF;" class="navbar navbar-expand-md fixed-top bg-light align-text-right">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/public/img/Logo_MissTravveller.png">
           <img src="/public/img/Logo_MissTravveller.png" alt="Logo" width="90" height="90"
             class="d-inline-block align-text-center">
         </a>
@@ -20,12 +20,11 @@ const navbarApp = () => {
               <a class="nav-link" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Nosotros</a>
+              <a class="nav-link active" href="/src/pages/nosotros/paginaNosotros.html">Nosotros</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle" href="/src/pages/productos/productos.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-
                 Productos
               </a>
               <ul class="dropdown-menu">
@@ -42,21 +41,19 @@ const navbarApp = () => {
               <a class="nav-link" href="/src/pages/contacto/paginaContacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Formulario</a>
+              <a class="nav-link" href="/src/pages/formulario/formulario.html">Formulario</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Ingresar</a>
+              <a class="nav-link" href="/src/pages/ingresar/ingresar.html">Ingresar</a>
             </li>
              <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li> 
           <!-- </ul>
         </div>
-
       </div>
     </nav> 
-
 `;
-}
+};
 
 export{navbarApp};
