@@ -19,21 +19,8 @@ const navbarApp = () => {
             <li class="nav-item">
               <a class="nav-link " href="/src/pages/nosotros/paginaNosotros.html">Nosotros</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/src/pages/productos/productos.html" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-
-                Productos
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Huatulco</a></li>
-                <li><a class="dropdown-item" href="#">Valle de Bravo</a></li>
-                <li><a class="dropdown-item" href="#">Taxco</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Ver todo</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link " href="/src/pages/productos/productos.html">Productos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/src/pages/contacto/paginaContacto.html">Contacto</a>
