@@ -8,7 +8,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         aboutUs: resolve(__dirname, 'src/pages/nosotros/paginaNosotros.html'),
         contact: resolve(__dirname, 'src/pages/contacto/paginaContacto.html'),
-        login: resolve(__dirname, 'src/pages/igresar/ingresar.html'),
+        login: resolve(__dirname, 'src/pages/ingresar/ingresar.html'),
         form: resolve(__dirname, 'src/pages/formulario/formulario.html'),
 
       },
