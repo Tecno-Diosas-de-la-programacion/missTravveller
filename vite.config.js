@@ -10,6 +10,7 @@ export default defineConfig({
         contact: resolve(__dirname, 'src/pages/contacto/paginaContacto.html'),
         login: resolve(__dirname, 'src/pages/ingresar/ingresar.html'),
         form: resolve(__dirname, 'src/pages/formulario/formulario.html'),
+        products: resolve(__dirname, 'src/pages/productos/productos.html')
 
       },
     },
