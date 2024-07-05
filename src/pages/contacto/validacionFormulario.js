@@ -30,7 +30,6 @@ const valiteEmailFormat = (event) => {
     const fieldValue = event.target.value;
 
     const regex = new RegExp(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/);
-    console.log(regex.test(field.value));//Devuelve turue or false
 
     if (fieldValue.trim().length > 5 && !regex.test(fieldValue)) {
         field.classList.add("invalid");
@@ -48,7 +47,6 @@ const valitePhoneFormat = (event) => {
     const fieldValue = event.target.value;
 
     const regex = new RegExp(/^\d{9}$/);
-    console.log(regex.test(field.value));//Devuelve turue or false
 
     if (fieldValue.trim().length > 3 && !regex.test(fieldValue)) {//!false = true
         field.classList.add("invalid");
@@ -93,11 +91,9 @@ form.addEventListener("submit", function (event) {
     // Enviar correo electrónico usando EmailJS
     emailjs.send("service_3np4zfy", "template_ofvcspn", formData)
         .then(response => {
-            console.log("Correo enviado", response.status, response.text);
-            alert("Correo enviado exitosamente.");
+            swal('','Tu mensaje fue enviado con éxito','success');
         }, error => {
-            console.error("Error al enviar correo", error);
-            alert("Error al enviar correo. Inténtalo nuevamente.");
+            swal('','Hubo un error, inténtalo nuevamente','error');
         });
 });
 
