@@ -660,3 +660,9 @@ Footer content
   margin-left: 2em;
   
 }
+
+.iconstyle {
+  color: black;
+  width: 30px;
+  height: 30px;
+}
