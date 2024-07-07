@@ -1,0 +1,104 @@
+[
+    {
+      "id": 1,
+      "nombreDestino": "Querétaro, pueblo mágico de Peña.",
+      "descripcion": "¡Te invitamos a un día de aventura en Querétaro!",
+      "itinerario": [
+        {
+          "puntoReunion": "Metro Revolución",
+          "horaSalida": "07:00 am",
+          "actividad": "Desayuno en la región, cada uno por cuenta propia"
+        },
+        {
+          "puntoReunion": "Viñedos La Redonda",
+          "horaSalida": "N/A",
+          "actividad": "Visita guiada a los viñedos y degustación de vinos"
+        },
+        {
+          "puntoReunion": "Peña de Bernal",
+          "horaSalida": "N/A",
+          "actividad": "Traslado y tiempo libre para explorar"
+        },
+        {
+          "puntoReunion": "N/A",
+          "horaSalida": "18:00 hrs",
+          "actividad": "Regreso al punto de partida"
+        }
+      ],
+      "img": "/img/Queretaro.jpg",
+      "autor": "Dulce",
+      "precio": 1700,
+      "fechaViaje": "2024-07-06",
+      "cupo": 16,
+      "fechaCreacion": "2024-07-05"
+    },
+    {
+      "id": 2,
+      "nombreDestino": "Puebla, barroco y sabor",
+      "descripcion": "¡Adéntrate en la magia de Puebla!",
+      "itinerario": [
+        {
+          "puntoReunion": "Angel de la Independencia",
+          "horaSalida": "07:00 am",
+          "actividad": "Desayuno en la región, cada uno por cuenta propia"
+        },
+        {
+          "puntoReunion": "Centro Histórico",
+          "horaSalida": "N/A",
+          "actividad": "Recorrido por las calles y admiración de la arquitectura"
+        }
+      ],
+      "img": "/img/Puebla.jpg",
+      "autor": "Mariana",
+      "precio": 1500,
+      "fechaViaje": "2024-07-13",
+      "cupo": 12,
+      "fechaCreacion": "2024-07-05"
+    },
+    {
+      "id": 3,
+      "nombreDestino": "Taxco, la ciudad de plata",
+      "descripcion": "Descubre Taxco, Pueblo Mágico",
+      "itinerario": [
+        {
+          "puntoReunion": "Monumento a los Niños Héroes",
+          "horaSalida": "08:00 am",
+          "actividad": "Desayuno en la región, cada uno por cuenta propia"
+        },
+        {
+          "puntoReunion": "Centro Histórico",
+          "horaSalida": "N/A",
+          "actividad": "Recorrido por las calles y admiración de la arquitectura"
+        }
+      ],
+      "img": "/img/Taxco.jpg",
+      "autor": "Carlos",
+      "precio": 1200,
+      "fechaViaje": "2024-07-20",
+      "cupo": 10,
+      "fechaCreacion": "2024-07-06"
+    },
+    {
+      "id": 4,
+      "nombreDestino": "Taxco, la ciudad de plata",
+      "descripcion": "Descubre Taxco, Pueblo Mágico",
+      "itinerario": [
+        {
+          "puntoReunion": "Monumento a los Niños Héroes",
+          "horaSalida": "08:00 am",
+          "actividad": "Desayuno en la región, cada uno por cuenta propia"
+        },
+        {
+          "puntoReunion": "Centro Histórico",
+          "horaSalida": "N/A",
+          "actividad": "Recorrido por las calles y admiración de la arquitectura"
+        }
+      ],
+      "img": "/img/Taxco.jpg",
+      "autor": "Carlos",
+      "precio": 1200,
+      "fechaViaje": "2024-07-20",
+      "cupo": 10,
+      "fechaCreacion": "2024-07-06"
+    }
+  ]
