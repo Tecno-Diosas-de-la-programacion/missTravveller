@@ -4,7 +4,7 @@ const navbarApp = () => {
     
     return `
 
-    <nav style="background: #FFFFFF;" class="navbar navbar-expand-md fixed-top bg-light align-text-right">
+    <nav style="background: #8AB9B7;" class="navbar navbar-expand-md fixed-top bg-light align-text-right">
       <div class="container-fluid">
         <a class="navbar-brand" href="/public/img/Logo_MissTravveller.png">
           <img src="/public/img/Logo_MissTravveller.png" alt="Logo" width="90" height="90"
