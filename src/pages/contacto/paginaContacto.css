@@ -1,6 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;/* Incluye al padding y el border en el cálculo del ancho y alto total del elemento */
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+:root{/* Declaramos variables para reutilizar los colores */
+  --color_texto:#b564b2;
+  --color_elementis_fieldset:#4d3e6b;
+  --color_boton: #ea563f;
+  --color_fieldset:#ffa07a;
+}
+
+nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
+  display: flex ;/* Se aplica flex al contenedor de nav, lo que permite una distribución flexible de los */
+  justify-content: space-between ;/* Permite que haya espacio entre los elementos */
+  align-items: center ;/* Alineación vertical de los elementos */
+  font-family: lato;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3em;
+  margin: auto;
+  
+  background: #8AB9B7;
+  height: 4em;
+}
+
+h7{
+  font-family:lato;
+  font-style: italic;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+h4{
+  padding-top: 0.7em;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+h3{
+  
+  align-items: center ;
+  color: black;
+  
+  text-align: center;
+  border-radius: 10px;
+  font-family: lato;
+  font-size: 2.1em;
+  font-weight: 600;
+}
+
+.titulo > h3{
+  font-size: 332px;
+}
+
+h1{
+  font-family: lato;
+}
+
+h2{
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  font-family: lato;
+  font-size: 1.5em;
+  font-weight: 600;
+}
 body {
   background-color: #ffffff;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: black;
 }
+.nav-item{/* Referencia a clases */
+  margin: 30px;
+  font-size: 0.8em;/* Unidad relativa */
+}
+
+.lead {
+  font-family: lato;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+#hamburguesa{
+  height: 45px;
+  width: auto;
+}
+/* Featurettes
+  ------------------------- */
+  .featurette-divider {
+    margin: 1rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 400;
+    line-height: 2;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+    color: black;
+  }
 
 input[type=text],[type=email],[type=tel]{
   width: 100%;
@@ -47,4 +208,42 @@ input[type=text],[type=email],[type=tel]{
 
 #quieres-saber-mas{
   align-content: center;
+}
+
+.foot-item {
+  padding: 1em;
+}
+
+.container-footer {
+  background-color: #8AB9B7;
+
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x)* 1);
+  padding-left: calc(var(--bs-gutter-x)* 1);
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+.footer-elementos{
+  align-items: center;
+  height: fit-content;
+}
+
+.iconos-redes {
+  width: 35px;
+  height: 35px;
+
+}
+
+.footer-redes {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: polato;
+  color: #afb6c7;
+  margin-left: 2em;
+  
 }
