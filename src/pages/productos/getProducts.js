@@ -3,22 +3,33 @@ fetch("/db.json")
     .then(data => {
         const destinos = data.map(destino => {
             return `
-        <div class=" col-lg-5 col-md-5 col-sm-5">
-          <div id = "card-products" class="card m-2 rounded shadow-sm">
-            <div class="card-body"><strong>${destino.nombreDestino}</strong></div>
-            <img id = "img-product" src="${destino.img}" class="card-img-top" alt="${destino.nombreDestino}">
-            <div class="card-body">Itinerario</div>
-            <ul class="list-group list-group-flush">
-                ${destino.itinerario.map(actividad => `
-                <li id = "products" class="list-group-item"><strong>Destino: </strong>${actividad.puntoReunion} <br> <strong>Hora de salida:</strong> ${actividad.horaSalida} <br> <strong>Actividad:</strong> <br>${actividad.actividad}</li>`).join('')}
-            </ul>
-            <div class="card-body">Precio: ${destino.precio}</div>
-            
-            <button type="button" class="btn btn-primary"> 
-              <a href="/src/pages/contacto/paginaContacto.html" target="_blank"> ¡Reserva ahora! </a>
-            </button>
-          </div>
-        </div>
+                <div class="col-lg-5">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-6 col-md-5">
+                                <img class="card-img card-fluid rounded-star" src="${destino.img}" alt="">
+                            </div>
+                            <div class="col-6 col-md-7">
+                                <div class="card-body d-flex flex-colum">
+                                    <div class="h-100">
+                                        <h3 class="card-title">${destino.nombreDestino}</h3>
+                                        <p class="card-text">${destino.descripcion}</p>
+                                        <h4 class="card-title mb-3">$ <strong>${destino.precio}</strong> MXN </h4>
+                                        <div>
+                                            <div>
+                                                <button type="button" class="btn btn-dark">
+                                                    <i class="bi bi-handbag me-1"></i>
+                                                    <a href="/src/pages/contacto/paginaContacto.html" target="_blank">¡Reserva ahora! </a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
       `;
         });
 
