@@ -3,10 +3,10 @@ fetch("/db.json")
     .then(data => {
         const destinos = data.map(destino => {
             return `
-        <div class=" col-lg-3 col-md-4 col-sm-5">
+        <div class=" col-lg-5 col-md-5 col-sm-5">
           <div id = "card-products" class="card m-2 rounded shadow-sm">
             <div class="card-body"><strong>${destino.nombreDestino}</strong></div>
-            <img id = "img-product" src="../../../public/img/Logo_MissTravveller.png" class="card-img-top" alt="${destino.nombreDestino}">
+            <img id = "img-product" src="${destino.img}" class="card-img-top" alt="${destino.nombreDestino}">
             <div class="card-body">Itinerario</div>
             <ul class="list-group list-group-flush">
                 ${destino.itinerario.map(actividad => `
