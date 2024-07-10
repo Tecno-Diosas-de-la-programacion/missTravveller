@@ -663,17 +663,15 @@
 
 /* Productos */
 
-  .card-img{
+.card-img{
     width: 100%;
     height: 100%;
-    
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     border: none !important;
 }
 
 .card h3{
-
     text-transform: uppercase;
     color: rgb(88, 88, 88);
     font-size: .8rem;
@@ -682,5 +680,15 @@
 .card p{
     line-height: 1.4em;
 }
-  
 
+.btn-info{
+  background-color: #3E78FF !important;
+  border-color: #3E78FF !important;
+  color: #fff !important;
+}
+
+#button-booking{
+    color: rgb(255 255 255);
+    text-decoration: underline;
+    text-decoration: none;
+}

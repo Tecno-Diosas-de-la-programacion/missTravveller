@@ -17,9 +17,9 @@ fetch("/db.json")
                                         <h4 class="card-title mb-3">$ <strong>${destino.precio}</strong> MXN </h4>
                                         <div>
                                             <div>
-                                                <button type="button" class="btn btn-dark">
+                                                <button type="button" class="btn btn-info">
                                                     <i class="bi bi-handbag me-1"></i>
-                                                    <a href="/src/pages/contacto/paginaContacto.html" target="_blank">¡Reserva ahora! </a>
+                                                    <a id ="button-booking" href="/src/pages/contacto/paginaContacto.html" target="_blank">¡Reserva ahora! </a>
                                                 </button>
                                             </div>
                                         </div>
