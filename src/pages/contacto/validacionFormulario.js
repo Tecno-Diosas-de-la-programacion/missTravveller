@@ -48,7 +48,7 @@ const valitePhoneFormat = (event) => {
 
     const regex = new RegExp(/^\d{9}$/);
 
-    if (fieldValue.trim().length > 3 && !regex.test(fieldValue)) {//!false = true
+    if (fieldValue.trim().length > 5 && !regex.test(fieldValue)) {//!false = true
         field.classList.add("invalid");
         field.nextElementSibling.classList.add("error");
         field.nextElementSibling.innerHTML = `Porfavor ingresa un número telefónico válido.`;

@@ -40,7 +40,7 @@ input[type=text],[type=email],[type=tel]{
 }
 
 .fondo-formulario{
-  background-color: rgba(255, 193, 50, 0.9);
+  background-color: #8AB9B7;
   padding: 50px;
   border-radius: 10px;
 }
