@@ -1,0 +1,342 @@
+[
+  {
+      "id": 1,
+      "nombreDestino": "Querétaro, pueblo mágico de Peña.",
+      "descripcion": "¡Te invitamos a un día de aventura en Querétaro!",
+      "itinerario": [
+          {
+              "puntoReunion": "Metro Revolución",
+              "horaSalida": "07:00 am",
+              "actividad": "Desayuno: En la región, cada uno por cuenta propia",
+              "horasEstadia": "1 hora",
+              "horaRegreso": "08:00 am"
+          },
+          {
+              "puntoReunion": "Viñedos La Redonda",
+              "horaSalida": "N/A",
+              "actividad": "Visita guiada a los viñedos y degustación de vinos",
+              "horasEstadia": "4 horas",
+              "horaRegreso": "10:00 am"
+          },
+          {
+              "puntoReunion": "Peña de Bernal",
+              "horaSalida": "N/A",
+              "actividad": "Traslado y tiempo libre para explorar",
+              "horasEstadia": "3 horas",
+              "horaRegreso": "01:00 pm"
+          },
+          {
+              "puntoReunion": "N/A",
+              "horaSalida": "18:00 hrs",
+              "actividad": "Regreso al punto de partida",
+              "horasEstadia": "N/A",
+              "horaRegreso": "N/A"
+          }
+      ],
+      "img": "/img/01-QUERETARO.jpg",
+      "autor": "Dulce",
+      "precio": 1700,
+      "fechaViaje": "2024-07-06",
+      "cupo": 20,
+      "fechaCreacion": "2024-07-05"
+  },
+  {
+      "id": 2,
+      "nombreDestino": "Puebla, barroco y sabor",
+      "descripcion": "¡Adéntrate en la magia de Puebla!",
+      "itinerario": [
+          {
+              "puntoReunion": "Metro Revolución",
+              "horaSalida": "07:00 am",
+              "actividad": "Desayuno: En la región, cada uno por cuenta propia",
+              "horasEstadia": "1 hora",
+              "horaRegreso": "08:00 am"
+          },
+          {
+              "puntoReunion": "Centro Histórico",
+              "horaSalida": "N/A",
+              "actividad": "Recorrido por las calles y admiración de la arquitectura",
+              "horasEstadia": "3 horas",
+              "horaRegreso": "18:00 pm"
+          }
+      ],
+      "img": "/img/02-PUEBLA.jpg",
+      "autor": "Dulce",
+      "precio": 800,
+      "fechaViaje": "2024-07-13",
+      "cupo": 20,
+      "fechaCreacion": "2024-07-05"
+  },
+  {
+      "id": 3,
+      "nombreDestino": "Taxco, la ciudad de plata",
+      "descripcion": "Descubre Taxco, Pueblo Mágico",
+      "itinerario": [
+          {
+              "puntoReunion": "Metro Revolución",
+              "horaSalida": "07:00 am",
+              "actividad": "Desayuno: En la región, cada uno por cuenta propia",
+              "horasEstadia": "1 hora",
+              "horaRegreso": "08:00 am"
+          },
+          {
+              "puntoReunion": "Teleférico de Taxco",
+              "horaSalida": "N/A",
+              "actividad": "Paseo en teleférico con vistas panorámicas",
+              "horasEstadia": "2 horas",
+              "horaRegreso": "10:00 am"
+          },
+          {
+              "puntoReunion": "Plaza Borda",
+              "horaSalida": "N/A",
+              "actividad": "Visita guiada por el centro histórico y la iglesia de Santa Prisca",
+              "horasEstadia": "2 horas",
+              "horaRegreso": "12:00 pm"
+          },
+          {
+              "puntoReunion": "N/A",
+              "horaSalida": "17:00 hrs",
+              "actividad": "Regreso al punto de partida",
+              "horasEstadia": "N/A",
+              "horaRegreso": "N/A"
+          }
+      ],
+      "img": "/img/03-TAXCO.jpeg",
+      "autor": "Dulce",
+      "precio": 800,
+      "fechaViaje": "2024-07-20",
+      "cupo": 20,
+      "fechaCreacion": "2024-07-06"
+  },
+  {
+      "id": 4,
+      "nombreDestino": "Veracruz, Costa Esmeralda y Tecolutla",
+      "descripcion": "Sol, Playa y Arena",
+      "itinerario": [
+          {
+              "puntoReunion": "Metro Revolución",
+              "horaSalida": "23:00 pm",
+              "actividad": "Día 1: Desayuno en la región, cada uno por cuenta propia, veremos el amanecer en la playa, Conoce Costa Esmeralda",
+              "horasEstadia": "6 horas",
+              "horaRegreso": "05:00 am"
+          },
+          {
+              "puntoReunion": "Playa Tecolutla",
+              "horaSalida": "N/A",
+              "actividad": "Día 2: Desayuno en la región, cada uno por cuenta propia, Liberación de Tortugas, Visita de Manglares",
+              "horasEstadia": "8 horas",
+              "horaRegreso": "01:00 pm"
+          },
+          {
+              "puntoReunion": "Playa Tecolutla",
+              "horaSalida": "N/A",
+              "actividad": "Día 3: Desayuno en la región, cada uno por cuenta propia, Estadía en Playa hasta las 14:30, Regreso a la CDMX",
+              "horasEstadia": "6 horas",
+              "horaRegreso": "02:30 pm"
+          }
+      ],
+      "img": "/img/04-VERACUZ.png",
+      "autor": "Dulce",
+      "precio": 2700,
+      "fechaViaje": "2024-07-27",
+      "cupo": 20,
+      "fechaCreacion": "2024-07-06"
+  },
+  {
+      "id": 5,
+      "nombreDestino": "Teotihuacán",
+      "descripcion": "Ciudad donde los hombres se hacen Dioses",
+      "itinerario": [
+          {
+              "puntoReunion": "Metro Revolución",
+              "horaSalida": "06:00 am",
+              "actividad": "Desayuno en la región, cada uno por cuenta propia, recorreremos la ciudad de Teotihuacán, visitamos el Tianguis de artesanías",
+              "horasEstadia": "6 horas",
+              "horaRegreso": "18:00 pm"
+          }
+      ],
+      "img": "/img/05-TEOTIHUACAN.png",
+      "autor": "Dulce",
+      "precio": 800,
+      "fechaViaje": "2024-07-20",
+      "cupo": 20,
+      "fechaCreacion": "2024-07-06"
+  },
+  {
+      "id": 6,
+      "nombreDestino": "Acapulco, Guerrero",
+      "descripcion": "Disfruta de las playas de Acapulco",
+      "itinerario": [
+          {
+              "puntoReunion": "Metro Revolución",
+              "horaSalida": "22:00 pm",
+              "actividad": "Llegada a Acapulco y check-in en el hotel",
+              "horasEstadia": "10 horas",
+              "horaRegreso": "08:00 am"
+          },
+          {
+              "puntoReunion": "Playa Caleta",
+              "horaSalida": "N/A",
+              "actividad": "Día de playa en Caleta y Caletilla",
+              "horasEstadia": "6 horas",
+              "horaRegreso": "02:00 pm"
+          },
+          {
+              "puntoReunion": "N/A",
+              "horaSalida": "18:00 hrs",
+              "actividad": "Regreso al punto de partida",
+              "horasEstadia": "N/A",
+              "horaRegreso": "N/A"
+          }
+      ],
+      "img": "/img/06-ACAPULCO.jpg",
+      "autor": "Dulce",
+      "precio": 2700,
+      "fechaViaje": "2024-08-03",
+      "cupo": 20,
+      "fechaCreacion": "2024-07-06"
+  },
+  {
+      "id": 7,
+      "nombreDestino": "Museo de Cera, CDMX",
+      "descripcion": "Explora el Museo de Cera en la Ciudad de México",
+      "itinerario": [
+          {
+              "puntoReunion": "Metro Revolución",
+              "horaSalida": "10:00 am",
+              "actividad": "Visita al Museo de Cera",
+              "horasEstadia": "3 horas",
+              "horaRegreso": "01:00 pm"
+          },
+          {
+              "puntoReunion": "Metro Revolución",
+              "horaSalida": "01:00pm",
+              "actividad": "Almuerzo por cuenta propia y tiempo libre para explorar la zona",
+              "horasEstadia": "2 horas",
+              "horaRegreso": "03:00 pm"
+          },
+          {
+              "puntoReunion": "Metro Revolución",
+              "horaSalida": "15:00 hrs",
+              "actividad": "Regreso al punto de partida",
+              "horasEstadia": "N/A",
+              "horaRegreso": "N/A"
+          }
+      ],
+      "img": "/img/07-MUSEO DE CERA.jpg",
+      "autor": "Dulce",
+      "precio": 300,
+      "fechaViaje": "2024-08-10",
+      "cupo": 20,
+      "fechaCreacion": "2024-07-07"
+  },
+  {
+      "id": 8,
+      "nombreDestino": "Oaxaca, Huatulco",
+      "descripcion": "Descubre las playas y cultura de Huatulco, Oaxaca",
+      "itinerario": [
+          {
+              "puntoReunion": "Metro Revolución",
+              "horaSalida": "20:00 pm",
+              "actividad": "Viaje nocturno a Huatulco",
+              "horasEstadia": "10 horas",
+              "horaRegreso": "06:00 am"
+          },
+          {
+              "puntoReunion": "Playa Santa Cruz",
+              "horaSalida": "N/A",
+              "actividad": "Día de playa y actividades acuáticas",
+              "horasEstadia": "8 horas",
+              "horaRegreso": "02:00 pm"
+          },
+          {
+              "puntoReunion": "Centro de Huatulco",
+              "horaSalida": "N/A",
+              "actividad": "Visita al centro de Huatulco y mercado local",
+              "horasEstadia": "3 horas",
+              "horaRegreso": "05:00 pm"
+          },
+          {
+              "puntoReunion": "N/A",
+              "horaSalida": "18:00 hrs",
+              "actividad": "Regreso al punto de partida",
+              "horasEstadia": "N/A",
+              "horaRegreso": "N/A"
+          }
+      ],
+      "img": "/img/08-OAXACA.png",
+      "autor": "Dulce",
+      "precio": 3000,
+      "fechaViaje": "2024-08-17",
+      "cupo": 20,
+      "fechaCreacion": "2024-07-07"
+  },
+  {
+      "id": 9,
+      "nombreDestino": "Michoacán, Mariposa Monarca",
+      "descripcion": "Explora el santuario de la Mariposa Monarca en Michoacán",
+      "itinerario": [
+          {
+              "puntoReunion": "Metro Revolución",
+              "horaSalida": "05:00 am",
+              "actividad": "Viaje al santuario de la Mariposa Monarca",
+              "horasEstadia": "4 horas",
+              "horaRegreso": "09:00 am"
+          },
+          {
+              "puntoReunion": "Santuario de la Mariposa Monarca",
+              "horaSalida": "N/A",
+              "actividad": "Tour guiado y tiempo para explorar",
+              "horasEstadia": "5 horas",
+              "horaRegreso": "02:00 pm"
+          },
+          {
+              "puntoReunion": "N/A",
+              "horaSalida": "15:00 hrs",
+              "actividad": "Regreso al punto de partida",
+              "horasEstadia": "N/A",
+              "horaRegreso": "N/A"
+          }
+      ],
+      "img": "/img/09-MICHOACAN.jpg",
+      "autor": "Dulce",
+      "precio": 900,
+      "fechaViaje": "2024-09-01",
+      "cupo": 20,
+      "fechaCreacion": "2024-07-07"
+  },
+  {
+      "id": 10,
+      "nombreDestino": "Guanajuato, Festival Cervantino",
+      "descripcion": "Vive la cultura y el arte en el Festival Internacional Cervantino",
+      "itinerario": [
+          {
+              "puntoReunion": "Metro Revolución",
+              "horaSalida": "05:00 am",
+              "actividad": "Viaje a Guanajuato",
+              "horasEstadia": "5 horas",
+              "horaRegreso": "10:00 am"
+          },
+          {
+              "puntoReunion": "Centro de Guanajuato",
+              "horaSalida": "N/A",
+              "actividad": "Participación en las actividades del Festival Cervantino",
+              "horasEstadia": "6 horas",
+              "horaRegreso": "04:00 pm"
+          },
+          {
+              "puntoReunion": "N/A",
+              "horaSalida": "17:00 hrs",
+              "actividad": "Regreso al punto de partida",
+              "horasEstadia": "N/A",
+              "horaRegreso": "N/A"
+          }
+      ],
+      "img": "/img/10-CERVANTINO.png",
+      "autor": "Dulce",
+      "precio": 1500,
+      "fechaViaje": "2024-10-15",
+      "cupo": 20,
+      "fechaCreacion": "2024-07-07"
+  }
+]
