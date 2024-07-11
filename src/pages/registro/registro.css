@@ -103,6 +103,22 @@ nav {
     padding: 1em;
 }
 
+#footer-instagram {
+    font-size: 35px;
+    color: #8732cc;
+}
+
+#footer-facebook {
+    font-size: 35px;
+    color: #3249cc;
+}
+
+#footer-tiktok {
+    font-size: 33px;
+    color: #ff7519;
+}
+
+
 .bi {
     font-size: 105px;
     color: #3a4169;

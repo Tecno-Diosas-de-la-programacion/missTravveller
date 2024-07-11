@@ -228,6 +228,21 @@ input[type=text],[type=email],[type=tel]{
 
 }
 
+
+#footer-instagram {
+  font-size: 35px;
+  color: #8732cc;
+}
+
+#footer-facebook {
+  font-size: 35px;
+  color: #3249cc;
+}
+
+#footer-tiktok {
+  font-size: 33px;
+  color: #ff7519;
+}
 .footer-elementos{
   align-items: center;
   height: fit-content;
