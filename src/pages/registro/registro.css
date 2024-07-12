@@ -184,6 +184,8 @@ html, body {
 .btn {
     margin-bottom: 1rem;
     font-family: 'Lato', sans-serif;
+    align-content: center;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
