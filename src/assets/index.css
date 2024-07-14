@@ -7,11 +7,24 @@
 
 }
 
+/* No es buena  */
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 /* HERO */
 #hero {
     background: url(/img/index-beach.png);
     background-position: center;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 .text-index {
@@ -25,9 +38,9 @@
 }
 
 #search-index-input-button {
-    background: var( --btn-bg-color);
+    background: var(--btn-bg-color);
     border: none;
-    border-radius: var(--border-radius-large) ;
+    border-radius: var(--border-radius-large);
     color: var(--white-color);
     font-family: var(--title-font-family);
     font-size: var(--p-font-size);
@@ -43,7 +56,8 @@
     padding: 10px 15px;
 }
 
-#keyword, #icon-search{
+#keyword,
+#icon-search {
     border: none;
     background-color: transparent;
 }
