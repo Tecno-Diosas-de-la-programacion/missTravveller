@@ -61,3 +61,7 @@ body {
     border: none;
     background-color: transparent;
 }
+
+#testimonials {
+    background-color: var(--btn-bg-color);
+}
