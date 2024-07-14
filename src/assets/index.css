@@ -7,10 +7,6 @@
 
 }
 
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-
 /* HERO */
 #hero {
     background: url(/img/index-beach.png);
