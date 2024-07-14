@@ -1,6 +1,6 @@
 
-document.getElementById('addProductBtn').addEventListener('click', () => {
-    
+document.getElementById("addProductBtn").addEventListener('click', () => {
+      
     let isValid = true;
     let alertContainer = document.getElementById('alert-container');
     alertContainer.innerHTML = '';
@@ -43,8 +43,43 @@ document.getElementById('addProductBtn').addEventListener('click', () => {
     if (isValid) {
         alert('Formulario válido. Puedes enviar los datos.');
         // Aquí puedes agregar el código para enviar el formulario o procesar los datos.
+        const newProduct = {
+            "id": 0,
+            "nombreDestino": nombreDestino,
+            "descripcion": descripcion,
+            "itinerario": [],
+            "img": fileUpload,
+            "autor": "",
+            "precio": precio,
+            "fechaViaje": fecha,
+            "cupo": 99,
+            "fechaCreacion": ""
+        };
+
+        postProduct(newProduct);
     }
 });
+
+//Aqui empieza la adicion de productos con la funcion postProduct
+function postProduct (newProduct){
+    fetch("/public/db.json")
+        .then((resolve) => resolve.json())
+        .then((data) => {
+            console.log(data);
+            //Variable temporal para guardar el producto nuevo, para no modificar el original
+            const tempProducts = data;
+            //Aqui incrementamos el id y obtenemos el ultimo elemento
+            const lastId = tempProducts[tempProducts.length-1].id;
+            newProduct.id = lastId + 1;
+            //aqui colocamos el ultimo objeto al json
+            tempProducts.push(newProduct);
+            //Vamos a guardar el nuevo producto en el db2.json temporal, el writeFile no funciona
+            writeFile("/public/db2.json", JSON.stringify(tempProducts, null, 4));
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+}
 
 function showAlert(message) {
     let alertContainer = document.getElementById('alert-container');
