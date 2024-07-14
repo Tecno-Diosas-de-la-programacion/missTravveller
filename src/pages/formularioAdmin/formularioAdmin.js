@@ -57,6 +57,7 @@ document.getElementById("addProductBtn").addEventListener('click', () => {
         };
 
         postProduct(newProduct);
+
     }
 });
 
@@ -73,12 +74,28 @@ function postProduct (newProduct){
             newProduct.id = lastId + 1;
             //aqui colocamos el ultimo objeto al json
             tempProducts.push(newProduct);
+
+            //Local storage
+            localStorage.setItem("newProduct", JSON.stringify(newProduct));
+            
+            if(localStorage.getItem("newProduct")){
+                const nombreDestino = localStorage.getItem("newProduct");
+                const objectProduct = JSON.parse(localStorage.getItem("newProduct"));
+                console.log("Data from local storage " + objectProduct);
+            }else{
+                console.log("No hay datos en el local storage");
+            };
+            
+            
+
+            
             //Vamos a guardar el nuevo producto en el db2.json temporal, el writeFile no funciona
-            writeFile("/public/db2.json", JSON.stringify(tempProducts, null, 4));
+            //writeFile("/public/db2.json", JSON.stringify(tempProducts, null, 4));
         })
         .catch((error) => {
             console.log(error);
         });
+
 }
 
 function showAlert(message) {

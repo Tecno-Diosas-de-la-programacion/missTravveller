@@ -88,3 +88,4 @@ const getProducts = (pathfile) => {
 };
 
 getProducts("/public/db.json");
+
