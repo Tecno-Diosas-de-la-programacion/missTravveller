@@ -1,0 +1,53 @@
+/* VARIABLES */
+:root {
+    --c-white: #ffffff;
+    --c-brand-rgb: 138, 185, 183;
+    --btn-bg-color: #3E78FF;
+    --border-radius-large: 100px;
+
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/* HERO */
+#hero {
+    background: url(/img/index-beach.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.text-index {
+    font-weight: 600;
+    color: var(--c-white);
+}
+
+.input-group-text {
+    background-color: transparent;
+    border: 0;
+}
+
+#search-index-input-button {
+    background: var( --btn-bg-color);
+    border: none;
+    border-radius: var(--border-radius-large) ;
+    color: var(--white-color);
+    font-family: var(--title-font-family);
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight-semibold);
+    transition: all 0.3s;
+    color: var(--c-white);
+    margin-bottom: 0;
+}
+
+.input-group {
+    background-color: var(--c-white);
+    border-radius: var(--border-radius-large);
+    padding: 10px 15px;
+}
+
+#keyword, #icon-search{
+    border: none;
+    background-color: transparent;
+}
