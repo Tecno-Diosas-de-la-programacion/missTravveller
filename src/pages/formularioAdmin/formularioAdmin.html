@@ -47,11 +47,11 @@
         <div id="alert-container"></div>
         <form class="product-form" id="productForm">
             <div class="left-column">
-                <label for="nombre-destino">Nombre destino</label>
-                <input type="text" id="nombre-destino" placeholder="lugar">
+                <label for="nombre-destino">Nombre del destino</label>
+                <input type="text" id="nombre-destino" placeholder="Lugar">
 
                 <label for="fecha">Fecha</label>
-                <input type="text" id="fecha" placeholder="mm/dd/yyyy">
+                <input type="date" id="fecha" placeholder="mm/dd/yyyy">
 
                 <label for="precio">Precio</label>
                 <input type="text" id="precio" placeholder="$1,000">
@@ -65,13 +65,13 @@
             <div class="right-column">
                 <h2>Itinerario</h2>
 
-                <label for="punto-reunion">Punto reunión</label>
-                <input type="text" id="punto-reunion" placeholder="lugar">
+                <label for="punto-reunion">Punto de reunión</label>
+                <input type="text" id="punto-reunion" placeholder="Lugar">
 
-                <label for="hora-salida">Hora salida</label>
-                <input type="text" id="hora-salida" placeholder="hora">
+                <label for="hora-salida">Hora de salida</label>
+                <input type="time" id="hora-salida" placeholder="Hora">
 
-                <label for="descripcion-actividad">Descripción de Actividad</label>
+                <label for="descripcion-actividad">Descripción de la actividad</label>
                 <textarea id="descripcion-actividad" placeholder="Ingresa una descripción"></textarea>
 
                 <button type="button" class="btn" id="addActivityBtn">Agregar actividad</button>
@@ -96,7 +96,7 @@
                     <td>Dec 5</td>
                     <td>
                         <button class="edit-btn">Editar</button>
-                        <button class="delete-btn">Eliminar</button>
+                        <button class="delete-btn mt-2">Eliminar</button>
                     </td>
                 </tr>
                 <tr>
@@ -106,7 +106,7 @@
                     <td>Dec 5</td>
                     <td>
                         <button class="edit-btn">Editar</button>
-                        <button class="delete-btn">Eliminar</button>
+                        <button class="delete-btn mt-2">Eliminar</button>
                     </td>
                 </tr>
             </tbody>

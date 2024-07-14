@@ -1,4 +1,6 @@
-document.getElementById('addProductBtn').addEventListener('click', function() {
+
+document.getElementById('addProductBtn').addEventListener('click', () => {
+    
     let isValid = true;
     let alertContainer = document.getElementById('alert-container');
     alertContainer.innerHTML = '';
