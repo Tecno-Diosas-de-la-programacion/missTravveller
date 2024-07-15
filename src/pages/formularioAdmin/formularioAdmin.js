@@ -1,108 +1,84 @@
+import { localStorage } from "./postLocalStorage.js";
+import { validateInputsForm } from "./validateInputsFormAdmin.js";
 
-document.getElementById("addProductBtn").addEventListener('click', () => {
-      
-    let isValid = true;
-    let alertContainer = document.getElementById('alert-container');
-    alertContainer.innerHTML = '';
+const contactForm = document.forms["productForm"];
 
-    // Validate Nombre destino
-    let nombreDestino = document.getElementById('nombre-destino').value;
-    if (nombreDestino === '') {
-        isValid = false;
-        showAlert('Nombre destino es obligatorio.');
+/**
+ *  AddEventListener permite agregar funciones que se ejecutarán
+ *  en respuesta a un evento específico que ocurre aun elemento del DOM.
+ * 
+ *  register.addEventListener( type  , fncCallback );
+ * 
+ *  addEvenListener podemos manejar interacciones del usuario como clics,
+ * cambios de teclado, movimientos del mouse, entre otros.
+ */
+// contactForm.addEventListener( "click"  , ()=>{} );
+productForm.addEventListener( "button"  , async ( event )=>{
+    event.preventDefault();
+    console.log("Estoy en el evento click del botón");
+
+// Referencia de inputs TERMINAR ARANTXA Y ABI
+const nombreDestinoRef = productForm.elements["nombre-destino"];
+const fechaRef = productForm.elements["fecha"];
+const precioRef = productForm.elements["precio"];
+
+hora-salida
+descripcion-actividad
+
+// Sanitizar los datos ¿como podemos limpiar los elementosya recibidos? ARANTXA Y ABI
+emailRef.value = emailRef.value.toLowerCase();
+fullNameRef.value = fullNameRef.value.trim();
+
+const formData = {
+    id : 0, //funcion de abi 
+    nombreDestino : nombreDestinoRef.value,
+    fechaViaje : fechaRef.value, 
+    precio: precioRef.value,
+    img : fileUploadRef.value,
+    descripcion : descripcionRef.value,
+    cupo : cupoRef.value,
+    itinerario : [{
+        puntoReunion : puntoReunionRef.value, //CREAR INPUT FANNY Y DULCE
+        horaSalida : horaSalidaRef.value,
+        actividad : descripcionActRef.value, //descripcion de la actividad
+        horasEstadia : horasEstRef.value, //CREAR INPUT FANNY Y DULCE
+        horaRegreso : horaRegresoRef.value //CREAR INPUT FANNY Y DULCE
     }
+    ], 
+    
+ }
+ console.table( formData );
 
-    // Validate Fecha
-    let fecha = document.getElementById('fecha').value;
-    if (fecha === '') {
-        isValid = false;
-        showAlert('Fecha es obligatoria.');
+ //Insertar nuestras validaciones FANNY Y DULCE
+ const results = validateInputsForm(formData);
+
+ if( results.isValid ){
+    try{
+        await localStorage(); // ARANTXA ABI
     }
-
-    // Validate Precio
-    let precio = document.getElementById('precio').value;
-    if (precio === '') {
-        isValid = false;
-        showAlert('Precio es obligatorio.');
+    catch(error){
+        const errorMessage = document.getElementById("post-error-message");
+   errorMessage.innerHTML = error;
+   errorMessage.style.display = "block";
+   setTimeout( ()=> errorMessage.style.display = "none", 5000  );
     }
-
-    // Validate Archivo
-    let fileUpload = document.getElementById('file-upload').value;
-    if (fileUpload === '') {
-        isValid = false;
-        showAlert('Archivo es obligatorio.');
-    }
-
-    // Validate Descripción
-    let descripcion = document.getElementById('descripcion').value;
-    if (descripcion === '') {
-        isValid = false;
-        showAlert('Descripción es obligatoria.');
-    }
-
-    if (isValid) {
-        alert('Formulario válido. Puedes enviar los datos.');
-        // Aquí puedes agregar el código para enviar el formulario o procesar los datos.
-        const newProduct = {
-            "id": 0,
-            "nombreDestino": nombreDestino,
-            "descripcion": descripcion,
-            "itinerario": [],
-            "img": fileUpload,
-            "autor": "",
-            "precio": precio,
-            "fechaViaje": fecha,
-            "cupo": 99,
-            "fechaCreacion": ""
-        };
-
-        postProduct(newProduct);
-
-    }
+ }else{
+   const errorMessage = document.getElementById("error-message");
+   errorMessage.innerHTML = results.error;
+   errorMessage.style.display = "block";
+   setTimeout( ()=> errorMessage.style.display = "none", 5000  );
+ }
 });
 
-//Aqui empieza la adicion de productos con la funcion postProduct
-function postProduct (newProduct){
-    fetch("/public/db.json")
-        .then((resolve) => resolve.json())
-        .then((data) => {
-            console.log(data);
-            //Variable temporal para guardar el producto nuevo, para no modificar el original
-            const tempProducts = data;
-            //Aqui incrementamos el id y obtenemos el ultimo elemento
-            const lastId = tempProducts[tempProducts.length-1].id;
-            newProduct.id = lastId + 1;
-            //aqui colocamos el ultimo objeto al json
-            tempProducts.push(newProduct);
 
-            //Local storage
-            localStorage.setItem("newProduct", JSON.stringify(newProduct));
-            
-            if(localStorage.getItem("newProduct")){
-                const nombreDestino = localStorage.getItem("newProduct");
-                const objectProduct = JSON.parse(localStorage.getItem("newProduct"));
-                console.log("Data from local storage " + objectProduct);
-            }else{
-                console.log("No hay datos en el local storage");
-            };
-            
-            
 
-            
-            //Vamos a guardar el nuevo producto en el db2.json temporal, el writeFile no funciona
-            //writeFile("/public/db2.json", JSON.stringify(tempProducts, null, 4));
-        })
-        .catch((error) => {
-            console.log(error);
-        });
+/*Pasos para realizar
 
-}
+1. Obetenr datos del formulario cada uno corresponde a una variable
+2. con esas variables crear un objeto 
+3. convertir el objeto en string 
+4.  GUardar clavevalor en local storage SET ITEM 
+5. Obtener con getitem con la clave 
+6. convertir a JSON.Parse
 
-function showAlert(message) {
-    let alertContainer = document.getElementById('alert-container');
-    let alertDiv = document.createElement('div');
-    alertDiv.className = 'alert alert-danger';
-    alertDiv.role = 'alert';
-    alertDiv.innerText = message;
-    alertContainer.appendChild(alertDiv);
-}
+*/
