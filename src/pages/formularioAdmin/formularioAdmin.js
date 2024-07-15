@@ -21,24 +21,33 @@ productForm.addEventListener( "button"  , async ( event )=>{
 const nombreDestinoRef = productForm.elements["nombre-destino"];
 const fechaRef = productForm.elements["fecha"];
 const precioRef = productForm.elements["precio"];
+const archivoRef = productForm.elements["file-upload"];
+const descripcionRef = productForm.elements["descripcion"];
+const cupoRef = productForm.elements[""]; //CREAR ID FANNY Y DULCE
+//ESTOS SOON DEL ITINERARIO
+const puntoReunionRef = productForm.elements["punto-reunion"];
+const horaSalidaRef = productForm.elements["hora-salida"];
+const descripcionActRef = productForm.elements["descripcion-actividad"];
+const horasEstRef = productForm.elements[""]; //CREAR ID FANNY Y DULCE
+const horaRegresoRef = productForm.elements[""]; //CREAR ID FANNY Y DULCE
 
-hora-salida
-descripcion-actividad
 
 // Sanitizar los datos ¿como podemos limpiar los elementosya recibidos? ARANTXA Y ABI
 emailRef.value = emailRef.value.toLowerCase();
 fullNameRef.value = fullNameRef.value.trim();
+
+
 
 const formData = {
     id : 0, //funcion de abi 
     nombreDestino : nombreDestinoRef.value,
     fechaViaje : fechaRef.value, 
     precio: precioRef.value,
-    img : fileUploadRef.value,
+    img : archivoRef.value,
     descripcion : descripcionRef.value,
-    cupo : cupoRef.value,
+    cupo : cupoRef.value, //CREAR INPUT FANNY Y DULCE
     itinerario : [{
-        puntoReunion : puntoReunionRef.value, //CREAR INPUT FANNY Y DULCE
+        puntoReunion : puntoReunionRef.value, 
         horaSalida : horaSalidaRef.value,
         actividad : descripcionActRef.value, //descripcion de la actividad
         horasEstadia : horasEstRef.value, //CREAR INPUT FANNY Y DULCE
