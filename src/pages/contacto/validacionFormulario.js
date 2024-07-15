@@ -64,7 +64,7 @@ userEmailFiled.addEventListener("blur", validateEmptyField);
 userPhoneFiled.addEventListener("blur", validateEmptyField);
 userMessageFiled.addEventListener("blur", validateEmptyField);
 
-userEmailFiled.addEventListener("input", validateEmailFormat);//input se ejecuta un evento
+userEmailFiled.addEventListener("input", validateteEmailFormat);//input se ejecuta un evento
 userPhoneFiled.addEventListener("input", validatePhoneFormat);
 
 
