@@ -25,7 +25,7 @@ const validateEmptyField = (event) => {
     }
 };
 
-const validateteEmailFormat = (event) => {
+const validateEmailFormat = (event) => {
     const field = event.target;
     const fieldValue = event.target.value;
 
@@ -64,7 +64,7 @@ userEmailFiled.addEventListener("blur", validateEmptyField);
 userPhoneFiled.addEventListener("blur", validateEmptyField);
 userMessageFiled.addEventListener("blur", validateEmptyField);
 
-userEmailFiled.addEventListener("input", validateteEmailFormat);//input se ejecuta un evento
+userEmailFiled.addEventListener("input", validateEmailFormat);//input se ejecuta un evento
 userPhoneFiled.addEventListener("input", validatePhoneFormat);
 
 
