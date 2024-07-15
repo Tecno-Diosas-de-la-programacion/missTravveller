@@ -1,9 +1,11 @@
 /* VARIABLES */
 :root {
     --c-white: #ffffff;
+    --c-black: #000000;
     --c-brand-rgb: 138, 185, 183;
-    --btn-bg-color: #3E78FF;
+    --btn-bg-color: #324B4A;
     --border-radius-large: 100px;
+    --bg-color: #A9AFCD;
 
 }
 
@@ -41,12 +43,11 @@ body {
     background: var(--btn-bg-color);
     border: none;
     border-radius: var(--border-radius-large);
-    color: var(--white-color);
+    color: var(--c-white);
     font-family: var(--title-font-family);
     font-size: var(--p-font-size);
     font-weight: var(--font-weight-semibold);
     transition: all 0.3s;
-    color: var(--c-white);
     margin-bottom: 0;
 }
 
@@ -63,5 +64,5 @@ body {
 }
 
 #testimonials {
-    background-color: var(--btn-bg-color);
+    background-color: var(--bg-color);
 }
