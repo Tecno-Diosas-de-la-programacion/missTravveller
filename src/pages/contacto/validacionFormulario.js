@@ -25,7 +25,7 @@ const validateEmptyField = (event) => {
     }
 };
 
-const validateteEmailFormat = (event) => {
+const validateEmailFormat = (event) => {
     const field = event.target;
     const fieldValue = event.target.value;
 
