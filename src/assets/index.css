@@ -2,11 +2,11 @@
 :root {
     --c-white: #ffffff;
     --c-black: #000000;
-    --c-brand-rgb: 138, 185, 183;
+    --c-fonts: #324B4A;
     --btn-bg-color: #324B4A;
     --border-radius-large: 100px;
-    --bg-color: #A9AFCD;
-
+    --bg-color: #b8b7d7;
+    --bg-circle-steps: #b8b7d7;
 }
 
 /* No es buena  */
@@ -57,6 +57,10 @@ body {
     padding: 10px 15px;
 }
 
+.p-about-us {
+    font-size: 1.75rem;
+}
+
 #keyword,
 #icon-search {
     border: none;
@@ -65,4 +69,23 @@ body {
 
 #testimonials {
     background-color: var(--bg-color);
+}
+
+.circle-steps {
+    width: 120px;
+    height: 120px;
+    background: var(--bg-circle-steps);
+}
+
+.icon-large {
+    font-size: 2rem;
+}
+
+.icon-arrow {
+    top: 50px;
+    right: -25px;
+}
+
+.icon-opinios {
+    font-size: 4rem;
 }
