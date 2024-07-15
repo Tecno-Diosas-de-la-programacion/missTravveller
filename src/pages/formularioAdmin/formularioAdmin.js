@@ -23,13 +23,13 @@ const fechaRef = productForm.elements["fecha"];
 const precioRef = productForm.elements["precio"];
 const archivoRef = productForm.elements["file-upload"];
 const descripcionRef = productForm.elements["descripcion"];
-const cupoRef = productForm.elements[""]; //CREAR ID FANNY Y DULCE
+const cupoRef = productForm.elements["cupo"]; 
 //ESTOS SOON DEL ITINERARIO
 const puntoReunionRef = productForm.elements["punto-reunion"];
 const horaSalidaRef = productForm.elements["hora-salida"];
 const descripcionActRef = productForm.elements["descripcion-actividad"];
-const horasEstRef = productForm.elements[""]; //CREAR ID FANNY Y DULCE
-const horaRegresoRef = productForm.elements[""]; //CREAR ID FANNY Y DULCE
+const horasEstRef = productForm.elements["hora-estadia"];
+const horaRegresoRef = productForm.elements["hora-regreso"]; 
 
 
 // Sanitizar los datos ¿como podemos limpiar los elementosya recibidos? ARANTXA Y ABI
@@ -45,13 +45,13 @@ const formData = {
     precio: precioRef.value,
     img : archivoRef.value,
     descripcion : descripcionRef.value,
-    cupo : cupoRef.value, //CREAR INPUT FANNY Y DULCE
+    cupo : cupoRef.value, 
     itinerario : [{
         puntoReunion : puntoReunionRef.value, 
         horaSalida : horaSalidaRef.value,
         actividad : descripcionActRef.value, //descripcion de la actividad
-        horasEstadia : horasEstRef.value, //CREAR INPUT FANNY Y DULCE
-        horaRegreso : horaRegresoRef.value //CREAR INPUT FANNY Y DULCE
+        horasEstadia : horasEstRef.value,
+        horaRegreso : horaRegresoRef.value 
     }
     ], 
     
@@ -59,6 +59,30 @@ const formData = {
  console.table( formData );
 
  //Insertar nuestras validaciones FANNY Y DULCE
+
+ let isValid = true;
+    let alertContainer = document.getElementById('alert-container');
+    alertContainer.innerHTML = '';
+
+
+    // Validate Nombre destino
+
+ const validateInputsForm = (formData) => {
+    const results = {
+      isValid: true,
+      error: "",
+    };
+  
+    const checkFullName = validateFullName(formData.fullName) 
+    if (  checkFullName.isValid === false ){
+      results.isValid = false;
+      results.error = checkFullName.error;
+    }
+  
+    return results;
+  };
+  
+
  const results = validateInputsForm(formData);
 
  if( results.isValid ){
@@ -76,8 +100,7 @@ const formData = {
    errorMessage.innerHTML = results.error;
    errorMessage.style.display = "block";
    setTimeout( ()=> errorMessage.style.display = "none", 5000  );
- }
-});
+ };
 
 
 
@@ -88,6 +111,7 @@ const formData = {
 3. convertir el objeto en string 
 4.  GUardar clavevalor en local storage SET ITEM 
 5. Obtener con getitem con la clave 
-6. convertir a JSON.Parse
+6. convertir a JSON.Parse 
 
 */
+})
