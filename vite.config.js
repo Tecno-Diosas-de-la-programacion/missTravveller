@@ -13,6 +13,7 @@ export default defineConfig({
         form: resolve(__dirname, 'src/pages/formulario/formulario.html'),
         products: resolve(__dirname, 'src/pages/productos/productos.html'),
         signup: resolve(__dirname, 'src/pages/registro/registro.html'),
+        signin: resolve(__dirname, 'src/pages/ingresar/ingresar.html')
 
       },
     },
