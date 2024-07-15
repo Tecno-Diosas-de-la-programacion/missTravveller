@@ -1,14 +1,12 @@
-export {localStorage}
+export {addToLocalStorage}
 
-const localStorage =  async (newProduct) =>{
+const addToLocalStorage =  async (newProduct) =>{
     let productoString = JSON.stringify(newProduct);
     let productoLS = localStorage.setItem("newProduct", productoString);
     let productoJSON = JSON.parse(productoLS);
     console.log(productoJSON);
     // localStorage.getItem("newProduct"); Nos ayuda a obtener el string para colocar en la tabla
 }
-
-localStorage(newProduct);
 
 
 const postContactForm = async () =>{
@@ -29,4 +27,4 @@ const postContactForm = async () =>{
     console.log(contactResults);
 
     return contactResults
-}
+}                                            
