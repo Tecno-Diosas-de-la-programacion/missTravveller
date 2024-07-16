@@ -1,7 +1,8 @@
-import { localStorage } from "./postLocalStorage.js";
+import { addToLocalStorage } from "./postLocalStorage.js";
 import { validateInputsForm } from "./validateInputsFormAdmin.js";
 
-const contactForm = document.forms["productForm"];
+const productForm = document.forms["productForm"];
+const addProductButton = document.getElementById("addProductBtn")
 
 /**
  *  AddEventListener permite agregar funciones que se ejecutarán

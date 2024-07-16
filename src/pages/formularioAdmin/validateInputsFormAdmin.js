@@ -13,44 +13,6 @@ const validateInputsForm = (formData) => {
         error: ""
     }
 
-    const validateFullName = (nombreDestino) => {
-        const result = { isValid: true, error: "" };
-        if (nombreDestino.trim() === "") {
-            result.isValid = false;
-            result.error = "Este campo es requerido";
-        } else if (nombreDestino.length < 3) {
-            result.isValid = false;
-            result.error = "El nombre del destino debe ser mayor o igual a 3 caracteres";
-        } else if (nombreDestino.length > 50) {
-            result.isValid = false;
-            result.error = "El nombre del destino debe ser menos o igual a 50 caracteres";
-        }
-        return result;
-    };
-
-    const validateDate = (fecha) => {
-        const result = { isValid: true, error: "" };
-        if (date.trim() === "") {
-            result.isValid = false;
-            result.error = "Este campo es requerido";
-        } else {
-            result.isValid = true;
-        }
-        return result;
-    };
-
-    const validatePrice = (precio) => {
-        const result = { isValid: true, error: "" };
-        if (price.trim() === "") {
-            result.isValid = false;
-            result.error = "Este campo es requerido";
-        } else if (isNaN(precio) || precio <= 0) {
-            result.isValid = false;
-            result.error = "El precio debe ser un número mayor que 0";
-        }
-        return result;
-    };
-
     errors.nombreDestino = validateFullName(formData.nombreDestino);
     errors.fecha = validateDate(formData.fecha);
     errors.precio = validatePrice(formData.precio);
