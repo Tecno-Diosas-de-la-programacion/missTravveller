@@ -1,26 +1,4 @@
 export { validateInputsForm }
-<<<<<<< HEAD
-
-document.getElementById('productForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-    validateForm();
-});
-
-    const checkFullName = validateFullName(formData.fullName)
-    if( checkFullName.isValid== false){
-        results.isValid = false;
-        results.error = checkFullName.error;
-    }
-    return results;
-
-    const validateInputsForm = (formData) => {
-
-    const errors = {};
-    const results = {
-        isValid: true,
-        error: ""
-    }
-=======
 
 document.getElementById('productForm').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -34,7 +12,6 @@ const validateInputsForm = (formData) => {
         isValid: true,
         error: ""
     }
->>>>>>> origin/feature/GMXTDP-103
 
     const validateFullName = (nombreDestino) => {
         const result = { isValid: true, error: "" };
