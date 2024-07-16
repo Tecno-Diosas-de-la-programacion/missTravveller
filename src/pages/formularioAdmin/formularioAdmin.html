@@ -56,8 +56,8 @@
           <label for="precio">Precio</label>
           <input type="text" id="precio" placeholder="$1,000">
 
-          <label for="img-upload">Imagen</label>
-          <input type="file" id="img-upload">
+          <!--<label for="img-upload">Imagen</label>
+          <input type="file" id="img-upload">-->
 
           <label for="descripcion">Descripción</label>
           <textarea id="descripcion" placeholder="Ingresa una descripción"></textarea>
@@ -83,6 +83,10 @@
           <label for="descripcion-actividad">Descripción de la actividad</label>
           <textarea id="descripcion-actividad" placeholder="Ingresa una descripción"></textarea>
         </div>
+        <div id="post-error-message" class="alert alert-warning" role="alert" style="display: none;"></div>
+        <div id="error-message" class="alert alert-warning" role="alert" style="display: none;">
+          A simple warning alert—check it out!
+      </div>
       </form>
 
       <button type="button" class="btn" id="addProductBtn">Agregar producto</button>

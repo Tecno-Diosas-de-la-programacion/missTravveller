@@ -22,7 +22,7 @@ addProductButton.addEventListener( "click"  , async ( event )=>{
 const nombreDestinoRef = productForm.elements["nombre-destino"];
 const fechaRef = productForm.elements["fecha"];
 const precioRef = productForm.elements["precio"];
-const archivoRef = productForm.elements["file-upload"];
+//const archivoRef = productForm.elements["file-upload"]; SERVIDOR
 const descripcionRef = productForm.elements["descripcion"];
 const cupoRef = productForm.elements["cupo"]; 
 //ESTOS SOON DEL ITINERARIO
@@ -40,45 +40,33 @@ fullNameRef.value = fullNameRef.value.trim();
 
 
 const formData = {
-    id : 0, //funcion de abi 
+    id : 0, 
     nombreDestino : nombreDestinoRef.value,
     fechaViaje : fechaRef.value, 
     precio: precioRef.value,
-    img : archivoRef.value,
+    //img : archivoRef.value, SERVIDOR
     descripcion : descripcionRef.value,
-    cupo : cupoRef.value, 
+     
     itinerario : [{
         puntoReunion : puntoReunionRef.value, 
         horaSalida : horaSalidaRef.value,
         actividad : descripcionActRef.value, //descripcion de la actividad
         horasEstadia : horasEstRef.value,
-        horaRegreso : horaRegresoRef.value 
+        horaRegreso : horaRegresoRef.value ,
+        cupo : cupoRef.value
     }
     ], 
     
  }
  console.table( formData );
 
- //Insertar nuestras validaciones FANNY Y DULCE
-
- let isValid = true;
-    let alertContainer = document.getElementById('alert-container');
-    alertContainer.innerHTML = '';
-
-
-    // Validate Nombre destino
 
  const validateInputsForm = (formData) => {
     const results = {
       isValid: true,
       error: "",
     };
-  
-    const checkFullName = validateFullName(formData.fullName) 
-    if (  checkFullName.isValid === false ){
-      results.isValid = false;
-      results.error = checkFullName.error;
-    }
+
   
     return results;
   };
@@ -88,10 +76,10 @@ const formData = {
 
  if( results.isValid ){
     try{
-        await addToLocalStorage(formData); // ARANTXA ABI
+        await addToLocalStorage(formData); 
     }
     catch(error){
-        const errorMessage = document.getElementById("post-error-message");
+    const errorMessage = document.getElementById("post-error-message");
    errorMessage.innerHTML = error;
    errorMessage.style.display = "block";
    setTimeout( ()=> errorMessage.style.display = "none", 5000  );

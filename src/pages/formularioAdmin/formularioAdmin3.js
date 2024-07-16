@@ -11,8 +11,8 @@ const insertarEnTabla = (products) => {
                 <td>¿Archivo 35?</td>
                 <td><button class="btn btn-primary">Detalles</button></td>
                 <td>
-                    <button class="btn btn-dark">Editar</button>
-                    <button class="btn btn-danger">Eliminar</button>
+                    <button class="btn btn-dark ">Editar</button>
+                    <button class="btn btn-danger edit-btn">Eliminar</button>
                 </td>
             </tr>
         ` );

@@ -1,14 +1,19 @@
 export {addToLocalStorage}
 
-const addToLocalStorage =  async (newProduct) =>{
-    let productoString = JSON.stringify(newProduct);
-    let productoLS = localStorage.setItem("newProduct", productoString);
-    let productoJSON = JSON.parse(productoLS);
-    console.log(productoJSON);
+const addToLocalStorage =  async (formData) =>{
+    let productoString = JSON.stringify(formData);
+    localStorage.setItem("formData", productoString);
+    //JSON.parse(productoString);
+    //localStorage.getItem("formData");
+    
+    const objectProduct = JSON.parse(localStorage.getItem("formData"));
+    console.log(objectProduct);
+    console.log(typeof(objectProduct));
+    
     // localStorage.getItem("newProduct"); Nos ayuda a obtener el string para colocar en la tabla
 }
 
-
+/*
 const postContactForm = async () =>{
     const url = "https://reqres.in/api/users"
     const contactFormData = {
@@ -28,28 +33,7 @@ const postContactForm = async () =>{
 
     return contactResults
 } 
+*/
 
 
-//Aqui empieza la adicion de productos con la funcion postProduct=============================
-function postProduct (newProduct){
-    fetch("/public/db.json")
-        .then((resolve) => resolve.json())
-        .then((data) => {
-            console.log(data);
-            //Variable temporal para guardar el producto nuevo, para no modificar el original
-            const tempProducts = data;
-            //Aqui incrementamos el id y obtenemos el ultimo elemento
-            const lastId = tempProducts[tempProducts.length-1].id;
-            newProduct.id = lastId + 1;
-            //aqui colocamos el ultimo objeto al json
-            tempProducts.push(newProduct);
-            //Vamos a guardar el nuevo producto en el db2.json temporal, el writeFile no funciona
-            writeFile("/public/db2.json", JSON.stringify(tempProducts, null, 4));
-            //writeFile("/public/db2.json", JSON.stringify(tempProducts, null, 4));
-            })
-        .catch((error) => {
-        console.log(error);
-});
-
-}
 
