@@ -40,117 +40,53 @@
 
       <!-- START THE FEATURETTES -->
 
-<!--Formulario-->
+      <!--Formulario-->
 
       <h1>Agregar nuevo producto</h1>
       <br>
-        <div id="alert-container"></div>
-        <form class="product-form" id="productForm">
-            <div class="left-column">
-                <label for="nombre-destino">Nombre del destino</label>
-                <input type="text" id="nombre-destino" placeholder="Lugar">
+      <div id="alert-container"></div>
+      <form class="product-form" id="productForm">
+        <div class="left-column">
+          <label for="nombre-destino">Nombre del destino</label>
+          <input type="text" id="nombre-destino" placeholder="Lugar">
 
-                <label for="fecha">Fecha</label>
-                <input type="date" id="fecha" placeholder="mm/dd/yyyy">
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" placeholder="mm/dd/yyyy">
 
-                <label for="precio">Precio</label>
-                <input type="text" id="precio" placeholder="$1,000">
+          <label for="precio">Precio</label>
+          <input type="text" id="precio" placeholder="$1,000">
 
-                <label for="file-upload">Archivo</label>
-                <input type="file" id="file-upload">
+          <label for="img-upload">Imagen</label>
+          <input type="file" id="img-upload">
 
-                <label for="descripcion">Descripción</label>
-                <textarea id="descripcion" placeholder="Ingresa una descripción"></textarea>
-            </div>
-            <div class="right-column">
-                <h2>Itinerario</h2>
+          <label for="descripcion">Descripción</label>
+          <textarea id="descripcion" placeholder="Ingresa una descripción"></textarea>
+        </div>
+        <div class="right-column">
+          <h2>Itinerario</h2>
 
-                <label for="punto-reunion">Punto de reunión</label>
-                <input type="text" id="punto-reunion" placeholder="Lugar">
+          <label for="punto-reunion">Punto de reunión</label>
+          <input type="text" id="punto-reunion" placeholder="Lugar">
 
-                <label for="hora-salida">Hora de salida</label>
-                <input type="time" id="hora-salida" placeholder="Hora">
+          <label for="hora-salida">Hora de salida</label>
+          <input type="time" id="hora-salida" placeholder="Hora">
 
-                <label for="descripcion-actividad">Descripción de la actividad</label>
-                <textarea id="descripcion-actividad" placeholder="Ingresa una descripción"></textarea>
+          <label for="hora-estadia">Hora de estadía</label>
+          <input type="time" id="hora-estadia" placeholder="Hora">
 
-                <button type="button" class="btn" id="addActivityBtn">Agregar actividad</button>
-            </div>
-        </form>
+          <label for="hora-regreso">Hora de Regreso</label>
+          <input type="time" id="hora-regreso" placeholder="Hora">
 
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Punto reunión</th>
-                    <th>Hora salida</th>
-                    <th>Descripción de Actividad</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>35</td>
-                    <td>Destino 35</td>
-                    <td>Dec 5</td>
-                    <td>Dec 5</td>
-                    <td>
-                        <button class="edit-btn">Editar</button>
-                        <button class="delete-btn mt-2">Eliminar</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>Destino 12</td>
-                    <td>Dec 5</td>
-                    <td>Dec 5</td>
-                    <td>
-                        <button class="edit-btn">Editar</button>
-                        <button class="delete-btn mt-2">Eliminar</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+          <label for="cupo">cupo</label>
+          <input type="number" min="1" max="15" id="cupo" placeholder="Cupo">
+          <br>
+          <label for="descripcion-actividad">Descripción de la actividad</label>
+          <textarea id="descripcion-actividad" placeholder="Ingresa una descripción"></textarea>
+        </div>
+      </form>
 
-        <button type="button" class="btn" id="addProductBtn">Agregar producto</button>
+      <button type="button" class="btn" id="addProductBtn">Agregar producto</button>
     </div>
-
-      <!-- FOOTER -->
-      <div class="container-footer">
-        <footer class="footer-elementos d-flex flex-wrap justify-content-between align-items-center py-2">
-          <a class="nav align-text-left" href="#">
-            <img class="float-end" src="/public/img/boton_regreso.png" alt="Botón flecha" width="40" height="40">
-          </a>
-
-          <h4>Miss Travveller</h4>
-
-          <ul class="nav col-md-4 justify-content-left">
-            <li class="foot-item">
-              <a class="footer.redes" href="#">
-                <img class="iconos-redes" src="/public/img/boton_facebook.png" alt="Botón Facebook">
-              </a>
-            </li>
-            <li class="foot-item">
-              <a class="footer.redes" href="https://www.instagram.com/misstraveler.mx?igsh=bnFjbDdsMzkybnVx">
-                <img class="iconos-redes" src="/public/img/boton_instagram.png" alt="Botón Instagram">
-              </a>
-            </li>
-            <li class="foot-item">
-              <a class="footer.redes" href="#">
-                <img class="iconos-redes" src="/public/img/boton_tiktok.png" alt="Botón Tiktok" width="50" height="50">
-              </a>
-            </li>
-          </ul>
-
-          <h4>
-            <a href="#">Creadoras</a>
-          </h4>
-
-        </footer>
-      </div>
-
-
-
   </main>
 
 
