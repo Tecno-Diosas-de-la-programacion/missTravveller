@@ -1,14 +1,19 @@
 export {addToLocalStorage}
 
-const addToLocalStorage =  async (newProduct) =>{
-    let productoString = JSON.stringify(newProduct);
-    let productoLS = localStorage.setItem("newProduct", productoString);
-    let productoJSON = JSON.parse(productoLS);
-    console.log(productoJSON);
+const addToLocalStorage =  async (formData) =>{
+    let productoString = JSON.stringify(formData);
+    localStorage.setItem("formData", productoString);
+    //JSON.parse(productoString);
+    //localStorage.getItem("formData");
+    
+    const objectProduct = JSON.parse(localStorage.getItem("formData"));
+    console.log(objectProduct);
+    console.log(typeof(objectProduct));
+    
     // localStorage.getItem("newProduct"); Nos ayuda a obtener el string para colocar en la tabla
 }
 
-
+/*
 const postContactForm = async () =>{
     const url = "https://reqres.in/api/users"
     const contactFormData = {
@@ -28,5 +33,4 @@ const postContactForm = async () =>{
 
     return contactResults
 }
-
 

@@ -22,47 +22,59 @@ addProductButton.addEventListener( "click"  , async ( event )=>{
 const nombreDestinoRef = productForm.elements["nombre-destino"];
 const fechaRef = productForm.elements["fecha"];
 const precioRef = productForm.elements["precio"];
-const archivoRef = productForm.elements["file-upload"];
+//const archivoRef = productForm.elements["file-upload"]; SERVIDOR
 const descripcionRef = productForm.elements["descripcion"];
-const cupoRef = productForm.elements[""]; //CREAR ID FANNY Y DULCE
+const cupoRef = productForm.elements["cupo"]; 
 //ESTOS SOON DEL ITINERARIO
 const puntoReunionRef = productForm.elements["punto-reunion"];
 const horaSalidaRef = productForm.elements["hora-salida"];
 const descripcionActRef = productForm.elements["descripcion-actividad"];
-const horasEstRef = productForm.elements[""]; //CREAR ID FANNY Y DULCE
-const horaRegresoRef = productForm.elements[""]; //CREAR ID FANNY Y DULCE
+const horasEstRef = productForm.elements["hora-estadia"];
+const horaRegresoRef = productForm.elements["hora-regreso"]; 
 
 
 
 const formData = {
-    id : 0, //funcion de abi 
+    id : 0, 
     nombreDestino : nombreDestinoRef.value,
     fechaViaje : fechaRef.value, 
     precio: precioRef.value,
-    img : archivoRef.value,
+    //img : archivoRef.value, SERVIDOR
     descripcion : descripcionRef.value,
-    cupo : cupoRef.value, //CREAR INPUT FANNY Y DULCE
+     
     itinerario : [{
         puntoReunion : puntoReunionRef.value, 
         horaSalida : horaSalidaRef.value,
         actividad : descripcionActRef.value, //descripcion de la actividad
-        horasEstadia : horasEstRef.value, //CREAR INPUT FANNY Y DULCE
-        horaRegreso : horaRegresoRef.value //CREAR INPUT FANNY Y DULCE
+        horasEstadia : horasEstRef.value,
+        horaRegreso : horaRegresoRef.value ,
+        cupo : cupoRef.value
     }
     ], 
     
  }
  console.table( formData );
 
- //Insertar nuestras validaciones FANNY Y DULCE
+
+ const validateInputsForm = (formData) => {
+    const results = {
+      isValid: true,
+      error: "",
+    };
+
+  
+    return results;
+  };
+  
+
  const results = validateInputsForm(formData);
 
  if( results.isValid ){
     try{
-        await addToLocalStorage(formData); // ARANTXA ABI
+        await addToLocalStorage(formData); 
     }
     catch(error){
-        const errorMessage = document.getElementById("post-error-message");
+    const errorMessage = document.getElementById("post-error-message");
    errorMessage.innerHTML = error;
    errorMessage.style.display = "block";
    setTimeout( ()=> errorMessage.style.display = "none", 5000  );
@@ -72,8 +84,7 @@ const formData = {
    errorMessage.innerHTML = results.error;
    errorMessage.style.display = "block";
    setTimeout( ()=> errorMessage.style.display = "none", 5000  );
- }
-});
+ };
 
 
 
@@ -84,6 +95,7 @@ const formData = {
 3. convertir el objeto en string 
 4.  GUardar clavevalor en local storage SET ITEM 
 5. Obtener con getitem con la clave 
-6. convertir a JSON.Parse
+6. convertir a JSON.Parse 
 
 */
+})
