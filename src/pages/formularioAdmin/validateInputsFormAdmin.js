@@ -1,4 +1,5 @@
 export { validateInputsForm }
+<<<<<<< HEAD
 
 document.getElementById('productForm').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -19,6 +20,21 @@ document.getElementById('productForm').addEventListener('submit', function (even
         isValid: true,
         error: ""
     }
+=======
+
+document.getElementById('productForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    validateForm();
+});
+
+const validateInputsForm = (formData) => {
+
+    const errors = {};
+    const results = {
+        isValid: true,
+        error: ""
+    }
+>>>>>>> origin/feature/GMXTDP-103
 
     const validateFullName = (nombreDestino) => {
         const result = { isValid: true, error: "" };
