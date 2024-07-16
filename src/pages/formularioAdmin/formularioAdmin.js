@@ -1,7 +1,8 @@
-import { localStorage } from "./postLocalStorage.js";
+import { addToLocalStorage } from "./postLocalStorage.js";
 import { validateInputsForm } from "./validateInputsFormAdmin.js";
 
-const contactForm = document.forms["productForm"];
+const productForm = document.forms["productForm"];
+const addProductButton = document.getElementById("addProductBtn")
 
 /**
  *  AddEventListener permite agregar funciones que se ejecutarán
@@ -13,7 +14,7 @@ const contactForm = document.forms["productForm"];
  * cambios de teclado, movimientos del mouse, entre otros.
  */
 // contactForm.addEventListener( "click"  , ()=>{} );
-productForm.addEventListener( "button"  , async ( event )=>{
+addProductButton.addEventListener( "click"  , async ( event )=>{
     event.preventDefault();
     console.log("Estoy en el evento click del botón");
 
@@ -58,7 +59,7 @@ const formData = {
 
  if( results.isValid ){
     try{
-        await localStorage(); // ARANTXA ABI
+        await addToLocalStorage(formData); // ARANTXA ABI
     }
     catch(error){
         const errorMessage = document.getElementById("post-error-message");
