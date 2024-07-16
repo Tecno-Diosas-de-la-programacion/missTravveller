@@ -32,11 +32,6 @@ const horasEstRef = productForm.elements[""]; //CREAR ID FANNY Y DULCE
 const horaRegresoRef = productForm.elements[""]; //CREAR ID FANNY Y DULCE
 
 
-// Sanitizar los datos ¿como podemos limpiar los elementosya recibidos? ARANTXA Y ABI
-emailRef.value = emailRef.value.toLowerCase();
-fullNameRef.value = fullNameRef.value.trim();
-
-
 
 const formData = {
     id : 0, //funcion de abi 
