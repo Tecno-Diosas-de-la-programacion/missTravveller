@@ -81,7 +81,7 @@ nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
   font-size: 1.3em;
   margin: auto;
   
-  background: #8AB9B7;
+  background:transparent;
   height: 4em;
 }
 
@@ -98,6 +98,7 @@ h4{
   font-weight: 700;
   font-style: italic;
   font-size: 1.2em;
+  
 }
 
 h3{
@@ -127,7 +128,7 @@ h1{
 }
 
 #contorno-h3{
-  background-color: #5A8A65;
+  background-color:transparent;
   width: 85%;
   height: auto;
   text-align: center;
@@ -168,7 +169,7 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #5A8A65;
+  background-color:transparent;
   font-family: lato;
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -225,7 +226,8 @@ h2{
   font-family: lato;
   font-weight: 400;
   margin-bottom: 0.5em;
-  justify-content: left;
+  justify-content: justify;
+  text-align: justify;
 }
 #icono_viajero{
   justify-content: center;
@@ -287,11 +289,13 @@ h2{
       transition: all .3s ease-in-out
   }
   .team-style07:hover {
-      background: #5A8A65;
+    background-image: url('/public/img/blob.jpeg');
+    background-size: 300%;
+  
   }
   .team-style07:hover h3 a,
   .team-style07:hover p {
-      color: #fff
+      color: #000000
   }
   .team-style07 .team-thumb {
       position: relative
@@ -454,7 +458,9 @@ Footer content
 }
 
 .container-footer {
-  background-color: #8AB9B7;
+  /* background: linear-gradient(rgb(13, 13, 207), rgb(65, 100, 180)); */
+  background-image: url('/public/img/fondoFooter.jpg');
+    background-size: 100%;
 
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -490,4 +496,25 @@ Footer content
 .iconstyle {
   color: black;
   font-size: 2rem;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.7s;
+  padding: 30px 20px;
+  z-index: 10;
+}
+header.abajo{
+  background: #e6d0b7;
+  /* background: #ffffff; */
+  padding: 15px 20px;
+}
+
+main {
+  padding: 150px;
 }

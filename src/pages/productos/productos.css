@@ -105,7 +105,7 @@
     align-items: center ;
     color: black;
     
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
     font-family: lato;
     font-size: 2.1em;
@@ -127,7 +127,7 @@
   }
   
   #contorno-h3{
-    background-color: #5A8A65;
+    background-color:transparent;
     width: 85%;
     height: auto;
     text-align: center;
@@ -168,7 +168,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5A8A65;
+    background-color: transparent;
     font-family: lato;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -283,7 +283,8 @@
         transition: all .3s ease-in-out
     }
     .team-style07:hover {
-        background: #5A8A65;
+        /* background: #5A8A65; */
+        background-color: transparent;
     }
     .team-style07:hover h3 a,
     .team-style07:hover p {
@@ -644,7 +645,7 @@
   }
   
   .container-footer {
-    background-color: #8AB9B7;
+    background-color: #8AB9B7; 
   
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
@@ -708,3 +709,8 @@
     text-decoration: underline;
     text-decoration: none;
 }
+
+main {
+  padding: 150px;
+}
+

@@ -3,7 +3,8 @@ const navbarApp = () => {
   return `
 
   
-  <nav class="navbar navbar-expand-lg py-0">
+  <nav class="navbar navbar-expand-lg py-0;
+">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="/img/Logo_MissTravveller.png" alt="Logo" width="75" height="75"
@@ -13,7 +14,8 @@ const navbarApp = () => {
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <img id="hamburguesa" src="/img/hamburguesa.png" alt="Imagen patito despliega menú">
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent";
+>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
@@ -42,5 +44,14 @@ const navbarApp = () => {
   </nav> 
 `;
 };
+
+
+
+window.addEventListener("scroll", function(){
+  var header = document.querySelector("header");
+  header.classList.toggle("abajo",window.scrollY>0);
+})
+
+
 
 export{navbarApp};
