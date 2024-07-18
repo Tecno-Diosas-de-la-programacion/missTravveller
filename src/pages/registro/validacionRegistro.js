@@ -86,6 +86,43 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (valid) {
             alert("Formulario enviado correctamente.");
+            
+            //******Local Storage******//
+            const newUserData = {
+                "nombre": "",
+                "apeMaterno" : "",
+                "apePaterno" : "",
+                "correo" : "",
+                "contraseña" : "",
+            };
+            // Fill variable newUserData (JSON) with data from html input
+            fields.forEach((field) => {
+                if (field.name === "correo") {
+                    newUserData["correo"] = field.value.trim();
+                } else if (field.name === "password") {
+                    newUserData["contraseña"] = field.value.trim();
+                } else if (field.name === "nombre") {
+                    newUserData["nombre"] = field.value.trim();
+                } else if (field.name === "apellido-paterno") {
+                    newUserData["apePaterno"] = field.value.trim();
+                } else if (field.name === "apellido-materno") {
+                    newUserData["apeMaterno"] = field.value.trim();
+                }
+            });
+            //Guardar en localStorage
+            // Get array with all registered users
+            let userArray = JSON.parse(localStorage.getItem("userData"));
+            if (userArray === null) {
+                // Check, if user array exists. If not, create a new array
+                userArray = [];
+            }
+            // Add new User to user array
+            userArray.push(newUserData);
+            // Put user array with new user into local storage
+            // This 0saves all users, and does not overwrite the last user
+            localStorage.setItem("userData" , JSON.stringify(userArray));
+
+            
         } else {
             alert("Por favor, corrige los errores en el formulario.");
         }
