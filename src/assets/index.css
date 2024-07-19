@@ -1,0 +1,91 @@
+/* VARIABLES */
+:root {
+    --c-white: #ffffff;
+    --c-black: #000000;
+    --c-fonts: #324B4A;
+    --btn-bg-color: #324B4A;
+    --border-radius-large: 100px;
+    --bg-color: #b8b7d7;
+    --bg-circle-steps: #b8b7d7;
+}
+
+/* No es buena  */
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* HERO */
+#hero {
+    background: url(/img/index-beach.png);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.text-index {
+    font-weight: 600;
+    color: var(--c-white);
+}
+
+.input-group-text {
+    background-color: transparent;
+    border: 0;
+}
+
+#search-index-input-button {
+    background: var(--btn-bg-color);
+    border: none;
+    border-radius: var(--border-radius-large);
+    color: var(--c-white);
+    font-family: var(--title-font-family);
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight-semibold);
+    transition: all 0.3s;
+    margin-bottom: 0;
+}
+
+.input-group {
+    background-color: var(--c-white);
+    border-radius: var(--border-radius-large);
+    padding: 10px 15px;
+}
+
+.p-about-us {
+    font-size: 1.75rem;
+}
+
+#keyword,
+#icon-search {
+    border: none;
+    background-color: transparent;
+}
+
+#testimonials {
+    background-color: var(--bg-color);
+}
+
+.circle-steps {
+    width: 120px;
+    height: 120px;
+    background: var(--bg-circle-steps);
+}
+
+.icon-large {
+    font-size: 2rem;
+}
+
+.icon-arrow {
+    top: 50px;
+    right: -25px;
+}
+
+.icon-opinios {
+    font-size: 4rem;
+}

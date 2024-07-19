@@ -25,7 +25,7 @@ const validateEmptyField = (event) => {
     }
 };
 
-const valiteEmailFormat = (event) => {
+const validateEmailFormat = (event) => {
     const field = event.target;
     const fieldValue = event.target.value;
 
@@ -42,13 +42,13 @@ const valiteEmailFormat = (event) => {
     }
 };
 
-const valitePhoneFormat = (event) => {
+const validatePhoneFormat = (event) => {
     const field = event.target;
     const fieldValue = event.target.value;
 
-    const regex = new RegExp(/^\d{9}$/);
+    const regex = new RegExp(/^\d{10}$/);
 
-    if (fieldValue.trim().length > 3 && !regex.test(fieldValue)) {//!false = true
+    if (fieldValue.trim().length > 5 && !regex.test(fieldValue)) {//!false = true
         field.classList.add("invalid");
         field.nextElementSibling.classList.add("error");
         field.nextElementSibling.innerHTML = `Porfavor ingresa un número telefónico válido.`;
@@ -64,8 +64,8 @@ userEmailFiled.addEventListener("blur", validateEmptyField);
 userPhoneFiled.addEventListener("blur", validateEmptyField);
 userMessageFiled.addEventListener("blur", validateEmptyField);
 
-userEmailFiled.addEventListener("input", valiteEmailFormat);//input se ejecuta un evento
-userPhoneFiled.addEventListener("input", valitePhoneFormat);
+userEmailFiled.addEventListener("input", validateEmailFormat);//input se ejecuta un evento
+userPhoneFiled.addEventListener("input", validatePhoneFormat);
 
 
 const form = document.getElementById("contactForm");

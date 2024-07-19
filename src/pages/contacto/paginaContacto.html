@@ -5,8 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.84.0">
   <title>Miss Travveller</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,21 +20,16 @@
   <!-- Custom styles for this template -->
 
   <link rel="stylesheet" href="paginaContacto.css">
-  <link rel="stylesheet" href="/src/pages/nosotros/paginaNosotros.css">
 </head>
 
 <body>
 
   <header id="navbar-app"></header>
 
-
-
-    <hr class="featurette-divider">
-
     <!-- Forms -->
     <main class="container d-flex align-items-center min-vh-100">
 
-      <div class="row g-0 justify-content-center">
+      <div class="row g-0 mb-5 justify-content-center">
         <!-- Left -->
         <h1 id="titulo-contacto">Contáctanos</h1>
         <div class="col-lg-4 order-1 order-lg-1 offset-lg-1 mx-0 px-0">
@@ -48,24 +41,24 @@
 
           <div class="col-lg-4 order-3 order-lg-3 offset-lg-3 mx-0 px-0">
             <p>
-              <a href="https://www.instagram.com/misstraveler.mx?igsh=bnFjbDdsMzkybnVx">
-                <img src="/public/img/boton_instagram.png" class="logo-red-social" alt="Logo y link a instagram">
+              <a href="https://www.instagram.com/misstraveler.mx?igsh=bnFjbDdsMzkybnVx" target="_blank">
+                <i class="bi bi-instagram"></i>
               </a>
 
-              <a href="mailto:misstraveller09@gmail.com">
-                <img src="/public/img/gmail.png" class="logo-red-social" alt="Logo y link al correo">
+              <a href="mailto:misstraveller09@gmail.com" target="_blank">
+                <i class="bi bi-envelope-at-fill"></i>
               </a>
 
-              <a href="https://wa.me/message/CAFVMB36E6BXH1">
-                <img src="/public/img/whatsapp.png" class="logo-red-social" alt="Logo y link al whatsapp">
+              <a href="https://wa.me/message/CAFVMB36E6BXH1" target="_blank">
+                <i class="bi bi-whatsapp"></i>
               </a>
 
-              <a href="https://www.facebook.com/people/Misstraveller69/61559062033043/">
-                <img src="/public/img/boton_facebook.png" class="logo-red-social" alt="Logo y link al facebook">
+              <a href="https://www.facebook.com/people/Misstraveller69/61559062033043/" target="_blank">
+                <i class="bi bi-facebook"></i>
               </a>
 
-              <a href="https://www.tiktok.com/@misstraveler.mx?_t=8nYj7kX7IMI&_r=1">
-                <img src="/public/img/boton_tiktok.png" class="logo-red-social" alt="Logo y link a tik-tok">
+              <a href="https://www.tiktok.com/@misstraveler.mx?_t=8nYj7kX7IMI&_r=1" target="_blank">
+                <i class="bi bi-tiktok"></i>
               </a>
 
             </p>
@@ -77,28 +70,29 @@
           <form id="contactForm" class="fondo-formulario">
             <h1 id="quieres-saber-mas">¿Quieres saber más?</h1>
             <div class="mb-3">
-              <label for="form-control" class="form-label">Nombre completo*:</label>
+              <label for="nombre-completo" class="form-label">Nombre completo*:</label>
               <input id="nombre-completo" type="text" class="form-control" name="nombre"
                 placeholder="Escribe tu nombre completo" aria-describedby="nombre-completo" required>
               <span></span>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Correo electrónico*:</label>
-              <input type="email" class="form-control" name="correo" id="email" placeholder="email@gmail.com"
+              <input  id="email" type="email" class="form-control" name="correo" placeholder="email@gmail.com"
                 aria-describedby="email" required>
               <span></span>
             </div>
             <div class="mb-3">
               <label for="numero-telefonico" class="form-label">Número telefónico*:</label>
-              <input type="tel" class="form-control" name="teléfono" id="numero telefonico" maxlength=10
+              <input id="numero-telefonico" type="tel" class="form-control" name="teléfono" maxlength=10
                 placeholder="XX XX XX XX XX" required>
               <span></span>
             </div>
 
             <div class="mb-3">
-              <label for="texto-mensaje" class="form-label">Mensaje*:</label>
-              <input type="text" class="form-control" name="mensaje" id="texto-mensaje"
-                placeholder="Escribe tu nombre completo" aria-describedby="nombre-completo" required>
+
+                <label for="texto-mensaje" class="form-label">Mensaje*:</label>
+                <textarea id="texto-mensaje" name=mensaje class="form-control" rows="5"></textarea>
+
               <span></span>
             </div>
 
@@ -109,41 +103,34 @@
 
     </main>
 
-    <hr class="featurette-divider">
-
     <!-- FOOTER -->
-    <div class="container-footer">
-      <footer class="footer-elementos d-flex flex-wrap justify-content-between align-items-center py-2">
-        <a class="nav align-text-left" href="#">
-          <img class="float-end" src="/public/img/boton_regreso.png" alt="Botón flecha" width="40" height="40">
-        </a>
+    <footer class="container-footer">
+      <div class="footer-elementos d-flex flex-wrap justify-content-between align-items-center">
+          <a class="nav align-text-left" href="#">
+              <img class="float-end" src="/img/boton_regreso.png" alt="Botón flecha" width="40" height="40">
+          </a>
 
-        <h4>Miss Travveller</h4>
-          
-        <ul class="nav col-md-4 justify-content-left">
-          <li class="foot-item">
-            <a class="footer.redes" href="#">
-              <img class="iconos-redes" src="/public/img/boton_facebook.png" alt="Botón Facebook">
-            </a>
-          </li>
-          <li class="foot-item">
-            <a class="footer.redes" href="https://www.instagram.com/misstraveler.mx?igsh=bnFjbDdsMzkybnVx">
-              <img class="iconos-redes" src="/public/img/boton_instagram.png" alt="Botón Instagram">
-            </a>
-          </li>
-          <li class="foot-item">
-            <a class="footer.redes" href="#">
-              <img class="iconos-redes" src="/public/img/boton_tiktok.png" alt="Botón Tiktok" width="50" height="50">
-            </a>
-          </li>
-        </ul>
+          <ul class="nav col-md-3.5 justify-content-left">
+              <li class="foot-item">
+                  <a class="footer.redes" href="#">
+                      <i id="footer-facebook" class="bi bi-facebook"></i>
+                  </a>
+              </li>
+              <li class="foot-item">
+                  <a class="footer.redes" href="https://www.instagram.com/misstraveler.mx?igsh=bnFjbDdsMzkybnVx">
+                      <i id="footer-instagram" class="bi bi-instagram" width=""></i>
+                  </a>
+              </li>
+              <li class="foot-item">
+                  <a class="footer.redes" href="#">
+                      <i id="footer-tiktok" class="bi bi-tiktok"></i>
+                  </a>
+              </li>
+          </ul>
 
-        <h4>
-          <a href="#">Creadoras</a>
-        </h4>
-
-      </footer>
-    </div>
+          <h4>Miss Travveller</h4>
+      </div>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -154,7 +141,7 @@
     <!--Personalizacion de alert con libreria Sweet alert https://sweetalert.js.org/-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    <script src="./validacionFormulario.js"></script>
+    <script type="module" src="./validacionFormulario.js"></script>
     <script type="module" src="/main.js"></script>
 
 
