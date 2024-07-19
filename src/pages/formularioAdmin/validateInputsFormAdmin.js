@@ -1,4 +1,5 @@
 export { validateInputsForm }
+import {}
 
 document.getElementById('productForm').addEventListener('submit', function (event) {
     event.preventDefault();
