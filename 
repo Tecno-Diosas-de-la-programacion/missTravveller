@@ -1,0 +1,462 @@
+[33mcommit 7b77286108e80d3b28793c457af57dda20d8a4fa[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/GMXTDP-110-RegistroUsuarios[m[33m, [m[1;32mdevelop[m[33m)[m
+Merge: d2cac1f 812c3bd
+Author: Jaqueline <61999413+JaquelineTorres@users.noreply.github.com>
+Date:   Wed Jul 3 23:04:49 2024 -0600
+
+    Merge pull request #43 from Tecno-Diosas-de-la-programacion/feature/GMXTDP-67-Modificaciones-Pagina-Nosotros
+    
+    Feature/gmxtdp 67 modificaciones pagina nosotros
+
+[33mcommit 812c3bd38acd3e49afb433f03ae4dde85845f4e9[m
+Author: Diana Gallegos <diana_prz21@hotmail.com>
+Date:   Wed Jul 3 00:14:29 2024 -0600
+
+    Modify: hice pull y ya utilice Vite, hice las modificaciones necesarias de colores, letras y responsive
+
+[33mcommit 96ce33e067a358a9be71f98fc096c6014cd5d8c5[m
+Merge: a711041 d2cac1f
+Author: Diana Gallegos <diana_prz21@hotmail.com>
+Date:   Tue Jul 2 23:11:57 2024 -0600
+
+    Pull: de develop
+
+[33mcommit a7110417a5f3ee8fb3a56d7afe1870eeec02ade2[m
+Author: Diana Gallegos <diana_prz21@hotmail.com>
+Date:   Tue Jul 2 23:03:20 2024 -0600
+
+    Modificación: cambios a colores y responsividad
+
+[33mcommit d2cac1fa9896bec32f29d60ebd139f19ba7bd759[m
+Merge: 6f1a368 86093e8
+Author: Jaqueline <61999413+JaquelineTorres@users.noreply.github.com>
+Date:   Tue Jul 2 21:51:07 2024 -0600
+
+    Merge pull request #42 from Tecno-Diosas-de-la-programacion/feature/GMXTDP-80-Vite
+    
+    Feature/gmxtdp 80 vite
+
+[33mcommit 86093e821dd712ddc8a4a22a50472f9789bc79e8[m[33m ([m[1;31morigin/feature/GMXTDP-80-Vite[m[33m)[m
+Author: Jaqueline <jaqueline.torres.perez.unam@gmail.com>
+Date:   Tue Jul 2 21:46:45 2024 -0600
+
+    delete: style.css
+
+[33mcommit 7dd0a612f99ab31fd552d050f82f504e3996067d[m
+Author: Jaqueline <jaqueline.torres.perez.unam@gmail.com>
+Date:   Tue Jul 2 21:31:53 2024 -0600
+
+    uptate: Fonts uset in cards.css
+
+[33mcommit 11764575793833a37baf504f09b1a51b3a742171[m
+Author: Jaqueline <jaqueline.torres.perez.unam@gmail.com>
+Date:   Tue Jul 2 21:27:43 2024 -0600
+
+    delete: fonts
+
+[33mcommit 36d5d4a1c26daa5ef96d4786119dcc29f9c7422b[m
+Author: Jaqueline <jaqueline.torres.perez.unam@gmail.com>
+Date:   Tue Jul 2 21:24:06 2024 -0600
+
+    refactor: remove inline styles from HTML
+
+[33mcommit c48b5d8212c763a8a53f6b147d1fb0c0a60c9e74[m
+Author: Jaqueline <jaqueline.torres.perez.unam@gmail.com>
+Date:   Tue Jul 2 21:17:03 2024 -0600
+
+    modify: updated README
+
+[33mcommit 6c4a6e840334a82871a35ffa75fa72ae637b0659[m
+Author: Jaqueline Torres <jaque@MacBook-Pro.local>
+Date:   Tue Jul 2 20:28:52 2024 -0600
+
+    Modification: the paths of the files used were changed
+
+[33mcommit a43da04cafb119928a15674db59022453b141fc6[m
+Author: Jaqueline Torres <jaque@MacBook-Pro.local>
+Date:   Tue Jul 2 20:27:52 2024 -0600
+
+    Remove: console.log() removed
+
+[33mcommit 6cef7e38a85133d022f55f5372cf7027510148c0[m
+Author: Jaqueline Torres <jaque@MacBook-Pro.local>
+Date:   Tue Jul 2 20:26:32 2024 -0600
+
+    modification: modificación: se cambiaron referencias del HTML
+
+[33mcommit 2d673e4db7c4c742d150796b9b5bd4ceb9153057[m
+Author: Jaqueline Torres <jaque@MacBook-Pro.local>
+Date:   Tue Jul 2 20:12:48 2024 -0600
+
+    Change and reference: Contact page HTML file paths changed
+
+[33mcommit fa755d6f08bc6fbe1e247b9c0e44726c51e722c9[m
+Author: Jaqueline Torres <jaque@MacBook-Pro.local>
+Date:   Tue Jul 2 19:02:43 2024 -0600
+
+    add: files of vite
+
+[33mcommit 6f1a368310328bd3af38dfc0d863537ad9afbf76[m
+Merge: e60d675 9ce3fd0
+Author: Jaqueline <61999413+JaquelineTorres@users.noreply.github.com>
+Date:   Tue Jul 2 18:00:12 2024 -0600
+
+    Merge pull request #41 from Tecno-Diosas-de-la-programacion/feature/GMXTDP-78-Restructuracion_de_ramas
+    
+    Feature/gmxtdp 78 restructuracion de ramas
+
+[33mcommit 9ce3fd0104e5363703bef2351ba91659b09eef79[m[33m ([m[1;31morigin/feature/GMXTDP-78-Restructuracion_de_ramas[m[33m, [m[1;32mfeature/GMXTDP-78-Restructuracion_de_ramas[m[33m)[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Tue Jul 2 17:13:09 2024 -0600
+
+    agrega: productos html y js
+
+[33mcommit 5f65b5b59662b67ca32340270c242ff9a256938f[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Tue Jul 2 17:11:47 2024 -0600
+
+    agrega: paginaNosotros.js
+
+[33mcommit c863905cd497919a1df955827e4665be2875904f[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Tue Jul 2 17:09:45 2024 -0600
+
+    añadir: ingresar html y js
+
+[33mcommit 60e3a9ea859ced6ec33bf399ba49834e5fa9fcc5[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Tue Jul 2 17:08:21 2024 -0600
+
+    añadir: archu¿ivo formulario.html
+
+[33mcommit 3ad714e73ecc39196e354eea212993d06f4d549e[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Tue Jul 2 17:06:36 2024 -0600
+
+    añadir: archivo paginaContacto.js
+
+[33mcommit 769c49a94e094435f21a008e6a5226894d6123fd[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Tue Jul 2 17:04:43 2024 -0600
+
+    reubicacion: validacionFormulario.js
+
+[33mcommit 380f39179699b240531694e21f69221763772601[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Tue Jul 2 17:03:29 2024 -0600
+
+    reubicacion: paginaNosotros.css
+
+[33mcommit 5b94590bdd9a5a3482433b042fbd99c93cf2f364[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Tue Jul 2 17:02:05 2024 -0600
+
+    reubicacion: paginaCotacto.css
+
+[33mcommit 4904aadd14da5c3996c9158aa8483ca4b06aebcf[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Tue Jul 2 17:00:45 2024 -0600
+
+    reubicacion: cards.css
+
+[33mcommit 22c1d4a4b192829abf44a9a55051b746ba4aab92[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Tue Jul 2 16:58:46 2024 -0600
+
+    reubicacion: archivo html paginaNosotros
+
+[33mcommit 59a56c64fb7f9484290859f995994e2d8224a896[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Tue Jul 2 16:55:41 2024 -0600
+
+    eliminar: archivos duplicados CSS pagina contacto y pagina nosotros
+
+[33mcommit c26ab4972c4663c394ea696687852bac5ab616f4[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Tue Jul 2 16:40:04 2024 -0600
+
+    agregar: archivos nav y footer y se movio contacto.html
+
+[33mcommit 6a7abe3f220288f6e9200122f8baf2f0820a5777[m[33m ([m[1;31morigin/feature/GMXTDP-4-Pagina-Nosotros[m[33m)[m
+Author: Diana Gallegos <diana_prz21@hotmail.com>
+Date:   Tue Jul 2 16:26:04 2024 -0600
+
+    Modificación: cambios en colores e iconos
+
+[33mcommit e60d6752d4a0e713821f9a1b9c38e1e5d424e62d[m
+Author: Jaqueline <61999413+JaquelineTorres@users.noreply.github.com>
+Date:   Mon Jul 1 23:58:36 2024 -0600
+
+    Delete .vscode directory
+
+[33mcommit d937148cab1e953a53367eded2e6892dfb2788ff[m
+Author: Jaqueline <61999413+JaquelineTorres@users.noreply.github.com>
+Date:   Mon Jul 1 23:57:42 2024 -0600
+
+    Update.gitignore
+    
+    add .vscode in .gitignore
+
+[33mcommit 2d334ac140f0691292d2107980f271f0ceb89aee[m
+Merge: 30875ce 2057d7c
+Author: Jaqueline <61999413+JaquelineTorres@users.noreply.github.com>
+Date:   Mon Jul 1 23:55:11 2024 -0600
+
+    Merge pull request #38 from Tecno-Diosas-de-la-programacion/feature/GMXTDP-76-modify-contact-page
+    
+    add: se añadió libreria para el estilo del alert al enviar formulario
+
+[33mcommit 2057d7c2c0ece3aa725173eb208fcfddd6220961[m
+Author: Abigail Ramirez <abigailrg03@gmail.com>
+Date:   Mon Jul 1 21:20:23 2024 -0600
+
+    add: se añadio libreria para el estilo del alert al enviar formulario
+
+[33mcommit 30875ce0d22f30bd98de8fe926255aa65e6d1364[m
+Merge: cd48c64 9f7dffd
+Author: Jaqueline <61999413+JaquelineTorres@users.noreply.github.com>
+Date:   Mon Jul 1 21:18:37 2024 -0600
+
+    Merge pull request #37 from Tecno-Diosas-de-la-programacion/feature/GMXTDP-72-test-branch
+    
+    edit: add .DS_Store in the file .gitignore
+
+[33mcommit 9f7dffdaae8959bdb988b57a5aeb01a2f365938a[m[33m ([m[1;31morigin/feature/GMXTDP-72-test-branch[m[33m)[m
+Author: Jaqueline Torres <jaque@MacBook-Pro.local>
+Date:   Mon Jul 1 21:14:27 2024 -0600
+
+    edit: add .DS_Store in the file .gitignore
+
+[33mcommit cd48c64a4b88ba334a422fc508fdf2677000bb09[m
+Merge: f2791df cefdbe3
+Author: dianaprz21 <123781589+dianaprz21@users.noreply.github.com>
+Date:   Mon Jul 1 19:44:39 2024 -0600
+
+    Merge pull request #32 from Tecno-Diosas-de-la-programacion/feature/GMXTDP-4-Pagina-Nosotros
+    
+    Modificación: en colores y tipografías
+
+[33mcommit cefdbe3a677ffc068d7c8c1c6ed6895bde7015c8[m
+Merge: 6a39cae f2791df
+Author: Diana Gallegos <diana_prz21@hotmail.com>
+Date:   Mon Jul 1 19:43:25 2024 -0600
+
+    Hice pull
+
+[33mcommit 6a39caed714045a9d457118a20a25752f2f3744e[m
+Merge: 04695b5 26765fa
+Author: Diana Gallegos <diana_prz21@hotmail.com>
+Date:   Mon Jul 1 19:37:48 2024 -0600
+
+    Merge branch 'main' of github.com:Tecno-Diosas-de-la-programacion/missTravveller into feature/GMXTDP-4-Pagina-Nosotros
+
+[33mcommit f2791dfd8537386e5173fa540f77f3cf3259624b[m
+Merge: 0a64cbd 0a7fde9
+Author: arantxavb <arantxavazquez177@gmail.com>
+Date:   Mon Jul 1 18:24:05 2024 -0600
+
+    Merge pull request #35 from Tecno-Diosas-de-la-programacion/feature/GMXTDP-70-Creacion_NavBar
+    
+    Feature/gmxtdp 70 creacion nav bar
+
+[33mcommit 0a7fde9da12e1f6eedf79f42157bc4102ec56256[m[33m ([m[1;31morigin/feature/GMXTDP-70-Creacion_NavBar[m[33m, [m[1;32mfeature/GMXTDP-70-Creacion_NavBar[m[33m)[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Mon Jul 1 18:22:20 2024 -0600
+
+    carpeta nosotros
+
+[33mcommit d6aa63b8f343ea1db43e960e57932623adf6ac56[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Mon Jul 1 18:20:59 2024 -0600
+
+    carpeta contacto
+
+[33mcommit 7e61b9df1856ef03fd78166a808b7e93d525194e[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Mon Jul 1 18:19:29 2024 -0600
+
+    carpeta ingresar
+
+[33mcommit 28e8d964992c298ef15a8b2955a6885cb74d74e8[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Mon Jul 1 18:18:09 2024 -0600
+
+    carpeta formulario
+
+[33mcommit 0a64cbd2cb7a41d9e0b8d519ade921bb8bf67618[m
+Merge: 8c1b5ef e2bd6a8
+Author: arantxavb <arantxavazquez177@gmail.com>
+Date:   Mon Jul 1 18:10:40 2024 -0600
+
+    Merge pull request #34 from Tecno-Diosas-de-la-programacion/feature/GMXTDP-70-Creacion_NavBar
+    
+    crecaion de carpetas pages
+
+[33mcommit e2bd6a87732faef601714f3cc782ee756ee81564[m
+Author: Arantxa Vazquez <arantxavazquez177@gmail.com>
+Date:   Mon Jul 1 18:03:15 2024 -0600
+
+    crecaion de carpetas pages
+
+[33mcommit 8c1b5efb6c8e4c23ffd5c58924998220a8db4350[m
+Merge: 71c681a 26765fa
+Author: arantxavb <arantxavazquez177@gmail.com>
+Date:   Mon Jul 1 17:45:04 2024 -0600
+
+    Merge pull request #33 from Tecno-Diosas-de-la-programacion/feature/GMXTDP-70-Creacion_NavBar
+    
+    Merge pull request #31 from Tecno-Diosas-de-la-programacion/develop
+
+[33mcommit 04695b5ef6cdcc164e1d3c68e8af918cc175a134[m
+Author: Diana Gallegos <diana_prz21@hotmail.com>
+Date:   Mon Jul 1 16:16:31 2024 -0600
+
+    Modificación: en colores y tipografías
+
+[33mcommit 26765faf74871198ade48f87b3f4fb438828fc12[m[33m ([m[1;33mtag: [m[1;33mVersion-0.2[m[33m)[m
+Merge: 552d82a 71c681a
+Author: Jaqueline <61999413+JaquelineTorres@users.noreply.github.com>
+Date:   Sat Jun 29 23:48:22 2024 -0600
+
+    Merge pull request #31 from Tecno-Diosas-de-la-programacion/develop
+    
+    Develop
+
+[33mcommit 71c681a3c9a9a33e5145015e968e7ef7555c4356[m[33m ([m[1;32mfeature/GMXTDP-61-Pagina_de_Nosotros[m[33m)[m
+Merge: 2209428 b371ff9
+Author: Jaqueline <61999413+JaquelineTorres@users.noreply.github.com>
+Date:   Sat Jun 29 23:16:12 2024 -0600
+
+    Merge pull request #29 from Tecno-Diosas-de-la-programacion/feature/GMXTDP-57-pagina-contacto
+    
+    modified: Added js code to send the form data to EmailJs
+
+[33mcommit b371ff975939e6ec718c5d5e45f84abd63a96536[m[33m ([m[1;31morigin/feature/GMXTDP-57-pagina-contacto[m[33m)[m
+Author: Jaqueline Torres <jaque@MacBook-Pro.local>
+Date:   Sat Jun 29 23:13:33 2024 -0600
+
+    modified: Added js code to send the form data to EmailJs
+
+[33mcommit 22094282364251d0898e2b3a1b26c392ae736e3a[m
+Merge: c83f739 2b65fa1
+Author: Jaqueline <61999413+JaquelineTorres@users.noreply.github.com>
+Date:   Sat Jun 29 22:14:02 2024 -0600
+
+    Merge pull request #28 from Tecno-Diosas-de-la-programacion/feature/GMXTDP-57-pagina-contacto
+    
+    Feature/gmxtdp 57 pagina contacto
+
+[33mcommit 2b65fa1bdaf1cef94c3ac03c7a67f1631129d4e5[m
+Author: Jaqueline Torres <jaque@MacBook-Pro.local>
+Date:   Sat Jun 29 22:12:05 2024 -0600
+
+    modified: social media hyperlinks added
+
+[33mcommit fbc505655afeca21843c0690a1293507f4f24dfc[m
+Author: Jaqueline Torres <jaque@MacBook-Pro.local>
+Date:   Sat Jun 29 21:10:37 2024 -0600
+
+    modified: Colors, hyperlinks and styles were modified paginaContacto.html,paginaNosotros.css,paginaNosotros.html
+
+[33mcommit c83f739d57f48492e6db2696a65ceacd91acb495[m
+Merge: e58c21d 3e491cd
+Author: Jaqueline <61999413+JaquelineTorres@users.noreply.github.com>
+Date:   Sat Jun 29 19:51:08 2024 -0600
+
+    Merge pull request #26 from Tecno-Diosas-de-la-programacion/feature/GMXTDP-57-pagina-contacto
+    
+    Feature/gmxtdp 57 pagina contacto
+
+[33mcommit 3e491cd147cb9c4e2840f9235010e109a259875a[m
+Author: Jaqueline Torres <jaque@MacBook-Pro.local>
+Date:   Sat Jun 29 19:47:59 2024 -0600
+
+    add: new file validacionFormulario.js
+
+[33mcommit ad018be4d68f0022738246f3e013b01afd16f2bb[m
+Author: Jaqueline Torres <jaque@MacBook-Pro.local>
+Date:   Sat Jun 29 19:47:04 2024 -0600
+
+    form file changes are uploaded
+
+[33mcommit e58c21d3485d01c1d880a08aedc744e4da2e5b2e[m
+Merge: 0d016de 961bfef
+Author: Karina Robles <roblesks92@gmail.com>
+Date:   Sat Jun 29 18:21:49 2024 -0600
+
+    Merge pull request #25 from Tecno-Diosas-de-la-programacion/feature/GMXTDP-54-pagina-contacto
+    
+    Agrego: modificaciones formulario que sea responsive
+
+[33mcommit 961bfef06758a4aa8c1c6a13cf1cdf56656db8bb[m[33m ([m[1;31morigin/feature/GMXTDP-54-pagina-contacto[m[33m)[m
+Author: Karina Robles <roblesks92@gmail.com>
+Date:   Sat Jun 29 18:20:12 2024 -0600
+
+    Agrego: modificaciones formulario que sea responsive
+
+[33mcommit 0d016dec2cc3b2c0622c93ce00c20b130347c4dd[m
+Merge: 1b7a1c9 24a6509
+Author: Karina Robles <roblesks92@gmail.com>
+Date:   Sat Jun 29 16:57:43 2024 -0600
+
+    Merge pull request #24 from Tecno-Diosas-de-la-programacion/feature/GMXTDP-54-pagina-contacto
+    
+    Feature/gmxtdp 54 pagina contacto
+
+[33mcommit 24a6509f058dc3392c15bf2a6a02893871228151[m
+Merge: a9336c3 1b7a1c9
+Author: Karina Robles <roblesks92@gmail.com>
+Date:   Sat Jun 29 16:56:23 2024 -0600
+
+    Merge branch 'develop' of github.com:Tecno-Diosas-de-la-programacion/missTravveller into feature/GMXTDP-54-pagina-contacto
+
+[33mcommit a9336c30b7b592b27f2b122e09ba7a48dbf54107[m
+Author: Karina Robles <roblesks92@gmail.com>
+Date:   Sat Jun 29 16:44:11 2024 -0600
+
+    Agrego: modificaciones a tamaños de cajitas para respuesta de formulario
+
+[33mcommit ca0b0014c327cedd37a466471570df52fafc9057[m
+Author: Karina Robles <roblesks92@gmail.com>
+Date:   Sat Jun 29 16:24:48 2024 -0600
+
+    Agrego: modificaciones a tamaños de cajitas para respuesta de formulario
+
+[33mcommit 9c502cbfb587e2e5e84ea56f7802e64cc3542c46[m
+Author: Karina Robles <roblesks92@gmail.com>
+Date:   Sat Jun 29 15:17:28 2024 -0600
+
+    Agrego: modificaciones a logos de redes sociales y footter
+
+[33mcommit 4c2181c89551be4fc6c221abd07b0471e684d5cc[m
+Author: Karina Robles <roblesks92@gmail.com>
+Date:   Sat Jun 29 14:58:22 2024 -0600
+
+    Agrego: modificaciones a pagina de contacto en general
+
+[33mcommit b2f24fdb56294e2e855332914b3b8bed99b29455[m
+Author: Karina Robles <roblesks92@gmail.com>
+Date:   Fri Jun 28 17:29:42 2024 -0600
+
+    Agrego: modificaciones en el formulario de pagina contacto
+
+[33mcommit 755cb408f314e130cc81ce886fbae1ca982a3bfb[m
+Author: Karina Robles <roblesks92@gmail.com>
+Date:   Fri Jun 28 16:56:24 2024 -0600
+
+    Agregando: datos del formulario
+
+[33mcommit 1b7a1c9b039548e336a0907ff81301e000c7256b[m
+Merge: 3619b54 c345fcc
+Author: Karina Robles <roblesks92@gmail.com>
+Date:   Thu Jun 27 22:15:27 2024 -0600
+
+    Merge pull request #23 from Tecno-Diosas-de-la-programacion/feature/GMXTDP-54-pagina-contacto
+    
+    add: Agrego modificaciones de la tabla con iconos
+
+[33mcommit f7fab709f6d47a4cc8f3f6d8859295aaf3333a72[m
+Merge: c345fcc 552d82a
+Author: Karina Robles <roblesks92@gmail.com>
+Date:   Thu Jun 27 22:11:29 2024 -0600
+
+    Merge remote-tracking branch 'origin/main' into feature/GMXTDP-54-pagina-contacto
