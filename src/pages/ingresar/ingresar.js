@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (userFound == true) {
                     setError(contraseñaField, "Contraseña incorrecta") ;
                 } else {
-                    setError(correoField, "Correo incorrecto") ;
+                    setError(correoField, "Correo no registrado") ;
                     setError(contraseñaField, "Contraseña incorrecta") ;
                 }
             }
