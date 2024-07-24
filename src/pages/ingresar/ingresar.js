@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             if (userFound == true && correctPassword == true) {
-                swal("¡Bienvenido!").then(function () {window.location.href = "../index.html"});
+                swal("¡Bienvenido!").then(function () {window.location.href = "/index.html"});
             } else {
                 if (userFound == true) {
                     setError(contraseñaField, "Contraseña incorrecta") ;
