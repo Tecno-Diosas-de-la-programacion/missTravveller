@@ -7,7 +7,7 @@ const navbarApp = () => {
 ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="/img/Logo_MissTravveller.png" alt="Logo" width="75" height="75"
+        <img src="/img/Logo_MissTravveller.png" alt="Logo" width= "100px" height="100px"
           class="d-inline-block align-text-center">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

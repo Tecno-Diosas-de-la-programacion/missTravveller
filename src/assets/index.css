@@ -82,10 +82,12 @@ body {
 }
 
 .icon-arrow {
-    top: 50px;
-    right: -25px;
+    top: 30px;
+    right: -50px;
 }
 
 .icon-opinios {
-    font-size: 4rem;
+    font-size: 1.5rem;
+   
 }
+

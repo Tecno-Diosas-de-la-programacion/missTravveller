@@ -73,7 +73,7 @@ nav {
     font-weight: 700;
     font-size: 1.3em;
     margin: auto;
-    background: #8AB9B7;
+    background-color: transparent;
     height: 4em;
 }
 
@@ -195,15 +195,22 @@ html, body {
 }
 
 .container-footer {
-    background-color: #8AB9B7;
+    /* background: linear-gradient(rgb(13, 13, 207), rgb(65, 100, 180)); */
+    background-image: url('/public/img/fondoFooter.jpg');
+      background-size: 100rem;
+      background-position-y: center;
+      
+     
+  
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * 1);
-    padding-left: calc(var(--bs-gutter-x) * 1);
+    padding-right: calc(var(--bs-gutter-x)* 1);
+    padding-left: calc(var(--bs-gutter-x)* 1);
     margin-right: auto;
     margin-left: auto;
-}
+    
+  }
 
 .footer-elementos {
     align-items: center;
@@ -223,3 +230,24 @@ html, body {
     color: #afb6c7;
     margin-left: 2em;
 }
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+  }
+  header.abajo{
+    background: #e6d0b7;
+    /* background: #ffffff; */
+    padding: 15px 20px;
+  }
+  
+  main {
+    padding: 150px;
+  }

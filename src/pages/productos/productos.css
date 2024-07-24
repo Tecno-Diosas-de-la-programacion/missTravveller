@@ -81,7 +81,8 @@
     font-size: 1.3em;
     margin: auto;
     
-    background: #8AB9B7;
+    /* background: #8AB9B7; */
+    background-color: transparent;
     height: 4em;
   }
   
@@ -98,6 +99,7 @@
     font-weight: 700;
     font-style: italic;
     font-size: 1.2em;
+    text-align: center;
   }
   
   h3{
@@ -614,6 +616,7 @@
       padding: 1em;
       margin: 10em;
     }
+
   
     .container1{
       margin-top: 0%;
@@ -645,12 +648,17 @@
   }
   
   .container-footer {
-    background-color: #8AB9B7; 
+    /* background: linear-gradient(rgb(13, 13, 207), rgb(65, 100, 180)); */
+    background-image: url('/public/img/fondoFooter.jpg');
+      background-size: 100rem;
+      background-position-y: center;
+      
+     
   
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     width: 100%;
-    padding-right: calc(var(--bs-gutter-x)* 5);
+    padding-right: calc(var(--bs-gutter-x)* 1);
     padding-left: calc(var(--bs-gutter-x)* 1);
     margin-right: auto;
     margin-left: auto;
@@ -682,35 +690,117 @@
 
 .card-img{
     width: 100%;
-    height: 100%;
+    height: 50%;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     border: none !important;
+    margin-left: 15em;
+    background-size: cover;
+    margin-top: 4em;
+    float: right;
+    display: flex;
+    align-items: center;
+    word-break:break-all;
 }
+
+
+@media screen and (max-width: 500px) {
+  .card-img{
+      display:none;
+      background-color: purple;
+  }
+}
+
 
 .card h3{
     text-transform: uppercase;
-    color: rgb(88, 88, 88);
+    color: rgb(255, 115, 0);
     font-size: .8rem;
+   
 }
 
 .card p{
-    line-height: 1.4em;
+    line-height: 2em;
+    margin-top: 3em;
+    text-align: center;
 }
 
 .btn-info{
   background-color: #3E78FF !important;
   border-color: #3E78FF !important;
   color: #fff !important;
+  text-align: center;
+  
 }
 
 #button-booking{
     color: rgb(255 255 255);
     text-decoration: underline;
     text-decoration: none;
+    word-wrap: break-word;
+    font-size:medium;
+    text-align: center;
+  
+   
 }
 
 main {
   padding: 150px;
+}
+
+.bodyclass{
+  /* background-image: url('/public/img/fondo-products.jpg'); */
+  background-color: #FFFFFF;
+  background-size: cover;
+  background-position-x: center; 
+  background-position-y: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h6{
+  text-align: center;
+  font-style: italic;
+
+}
+
+.imgscroll{
+  display:block;
+  margin:auto;
+  width: 200px; height: 200px;
+}
+
+.letras-comprar{
+  font-family: fantasy;
+  font-size: 2em;
+}
+
+.carousel-inner{
+  border-radius: 0em;
+
+
+}
+
+.card-body{
+  float: right;
+  display: flex;
+  align-items: center;
+  word-break:break-all;
+  position-anchor: 0.1em;
+
+}
+
+.tituloLetras{
+  font-family: Lato;
+  font-size: 4em;
+  text-align: center;
+}
+
+.letrasChiquitas{
+  font-family: Lato;
+  font-size: 1em;
+  text-align: center;
+  font-style: italic;
 }
 

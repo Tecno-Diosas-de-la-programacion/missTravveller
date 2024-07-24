@@ -85,6 +85,10 @@ nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
   height: 4em;
 }
 
+.navbar-brand{
+  margin-right: 15em;
+}
+
 h7{
   font-family:lato;
   font-style: italic;
@@ -113,9 +117,16 @@ h3{
   font-weight: 600;
 }
 
-.titulo > h3{
-  font-size: 332px;
+.titulo {
+  font-size: 2.1em;
+  text-align: center;
+  line-height: 1em;
+  display: flex;
+  align-items: center;
+  word-break:break-all;
+  margin: 0 0 1em 1em;
 }
+  
 
 @media(max-width: 1023px){
   .titulo > h3 {
@@ -136,18 +147,23 @@ h1{
   margin-top: 8%;
 }
 
+
 #contorno-MissTravveller{
-  background-color: #FFFFFF;
+  background-color: transparent;
   height: auto;
-  padding: 2em;
+  padding: 0em;
   padding-top: 0;
+  border-top-left-radius: 5em;
+  line-height: 2em;
 }
 
 #contorno-Patito{
-  background-color: #FFFFFF;
+  background-image: url('/public/img/blob.jpeg');
   height: auto;
-  padding: 2em;
-  text-align: center;
+  width: 40em;
+  padding: 1em;
+  border-radius: 2em;
+  align-items: center;
 }
 
 body {
@@ -196,8 +212,9 @@ h2{
     }
 
     &:hover{
-      background-color: #75d6d9;
+      background-color: #a8bceb;
       border-radius: 10px;
+      background-size: cover;
     }
 
     &:hover figure{
@@ -220,22 +237,31 @@ h2{
 .nav-item{/* Referencia a clases */
   margin: 30px;
   font-size: 0.8em;/* Unidad relativa */
+  float: right;
+  display: flex;
+  align-items: center;
+ 
+
+
+
+
+
 }
 
 .lead { /*uso es <p> */
   font-family: lato;
   font-weight: 400;
-  margin-bottom: 0.5em;
   justify-content: justify;
   text-align: justify;
+  margin-top: 2em;
 }
-#icono_viajero{
-  justify-content: center;
-}
+
 
 #hamburguesa{
   height: 45px;
   width: auto;
+  /* margin-left: 10em; */
+  
 }
 
  /* Featurettes
@@ -245,12 +271,9 @@ h2{
   }
   /* Thin out the marketing headings */
   .featurette-heading {
-    font-weight: 400;
-    line-height: 2;
-    /* rtl:remove */
-    letter-spacing: -.05rem;
-    color: black;
-    text-align: justify;
+    font-family: Lato;
+    font-size: 3em;
+    text-align: center;
   }
 
   /* CARDS CSS */
@@ -269,9 +292,12 @@ h2{
       font-weight: 700;
 
   }
+
   a {
   text-decoration:none;    
   }
+
+  
   .team-style07 {
       background: #fff;
       text-align: center;
@@ -279,6 +305,7 @@ h2{
       box-shadow: 0px 10px 30px 0px rgb(26 29 72 / 7%);
       border-radius: 15px;
       transition: all .3s ease-in-out;
+
   }
   .team-style07 {
       background: #fff;
@@ -286,25 +313,32 @@ h2{
       padding: 30px;
       box-shadow: 0px 10px 30px 0px rgba(26, 29, 72, 0.07);
       border-radius: 15px;
-      transition: all .3s ease-in-out
+      transition: all .3s ease-in-out;
+      
   }
   .team-style07:hover {
     background-image: url('/public/img/blob.jpeg');
     background-size: 300%;
+    
+
   
   }
   .team-style07:hover h3 a,
   .team-style07:hover p {
       color: #000000
   }
+
   .team-style07 .team-thumb {
-      position: relative
-  }
+      position: relative;
+
+    }
   .team-style07 .team-thumb .team-social {
-      position: absolute;
+      position:relative;
       bottom: 0;
       left: 0;
-      right: 0
+      right: 0;
+     
+
   }
   .team-style07:hover .team-thumb .team-social .styled-icons li:nth-child(1) {
       left: 40px;
@@ -312,7 +346,8 @@ h2{
       bottom: 0;
       z-index: 10;
       opacity: 1;
-      transition: all .4s ease-in-out 0s
+      transition: all .4s ease-in-out 0s;
+      
   }
   .team-style07 .team-thumb .team-social .styled-icons li:nth-child(1) {
       position: absolute;
@@ -377,7 +412,7 @@ h2{
       text-decoration: none;
       width: 36px;
       transition: all .2s ease;
-      border-radius: 50%
+      border-radius: 50%;
   }
   .styled-icons li {
       display: inline-block;
@@ -388,6 +423,8 @@ h2{
 
  .mb-0 {
   font-family: lato;
+  height:auto;
+  word-wrap: break-word;
  }
 
 
@@ -440,27 +477,31 @@ Footer content
 
 #footer-instagram {
   font-size: 35px;
-  color: #8732cc;
+  color: #000000;
 }
 
 #footer-facebook {
   font-size: 35px;
-  color: #3249cc;
+  color: #000000;
 }
 
 #footer-tiktok {
   font-size: 33px;
-  color: #ff7519;
+  color: #000000;
 }
 
 .foot-item {
   padding: 1em;
+  color: black;
 }
 
 .container-footer {
   /* background: linear-gradient(rgb(13, 13, 207), rgb(65, 100, 180)); */
   background-image: url('/public/img/fondoFooter.jpg');
-    background-size: 100%;
+    background-size: 150rem;
+    background-position-y: center;
+    
+   
 
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -480,6 +521,7 @@ Footer content
 .iconos-redes {
   width: 35px;
   height: 35px;
+
 
 }
 
@@ -517,4 +559,44 @@ header.abajo{
 
 main {
   padding: 150px;
+}
+
+
+.bodyus{
+  /* background-image: url('/public/img/fondo-arena-high.jpg'); */
+  background-color: #FFFFFF;
+  background-size: cover;
+  background-position-x: center; 
+  background-position-y: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+
+
+}
+
+
+.pfont{
+  font-family: Lato;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+.bd-placeholder-img{
+  margin-top: 1em
+
+}
+
+.tituloLetras{
+  font-family: Lato;
+  font-size: 4em;
+  text-align: center;
+}
+
+.letrasChiquitas{
+  font-family: Lato;
+  font-size: 1em;
+  text-align: center;
+  font-style: italic;
 }

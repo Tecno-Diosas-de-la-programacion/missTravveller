@@ -80,7 +80,6 @@ nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
   font-weight: 700;
   font-size: 1.3em;
   margin: auto;
-
   background:transparent;
   height: 4em;
 }
@@ -112,8 +111,9 @@ h3{
   font-weight: 600;
 }
 
-.titulo > h3{
-  font-size: 332px;
+.titulo{
+  font-size: 2.1em;
+  text-align: left;
 }
 
 h1{
@@ -129,7 +129,8 @@ h2{
   font-weight: 600;
 }
 body {
-  background-color: #ffffff;
+  background-color: #ffffff; 
+  
   padding-top: 0;
   padding-bottom: 0;
   color: black;
@@ -147,7 +148,7 @@ body {
   margin-bottom: 0.5em;
 }
 #hamburguesa{
-  height: 45px;
+  height: 40px;
   width: auto;
 }
 /* Featurettes
@@ -193,6 +194,7 @@ input[type=text],[type=email],[type=tel]{
 #titulo-contacto{
   text-align: center;
   margin: 50px;
+  
 }
 
 .logo-red-social{
@@ -202,21 +204,31 @@ input[type=text],[type=email],[type=tel]{
 }
 
 .fondo-formulario{
-  background-color: #8AB9B7;
+  background-image: url('/public/img/fondoform.jpeg');
+  background-color: transparent;
   padding: 50px;
   border-radius: 10px;
+  background-size: cover;
+
 }
 
 #quieres-saber-mas{
   align-content: center;
+  text-align: center;
 }
 
 .foot-item {
   padding: 1em;
+  
 }
 
 .container-footer {
-  background-color: #8AB9B7;
+  /* background: linear-gradient(rgb(13, 13, 207), rgb(65, 100, 180)); */
+  background-image: url('/public/img/fondoFooter.jpg');
+    background-size: 150rem;
+    background-position-y: center;
+    
+   
 
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -225,23 +237,23 @@ input[type=text],[type=email],[type=tel]{
   padding-left: calc(var(--bs-gutter-x)* 1);
   margin-right: auto;
   margin-left: auto;
-
+  
 }
 
 
 #footer-instagram {
   font-size: 35px;
-  color: #8732cc;
+  color: #000000;
 }
 
 #footer-facebook {
   font-size: 35px;
-  color: #3249cc;
+  color: #000000;
 }
 
 #footer-tiktok {
   font-size: 33px;
-  color: #ff7519;
+  color: #000000;
 }
 .footer-elementos{
   align-items: center;
@@ -261,5 +273,69 @@ input[type=text],[type=email],[type=tel]{
   cursor: polato;
   color: #afb6c7;
   margin-left: 2em;
+
+}
+
+.fondo{
+  /* background-image: url('/public/img/fondoform.jpg'); */
+  background-color:rgb(255, 255, 255);
+  background-size: cover;
+  background-position-x: center; 
+  background-position-y: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.contactdiv {
+
+  text-align: center;
+  font-size: large;
+  }
+
+.bi {
+    font-size: 2.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.navbar-toggler{
+  margin-left: -5em;
+}
+
+
+.tituloLetras{
+  font-family: Lato;
+  font-size: 4em;
+  text-align: center;
+}
+
+.letrasChiquitas{
+  font-family: Lato;
+  font-size: 1em;
+  text-align: center;
+  font-style: italic;
+}
+
+.pfont{
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.5em;
+  float: left;
+  display: flex;
+  /* align-items: center; */
+  /* word-break:break-all; */
+  font-family: Lato;
+  margin-top: 2em;
+}
+
+.form-label{
+  padding-top: 0.7em;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #ffffff;
 
 }
