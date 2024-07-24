@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
             localStorage.setItem("userData" , JSON.stringify(userArray));
 
             //redireccionar a login
-            swal("Formulario enviado correctamente.").then(function () {window.location.href = "../ingresar/ingresar.html"});
+            swal("Formulario enviado correctamente.").then(function () {window.location.href = "./ingresar/ingresar.html"});
 
         } else {
             swal("Por favor, corrige los errores en el formulario.");
