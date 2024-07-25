@@ -85,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         if (valid) {
-            alert("Formulario enviado correctamente.");
             //******Local Storage******//
             const newUserData = {
                 "nombre": "",
@@ -120,8 +119,12 @@ document.addEventListener("DOMContentLoaded", function() {
             // Put user array with new user into local storage
             // This 0saves all users, and does not overwrite the last user
             localStorage.setItem("userData" , JSON.stringify(userArray));
+
+            //redireccionar a login
+            swal("Formulario enviado correctamente.").then(function () {window.location.href = "../ingresar/ingresar.html"});
+
         } else {
-            alert("Por favor, corrige los errores en el formulario.");
+            swal("Por favor, corrige los errores en el formulario.");
         }
     });
 
