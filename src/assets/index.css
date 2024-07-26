@@ -21,6 +21,20 @@ body {
     box-sizing: border-box;
 }
 
+nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
+  display: flex ;/* Se aplica flex al contenedor de nav, lo que permite una distribución flexible de los */
+  justify-content: space-between ;/* Permite que haya espacio entre los elementos */
+  align-items: center ;/* Alineación vertical de los elementos */
+  font-family: lato;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3em;
+  margin: auto;
+  
+  background:#f5deb3;
+  height: 4em;
+}
+
 /* HERO */
 #hero {
     background: url(/img/index-beach.png);
@@ -89,3 +103,62 @@ body {
 .icon-opinios {
     font-size: 4rem;
 }
+
+#footer-instagram {
+    font-size: 35px;
+    color: #000000;
+  }
+  
+  #footer-facebook {
+    font-size: 35px;
+    color: #000000;
+  }
+  
+  #footer-tiktok {
+    font-size: 33px;
+    color: #000000;
+  }
+
+  .foot-item {
+    padding: 1em;
+  }
+  
+  .container-footer {
+    background-image: url('/public/img/fondoFooter.jpg');
+  
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* 1);
+    padding-left: calc(var(--bs-gutter-x)* 1);
+    margin-right: auto;
+    margin-left: auto;
+    background-size: cover;
+    
+  }
+  
+  .footer-elementos{
+    align-items: center;
+    height: fit-content;
+  }
+  
+  .iconos-redes {
+    width: 35px;
+    height: 35px;
+  
+  }
+  
+  .footer-redes {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: polato;
+    color: #afb6c7;
+    margin-left: 2em;
+    
+  }
+  
+  .iconstyle {
+    color: black;
+    font-size: 2rem;
+  }
