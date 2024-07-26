@@ -81,7 +81,7 @@ nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
   font-size: 1.3em;
   margin: auto;
   
-  background: #8AB9B7;
+  background:#f5deb3;
   height: 4em;
 }
 
@@ -436,17 +436,17 @@ Footer content
 
 #footer-instagram {
   font-size: 35px;
-  color: #8732cc;
+  color: #000000;
 }
 
 #footer-facebook {
   font-size: 35px;
-  color: #3249cc;
+  color: #000000;
 }
 
 #footer-tiktok {
   font-size: 33px;
-  color: #ff7519;
+  color: #000000;
 }
 
 .foot-item {
@@ -454,7 +454,7 @@ Footer content
 }
 
 .container-footer {
-  background-color: #8AB9B7;
+  background-image: url('/public/img/fondoFooter.jpg');
 
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -463,6 +463,7 @@ Footer content
   padding-left: calc(var(--bs-gutter-x)* 1);
   margin-right: auto;
   margin-left: auto;
+  background-size: cover;
   
 }
 

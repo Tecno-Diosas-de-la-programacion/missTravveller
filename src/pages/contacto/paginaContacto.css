@@ -80,8 +80,8 @@ nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
   font-weight: 700;
   font-size: 1.3em;
   margin: auto;
-
-  background: #8AB9B7;
+  
+  background:#f5deb3;
   height: 4em;
 }
 
@@ -202,7 +202,8 @@ input[type=text],[type=email],[type=tel]{
 }
 
 .fondo-formulario{
-  background-color: #8AB9B7;
+  background-image: url('/public/img/fondoform.jpeg');
+  background-size: cover;
   padding: 50px;
   border-radius: 10px;
 }
@@ -215,8 +216,28 @@ input[type=text],[type=email],[type=tel]{
   padding: 1em;
 }
 
+
+#footer-instagram {
+  font-size: 35px;
+  color: #000000;
+}
+
+#footer-facebook {
+  font-size: 35px;
+  color: #000000;
+}
+
+#footer-tiktok {
+  font-size: 33px;
+  color: #000000;
+}
+
+.foot-item {
+  padding: 1em;
+}
+
 .container-footer {
-  background-color: #8AB9B7;
+  background-image: url('/public/img/fondoFooter.jpg');
 
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -225,24 +246,10 @@ input[type=text],[type=email],[type=tel]{
   padding-left: calc(var(--bs-gutter-x)* 1);
   margin-right: auto;
   margin-left: auto;
-
+  background-size: cover;
+  
 }
 
-
-#footer-instagram {
-  font-size: 35px;
-  color: #8732cc;
-}
-
-#footer-facebook {
-  font-size: 35px;
-  color: #3249cc;
-}
-
-#footer-tiktok {
-  font-size: 33px;
-  color: #ff7519;
-}
 .footer-elementos{
   align-items: center;
   height: fit-content;
@@ -261,5 +268,14 @@ input[type=text],[type=email],[type=tel]{
   cursor: polato;
   color: #afb6c7;
   margin-left: 2em;
+  
+}
 
+.iconstyle {
+  color: black;
+  font-size: 2rem;
+}
+
+.form-label{
+  color: #ffffff;
 }
