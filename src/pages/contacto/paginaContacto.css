@@ -80,8 +80,8 @@ nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
   font-weight: 700;
   font-size: 1.3em;
   margin: auto;
-
-  background: #8AB9B7;
+  
+  background:#f5deb3;
   height: 4em;
 }
 
@@ -202,7 +202,8 @@ input[type=text],[type=email],[type=tel]{
 }
 
 .fondo-formulario{
-  background-color: #8AB9B7;
+  background-image: url('/public/img/fondoform.jpeg');
+  background-size: cover;
   padding: 50px;
   border-radius: 10px;
 }
@@ -213,19 +214,6 @@ input[type=text],[type=email],[type=tel]{
 
 .foot-item {
   padding: 1em;
-}
-
-.container-footer {
-  background-color: #8AB9B7;
-
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  width: 100%;
-  padding-right: calc(var(--bs-gutter-x)* 1);
-  padding-left: calc(var(--bs-gutter-x)* 1);
-  margin-right: auto;
-  margin-left: auto;
-
 }
 
 
@@ -286,4 +274,8 @@ input[type=text],[type=email],[type=tel]{
 .iconstyle {
   color: black;
   font-size: 2rem;
+}
+
+.form-label{
+  color: #ffffff;
 }
