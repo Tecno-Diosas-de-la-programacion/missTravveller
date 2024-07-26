@@ -127,7 +127,6 @@ h1{
 }
 
 #contorno-h3{
-  background-color: #5A8A65;
   width: 85%;
   height: auto;
   text-align: center;
@@ -168,7 +167,6 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #5A8A65;
   font-family: lato;
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -195,7 +193,8 @@ h2{
     }
 
     &:hover{
-      background-color: #75d6d9;
+      background-image: url('/public/img/fondoValores.jpg');
+      background-size: cover;
       border-radius: 10px;
     }
 
@@ -287,11 +286,12 @@ h2{
       transition: all .3s ease-in-out
   }
   .team-style07:hover {
-      background: #5A8A65;
+      background-image: url('/public/img/fondoUs.jpeg');
+      background-size: cover;
   }
   .team-style07:hover h3 a,
   .team-style07:hover p {
-      color: #fff
+      color: #000000
   }
   .team-style07 .team-thumb {
       position: relative
@@ -349,7 +349,7 @@ h2{
       transition: all .5s ease-in-out 0s
   }
   .team-style07 .team-thumb .team-social .styled-icons li a {
-      color: #fff;
+      color: #000000;
       height: 40px;
       width: 40px;
       line-height: 40px;
@@ -491,4 +491,25 @@ Footer content
 .iconstyle {
   color: black;
   font-size: 2rem;
+}
+
+.letrasChiquitas{
+  font-family: Lato;
+  font-size: 1.1em;
+  text-align: center;
+  font-style: italic;
+}
+
+.gif-patito{
+  border-radius: 2em;
+  width: 500px;
+  object-fit: cover;
+  object-position: bottom;
+  margin-top: 1em;
+}
+
+@media only screen and (max-width: 480px) {
+  gif-patito {
+    width: 100%;
+  }
 }

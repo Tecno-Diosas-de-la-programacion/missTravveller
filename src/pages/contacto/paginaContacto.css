@@ -204,8 +204,16 @@ input[type=text],[type=email],[type=tel]{
 .fondo-formulario{
   background-image: url('/public/img/fondoform.jpeg');
   background-size: cover;
-  padding: 50px;
+  /* padding: 50px; */
   border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 1em;
 }
 
 #quieres-saber-mas{
@@ -279,3 +287,16 @@ input[type=text],[type=email],[type=tel]{
 .form-label{
   color: #ffffff;
 }
+
+.bbi {
+  font-size: 2.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  justify-content: center; 
+  align-items: center;
+}
+
+
