@@ -708,3 +708,17 @@
     text-decoration: underline;
     text-decoration: none;
 }
+
+.tituloLetras{
+  font-family: Lato;
+  font-size: 4em;
+  text-align: center;
+}
+
+.letrasChiquitas{
+  font-family: Lato;
+  font-size: 1em;
+  text-align: center;
+  font-style: italic;
+}
+
