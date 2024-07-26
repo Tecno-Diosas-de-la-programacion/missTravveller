@@ -243,6 +243,25 @@ input[type=text],[type=email],[type=tel]{
   font-size: 33px;
   color: #000000;
 }
+
+.foot-item {
+  padding: 1em;
+}
+
+.container-footer {
+  background-image: url('/public/img/fondoFooter.jpg');
+
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x)* 1);
+  padding-left: calc(var(--bs-gutter-x)* 1);
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+  
+}
+
 .footer-elementos{
   align-items: center;
   height: fit-content;
@@ -261,5 +280,10 @@ input[type=text],[type=email],[type=tel]{
   cursor: polato;
   color: #afb6c7;
   margin-left: 2em;
+  
+}
 
+.iconstyle {
+  color: black;
+  font-size: 2rem;
 }
