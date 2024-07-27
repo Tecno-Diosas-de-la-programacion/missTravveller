@@ -5,7 +5,7 @@ const navbarApp = () => {
   
   <nav class="navbar navbar-expand-lg py-0">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/index.html">
         <img src="/img/Logo_MissTravveller.png" alt="Logo" width="75" height="75"
           class="d-inline-block align-text-center">
       </a>
