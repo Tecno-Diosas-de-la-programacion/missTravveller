@@ -71,20 +71,6 @@
   --color_fieldset:#ffa07a;
 }
 
-nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
-  display: flex ;/* Se aplica flex al contenedor de nav, lo que permite una distribución flexible de los */
-  justify-content: space-between ;/* Permite que haya espacio entre los elementos */
-  align-items: center ;/* Alineación vertical de los elementos */
-  font-family: lato;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.3em;
-  margin: auto;
-  
-  background:#f5deb3;
-  height: 4em;
-}
-
 h7{
   font-family:lato;
   font-style: italic;
@@ -215,25 +201,60 @@ h2{
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-.nav-item{/* Referencia a clases */
-  margin: 30px;
-  font-size: 0.8em;/* Unidad relativa */
-}
-
 .lead { /*uso es <p> */
   font-family: lato;
   font-weight: 400;
   margin-bottom: 0.5em;
   justify-content: left;
 }
-#icono_viajero{
-  justify-content: center;
+
+/* Inicio navbar  */
+
+nav {
+  background-color: #f5deb3;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-size: 1.3em;
+  height: 4em;
 }
 
-#hamburguesa{
-  height: 45px;
+/* Logo */
+#logo-missTravveller {
+  width: 60px;
+  height: 60px;
+}
+
+/* Imagen del botón de hamburguesa */
+#hamburguesa {
+  height: auto;
   width: auto;
 }
+
+/* Estilos específicos para la imagen del botón de hamburguesa */
+.navbar-toggler img {
+  max-width: 30px;
+}
+
+/* Fondo y z-index para el menú desplegable */
+#navbarNavDropdown {
+  z-index: 25;
+}
+
+/* Aplicar el fondo solo en pantallas pequeñas y medianas */
+@media (max-width: 991.98px) {
+  #navbarNavDropdown {
+    background-color: #f5deb3;
+  }
+}
+
+/* Ajuste adicional para alineación de los elementos del navbar en pantallas grandes */
+@media (min-width: 992px) {
+  .navbar-nav {
+    margin-left: auto;
+  }
+}
+/* Fin navbar  */
+
 
  /* Featurettes
   ------------------------- */
