@@ -236,14 +236,16 @@ nav {
 }
 
 /* Fondo y z-index para el menú desplegable */
-#navbarNavDropdown {
+#navbarCollapse{
   z-index: 25;
 }
 
 /* Aplicar el fondo solo en pantallas pequeñas y medianas */
-@media (max-width: 991.98px) {
-  #navbarNavDropdown {
+@media (max-width: 800px) {
+  #navbarCollapse {
     background-color: #f5deb3;
+    max-height: 80vh; /* Altura máxima del menú desplegable */
+    overflow-y: auto; /* Habilitar desplazamiento vertical */
   }
 }
 
