@@ -1,0 +1,50 @@
+/* Ajuste del logo */
+#logo-missTravveller {
+  width: 60px;
+  height: 60px;
+}
+
+/* Imagen del botón de hamburguesa */
+#hamburguesa {
+  height: auto;
+  width: auto;
+}
+
+.navbar-toggler img {
+  max-width: 40px;
+}
+
+/* Estilo personalizado del navbar */
+.custom-navbar {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.3em;
+  height: 4em;
+  transition: all 0.4s ease;
+}
+
+.navbar-scrolled {
+  background-color: #f5deb3;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-item {
+  margin: 30px;
+  align-items: center;
+}
+
+/* Espaciador para evitar solapamiento del contenido */
+.spacer {
+  height: 75px; /* Ajusta según la altura del navbar */
+  background-color: transparent;
+}
+
+/* Aplicar el fondo solo en pantallas pequeñas y medianas */
+@media (max-width: 991.98px) {
+  #navbarCollapse {
+    background-color: #f5deb3;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+}

@@ -127,18 +127,10 @@ h1{
   padding-top: 0;
 }
 
-#contorno-Patito{
-  background-color: #FFFFFF;
-  height: auto;
-  padding: 2em;
-  text-align: center;
-}
-
 body {
     padding-top: 0;
     padding-bottom: 0;
     color: black;
-    background-color: #FFFFFF;
   }
 
 h2{
@@ -206,57 +198,8 @@ h2{
   font-weight: 400;
   margin-bottom: 0.5em;
   justify-content: left;
+  margin: auto;
 }
-
-/* Inicio navbar  */
-
-nav {
-  background-color: #f5deb3;
-  font-family: Lato, sans-serif;
-  font-weight: 700;
-  font-size: 1.3em;
-  height: 4em;
-}
-
-/* Logo */
-#logo-missTravveller {
-  width: 60px;
-  height: 60px;
-}
-
-/* Imagen del botón de hamburguesa */
-#hamburguesa {
-  height: auto;
-  width: auto;
-}
-
-/* Estilos específicos para la imagen del botón de hamburguesa */
-.navbar-toggler img {
-  max-width: 30px;
-}
-
-/* Fondo y z-index para el menú desplegable */
-#navbarCollapse{
-  z-index: 25;
-}
-
-/* Aplicar el fondo solo en pantallas pequeñas y medianas */
-@media (max-width: 800px) {
-  #navbarCollapse {
-    background-color: #f5deb3;
-    max-height: 80vh; /* Altura máxima del menú desplegable */
-    overflow-y: auto; /* Habilitar desplazamiento vertical */
-  }
-}
-
-/* Ajuste adicional para alineación de los elementos del navbar en pantallas grandes */
-@media (min-width: 992px) {
-  .navbar-nav {
-    margin-left: auto;
-  }
-}
-/* Fin navbar  */
-
 
  /* Featurettes
   ------------------------- */

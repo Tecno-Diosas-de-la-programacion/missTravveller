@@ -71,20 +71,6 @@
     --color_fieldset:#ffa07a;
   }
   
-  nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
-    display: flex ;/* Se aplica flex al contenedor de nav, lo que permite una distribución flexible de los */
-    justify-content: space-between ;/* Permite que haya espacio entre los elementos */
-    align-items: center ;/* Alineación vertical de los elementos */
-    font-family: lato;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.3em;
-    margin: auto;
-    
-    background:#f5deb3;
-    height: 4em;
-  }
-  
   h7{
     font-family:lato;
     font-style: italic;
@@ -216,23 +202,12 @@
   -------------------------------------------------- */
   /* Padding below the footer and lighter body text */
   
-  .nav-item{/* Referencia a clases */
-    margin: 30px;
-    font-size: 0.8em;/* Unidad relativa */
-  }
-  
   .lead {
     font-family: lato;
     font-weight: 400;
     text-align: center;
     margin-bottom: 0.5em;
   }
-  
-  #hamburguesa{
-    height: 45px;
-    width: auto;
-  }
-  
    /* Featurettes
     ------------------------- */
     .featurette-divider {
