@@ -29,35 +29,27 @@
     <header id="navbar-app"></header>
 
     <main>
-        <!-- <hr class="featurette-divider"> -->
+        <hr class="featurette-divider">
         <br>
         <!-- Marketing messaging and featurettes
   ================================================== -->
-        <div style="text-align:center">
         <!-- Wrap the rest of the page in another container to center all the content. -->
-        <h1 class="tituloLetras">¿Necesitas unas vacaciones totalmente planeadas?</h1>
-        <h1 class="tituloLetras">¡Da scroll y nosotros te ayudamos!</h1>
-
-        <img src="/public/img/scroll-down-arrow.gif" class="imgscroll">
-
-        <h4>"Mis aventuras, mis viajes, Miss Travveller"</h4>
-        </div>
 
         <div class="container marketing">
 
             <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/public/img/prod.carousel.grupo1.jpeg" class="d-block w-100 img-fluid" alt="botes estacionados en un puerto en el oceano">
+                        <img src="/img/prod.carousel.botes.jpg" class="d-block w-100 img-fluid" alt="botes estacionados en un puerto en el oceano">
                     </div>
                     <div class="carousel-item">
-                        <img src="/public/img/prod.carousel.grupo2.jpeg" class="d-block w-100 img-fluid" alt="botellas de licor en una estanteria">
+                        <img src="/img/prod.carousel.botellas.jpg" class="d-block w-100 img-fluid" alt="botellas de licor en una estanteria">
                     </div>
                     <div class="carousel-item">
-                        <img src="/public/img/VERACRUZ.jpeg" class="d-block w-100 img-fluid" alt="un pato amarillo con lentes oscuros">
+                        <img src="/img/prod.carousel.grupo.jpg" class="d-block w-100 img-fluid" alt="un pato amarillo con lentes oscuros">
                     </div>
                     <div class="carousel-item">
-                        <img src="/public/img/prod.carousel.grupo4.jpeg" class="d-block w-100 img-fluid" alt="un pato amarillo con lentes oscuros">
+                        <img src="/img/prod.carousel.pato.jpg" class="d-block w-100 img-fluid" alt="un pato amarillo con lentes oscuros">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -77,6 +69,30 @@
                 </button>
             </div>
         </div>
+<!-- carrito -->
+<section class="container mt-4">
+    <div id="list-container" class="row g-5 mb-5 justify-content-evenly"></div>
+</section>  
+
+<div id="cart-container" class="container mt-4">
+    <div id="shopping-cart" class="card p-4">
+        <img src="/public/img/carrito de compras.png" alt="Imagen del carrito" class="cart-image">
+        <h1>Carrito de compras</h1>
+        <div id="cart-items"></div>
+        <div id="cart-total" class="mt-3">Total: $0.00</div>
+        <div id="person-count" class="mt-3">
+            <label for="num-people">Número de personas:</label>
+            <input type="number" id="num-people" name="num-people" class="form-control" min="1" value="1" />
+        </div>
+        <div class="mt-4">
+            <button id="cancel-btn" class="btn btn-danger">Cancelar</button>
+            <button id="pay-btn" class="btn btn-success">Pagar</button>
+        </div>
+    </div>
+</div>
+<!-- carrito -->
+
+
         <section class="container mt-4">
             <div id="list-container" class="row g-5 mb-5 justify-content-evenly">
 
@@ -86,32 +102,32 @@
     </main>
 
     <footer class="container-footer">
-        <div class="footer-elementos d-flex flex-wrap justify-content-between align-items-center">
-            <a class="nav align-text-left" href="#">
-                <img class="float-end" src="/img/boton_regreso.png" alt="Botón flecha" width="40" height="40">
-            </a>
-  
-            <ul class="nav col-md-3.5 justify-content-left">
-                <li class="foot-item">
-                    <a class="footer.redes" href="#">
-                        <i id="footer-facebook" class="bi bi-facebook"></i>
-                    </a>
-                </li>
-                <li class="foot-item">
-                    <a class="footer.redes" href="https://www.instagram.com/misstraveler.mx?igsh=bnFjbDdsMzkybnVx">
-                        <i id="footer-instagram" class="bi bi-instagram" width=""></i>
-                    </a>
-                </li>
-                <li class="foot-item">
-                    <a class="footer.redes" href="#">
-                        <i id="footer-tiktok" class="bi bi-tiktok"></i>
-                    </a>
-                </li>
-            </ul>
-  
-            <h4>Miss Travveller</h4>
-        </div>
-    </footer>
+      <div class="footer-elementos d-flex flex-wrap justify-content-between align-items-center">
+          <a class="nav align-text-left" href="#">
+              <img class="float-end" src="/img/boton_regreso.png" alt="Botón flecha" width="40" height="40">
+          </a>
+
+          <ul class="nav col-md-3.5 justify-content-left">
+              <li class="foot-item">
+                  <a class="footer.redes" href="#">
+                      <i id="footer-facebook" class="bi bi-facebook"></i>
+                  </a>
+              </li>
+              <li class="foot-item">
+                  <a class="footer.redes" href="https://www.instagram.com/misstraveler.mx?igsh=bnFjbDdsMzkybnVx">
+                      <i id="footer-instagram" class="bi bi-instagram" width=""></i>
+                  </a>
+              </li>
+              <li class="foot-item">
+                  <a class="footer.redes" href="#">
+                      <i id="footer-tiktok" class="bi bi-tiktok"></i>
+                  </a>
+              </li>
+          </ul>
+
+          <h4>Miss Travveller</h4>
+      </div>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
