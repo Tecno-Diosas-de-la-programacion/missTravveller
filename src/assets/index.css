@@ -46,6 +46,7 @@ nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
 .text-index {
     font-weight: 600;
     color: var(--c-white);
+    font-family: "Lato", sans-serif;
 }
 
 .input-group-text {
@@ -161,4 +162,13 @@ nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
   .iconstyle {
     color: black;
     font-size: 2rem;
+  }
+
+  .featurette-heading {
+    font-weight: 400;
+    line-height: 2;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+    color: #ffffff;
+    text-align: center;
   }
