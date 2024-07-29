@@ -221,7 +221,7 @@ h2{
 }
 
 .lead { /*uso es <p> */
-  font-family: lato;
+  font-family:  "Lato", sans-serif;
   font-weight: 400;
   margin-bottom: 0.5em;
   justify-content: left;
@@ -247,7 +247,8 @@ h2{
     /* rtl:remove */
     letter-spacing: -.05rem;
     color: black;
-    text-align: justify;
+    text-align: center;
+    font-family:  "Lato", sans-serif;
   }
 
   /* CARDS CSS */
@@ -513,3 +514,4 @@ Footer content
     width: 100%;
   }
 }
+
