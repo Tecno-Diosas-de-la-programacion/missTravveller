@@ -70,7 +70,7 @@ userPhoneFiled.addEventListener("input", validatePhoneFormat);
 
 const form = document.getElementById("contactForm");
 
-form.addEventListener("submit", function (event) {
+form.addEventListener('submit', function (event) {
     event.preventDefault();
 
     // Verificar que no haya campos con la clase invalid
