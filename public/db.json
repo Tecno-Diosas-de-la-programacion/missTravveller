@@ -3,42 +3,42 @@
       "id": 1,
       "nombreDestino": "Querétaro, pueblo mágico de Peña.",
       "descripcion": "¡Te invitamos a un día de aventura en Querétaro!",
-      "itinerario": [
-          {
-              "puntoReunion": "Metro Revolución",
-              "horaSalida": "07:00 am",
-              "actividad": "Desayuno: En la región, cada uno por cuenta propia",
-              "horasEstadia": "1 hora",
-              "horaRegreso": "08:00 am"
-          },
-          {
-              "puntoReunion": "Viñedos La Redonda",
-              "horaSalida": "N/A",
-              "actividad": "Visita guiada a los viñedos y degustación de vinos",
-              "horasEstadia": "4 horas",
-              "horaRegreso": "10:00 am"
-          },
-          {
-              "puntoReunion": "Peña de Bernal",
-              "horaSalida": "N/A",
-              "actividad": "Traslado y tiempo libre para explorar",
-              "horasEstadia": "3 horas",
-              "horaRegreso": "01:00 pm"
-          },
-          {
-              "puntoReunion": "N/A",
-              "horaSalida": "18:00 hrs",
-              "actividad": "Regreso al punto de partida",
-              "horasEstadia": "N/A",
-              "horaRegreso": "N/A"
-          }
-      ],
       "img": "/img/01-QUERETARO.jpg",
       "autor": "Dulce",
       "precio": 1700,
       "fechaViaje": "2024-07-06",
       "cupo": 20,
-      "fechaCreacion": "2024-07-05"
+      "fechaCreacion": "2024-07-05",
+      "itinerario": [
+          {
+              "puntoReunion": "Metro Revolución",
+              "inicioActividad": "07:00 am",
+              "actividad": "Desayuno: En la región, cada uno por cuenta propia",
+              "horasEstadia": "1 hora",
+              "finActividad": "08:00 am"
+          },
+          {
+              "puntoReunion": "Viñedos La Redonda",
+              "inicioActividad": "N/A",
+              "actividad": "Visita guiada a los viñedos y degustación de vinos",
+              "horasEstadia": "4 horas",
+              "finActividad": "10:00 am"
+          },
+          {
+              "puntoReunion": "Peña de Bernal",
+              "inicioActividad": "N/A",
+              "actividad": "Traslado y tiempo libre para explorar",
+              "horasEstadia": "3 horas",
+              "finActividad": "01:00 pm"
+          },
+          {
+              "puntoReunion": "N/A",
+              "inicioActividad": "18:00 hrs",
+              "actividad": "Regreso al punto de partida",
+              "horasEstadia": "N/A",
+              "finActividad": "N/A"
+          }
+      ]
   },
   {
       "id": 2,
@@ -47,17 +47,17 @@
       "itinerario": [
           {
               "puntoReunion": "Metro Revolución",
-              "horaSalida": "07:00 am",
+              "inicioActividad": "07:00 am",
               "actividad": "Desayuno: En la región, cada uno por cuenta propia",
               "horasEstadia": "1 hora",
-              "horaRegreso": "08:00 am"
+              "finActividad": "08:00 am"
           },
           {
               "puntoReunion": "Centro Histórico",
-              "horaSalida": "N/A",
+              "inicioActividad": "N/A",
               "actividad": "Recorrido por las calles y admiración de la arquitectura",
               "horasEstadia": "3 horas",
-              "horaRegreso": "18:00 pm"
+              "finActividad": "18:00 pm"
           }
       ],
       "img": "/img/02-PUEBLA.jpg",
@@ -74,31 +74,31 @@
       "itinerario": [
           {
               "puntoReunion": "Metro Revolución",
-              "horaSalida": "07:00 am",
+              "inicioActividad": "07:00 am",
               "actividad": "Desayuno: En la región, cada uno por cuenta propia",
               "horasEstadia": "1 hora",
-              "horaRegreso": "08:00 am"
+              "finActividad": "08:00 am"
           },
           {
               "puntoReunion": "Teleférico de Taxco",
-              "horaSalida": "N/A",
+              "inicioActividad": "N/A",
               "actividad": "Paseo en teleférico con vistas panorámicas",
               "horasEstadia": "2 horas",
-              "horaRegreso": "10:00 am"
+              "finActividad": "10:00 am"
           },
           {
               "puntoReunion": "Plaza Borda",
-              "horaSalida": "N/A",
+              "inicioActividad": "N/A",
               "actividad": "Visita guiada por el centro histórico y la iglesia de Santa Prisca",
               "horasEstadia": "2 horas",
-              "horaRegreso": "12:00 pm"
+              "finActividad": "12:00 pm"
           },
           {
               "puntoReunion": "N/A",
-              "horaSalida": "17:00 hrs",
+              "inicioActividad": "17:00 hrs",
               "actividad": "Regreso al punto de partida",
               "horasEstadia": "N/A",
-              "horaRegreso": "N/A"
+              "finActividad": "N/A"
           }
       ],
       "img": "/img/03-TAXCO.jpeg",
@@ -115,24 +115,24 @@
       "itinerario": [
           {
               "puntoReunion": "Metro Revolución",
-              "horaSalida": "23:00 pm",
+              "inicioActividad": "23:00 pm",
               "actividad": "Día 1: Desayuno en la región, cada uno por cuenta propia, veremos el amanecer en la playa, Conoce Costa Esmeralda",
               "horasEstadia": "6 horas",
-              "horaRegreso": "05:00 am"
+              "finActividad": "05:00 am"
           },
           {
               "puntoReunion": "Playa Tecolutla",
-              "horaSalida": "N/A",
+              "inicioActividad": "N/A",
               "actividad": "Día 2: Desayuno en la región, cada uno por cuenta propia, Liberación de Tortugas, Visita de Manglares",
               "horasEstadia": "8 horas",
-              "horaRegreso": "01:00 pm"
+              "finActividad": "01:00 pm"
           },
           {
               "puntoReunion": "Playa Tecolutla",
-              "horaSalida": "N/A",
+              "inicioActividad": "N/A",
               "actividad": "Día 3: Desayuno en la región, cada uno por cuenta propia, Estadía en Playa hasta las 14:30, Regreso a la CDMX",
               "horasEstadia": "6 horas",
-              "horaRegreso": "02:30 pm"
+              "finActividad": "02:30 pm"
           }
       ],
       "img": "/img/04-VERACUZ.png",
@@ -149,10 +149,10 @@
       "itinerario": [
           {
               "puntoReunion": "Metro Revolución",
-              "horaSalida": "06:00 am",
+              "inicioActividad": "06:00 am",
               "actividad": "Desayuno en la región, cada uno por cuenta propia, recorreremos la ciudad de Teotihuacán, visitamos el Tianguis de artesanías",
               "horasEstadia": "6 horas",
-              "horaRegreso": "18:00 pm"
+              "finActividad": "18:00 pm"
           }
       ],
       "img": "/img/05-TEOTIHUACAN.png",
@@ -169,24 +169,24 @@
       "itinerario": [
           {
               "puntoReunion": "Metro Revolución",
-              "horaSalida": "22:00 pm",
+              "inicioActividad": "22:00 pm",
               "actividad": "Llegada a Acapulco y check-in en el hotel",
               "horasEstadia": "10 horas",
-              "horaRegreso": "08:00 am"
+              "finActividad": "08:00 am"
           },
           {
               "puntoReunion": "Playa Caleta",
-              "horaSalida": "N/A",
+              "inicioActividad": "N/A",
               "actividad": "Día de playa en Caleta y Caletilla",
               "horasEstadia": "6 horas",
-              "horaRegreso": "02:00 pm"
+              "finActividad": "02:00 pm"
           },
           {
               "puntoReunion": "N/A",
-              "horaSalida": "18:00 hrs",
+              "inicioActividad": "18:00 hrs",
               "actividad": "Regreso al punto de partida",
               "horasEstadia": "N/A",
-              "horaRegreso": "N/A"
+              "finActividad": "N/A"
           }
       ],
       "img": "/img/06-ACAPULCO.jpg",
@@ -203,24 +203,24 @@
       "itinerario": [
           {
               "puntoReunion": "Metro Revolución",
-              "horaSalida": "10:00 am",
+              "inicioActividad": "10:00 am",
               "actividad": "Visita al Museo de Cera",
               "horasEstadia": "3 horas",
-              "horaRegreso": "01:00 pm"
+              "finActividad": "01:00 pm"
           },
           {
               "puntoReunion": "Metro Revolución",
-              "horaSalida": "01:00pm",
+              "inicioActividad": "01:00pm",
               "actividad": "Almuerzo por cuenta propia y tiempo libre para explorar la zona",
               "horasEstadia": "2 horas",
-              "horaRegreso": "03:00 pm"
+              "finActividad": "03:00 pm"
           },
           {
               "puntoReunion": "Metro Revolución",
-              "horaSalida": "15:00 hrs",
+              "inicioActividad": "15:00 hrs",
               "actividad": "Regreso al punto de partida",
               "horasEstadia": "N/A",
-              "horaRegreso": "N/A"
+              "finActividad": "N/A"
           }
       ],
       "img": "/img/07-MUSEO DE CERA.jpg",
@@ -237,31 +237,31 @@
       "itinerario": [
           {
               "puntoReunion": "Metro Revolución",
-              "horaSalida": "20:00 pm",
+              "inicioActividad": "20:00 pm",
               "actividad": "Viaje nocturno a Huatulco",
               "horasEstadia": "10 horas",
-              "horaRegreso": "06:00 am"
+              "finActividad": "06:00 am"
           },
           {
               "puntoReunion": "Playa Santa Cruz",
-              "horaSalida": "N/A",
+              "inicioActividad": "N/A",
               "actividad": "Día de playa y actividades acuáticas",
               "horasEstadia": "8 horas",
-              "horaRegreso": "02:00 pm"
+              "finActividad": "02:00 pm"
           },
           {
               "puntoReunion": "Centro de Huatulco",
-              "horaSalida": "N/A",
+              "inicioActividad": "N/A",
               "actividad": "Visita al centro de Huatulco y mercado local",
               "horasEstadia": "3 horas",
-              "horaRegreso": "05:00 pm"
+              "finActividad": "05:00 pm"
           },
           {
               "puntoReunion": "N/A",
-              "horaSalida": "18:00 hrs",
+              "inicioActividad": "18:00 hrs",
               "actividad": "Regreso al punto de partida",
               "horasEstadia": "N/A",
-              "horaRegreso": "N/A"
+              "finActividad": "N/A"
           }
       ],
       "img": "/img/08-OAXACA.png",
@@ -278,24 +278,24 @@
       "itinerario": [
           {
               "puntoReunion": "Metro Revolución",
-              "horaSalida": "05:00 am",
+              "inicioActividad": "05:00 am",
               "actividad": "Viaje al santuario de la Mariposa Monarca",
               "horasEstadia": "4 horas",
-              "horaRegreso": "09:00 am"
+              "finActividad": "09:00 am"
           },
           {
               "puntoReunion": "Santuario de la Mariposa Monarca",
-              "horaSalida": "N/A",
+              "inicioActividad": "N/A",
               "actividad": "Tour guiado y tiempo para explorar",
               "horasEstadia": "5 horas",
-              "horaRegreso": "02:00 pm"
+              "finActividad": "02:00 pm"
           },
           {
               "puntoReunion": "N/A",
-              "horaSalida": "15:00 hrs",
+              "inicioActividad": "15:00 hrs",
               "actividad": "Regreso al punto de partida",
               "horasEstadia": "N/A",
-              "horaRegreso": "N/A"
+              "finActividad": "N/A"
           }
       ],
       "img": "/img/09-MICHOACAN.jpg",
@@ -312,24 +312,24 @@
       "itinerario": [
           {
               "puntoReunion": "Metro Revolución",
-              "horaSalida": "05:00 am",
+              "inicioActividad": "05:00 am",
               "actividad": "Viaje a Guanajuato",
               "horasEstadia": "5 horas",
-              "horaRegreso": "10:00 am"
+              "finActividad": "10:00 am"
           },
           {
               "puntoReunion": "Centro de Guanajuato",
-              "horaSalida": "N/A",
+              "inicioActividad": "N/A",
               "actividad": "Participación en las actividades del Festival Cervantino",
               "horasEstadia": "6 horas",
-              "horaRegreso": "04:00 pm"
+              "finActividad": "04:00 pm"
           },
           {
               "puntoReunion": "N/A",
-              "horaSalida": "17:00 hrs",
+              "inicioActividad": "17:00 hrs",
               "actividad": "Regreso al punto de partida",
               "horasEstadia": "N/A",
-              "horaRegreso": "N/A"
+              "finActividad": "N/A"
           }
       ],
       "img": "/img/10-CERVANTINO.png",
