@@ -705,3 +705,11 @@ Footer content
   font-style: italic;
 }
 
+.cart-image {
+  width: auto; /* Ajusta el ancho de la imagen al contenedor */
+  max-width: 100px; /* Tamaño máximo para la imagen */
+  height: auto; /* Mantiene la relación de aspecto */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
