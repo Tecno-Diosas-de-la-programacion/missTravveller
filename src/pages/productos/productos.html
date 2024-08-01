@@ -79,11 +79,38 @@
                 </button>
             </div>
         </div>
+
+<!-- carrito -->
+<section class="container mt-4">
+    <div id="list-container" class="row g-5 mb-5 justify-content-evenly"></div>
+</section>
+
+<div id="cart-container" class="container mt-4">
+    <div id="shopping-cart" class="card p-4">
+        <img src="/public/img/carrito de compras.png" alt="Imagen del carrito" class="cart-image">
+        <h1>Carrito de compras</h1>
+        <div id="cart-items"></div>
+        <div id="cart-total" class="mt-3">Total: $0.00</div>
+        <div id="person-count" class="mt-3">
+            <label for="num-people">Número de personas:</label>
+            <input type="number" id="num-people" name="num-people" class="form-control" min="1" value="1" />
+        </div>
+        <div class="mt-4">
+            <button id="cancel-btn" class="btn btn-danger">Cancelar</button>
+            <button id="pay-btn" class="btn btn-success">Pagar</button>
+        </div>
+    </div>
+</div>
+<!-- carrito -->
+
+
         <section class="container mt-4">
             <div id="list-container" class="row g-5 mb-5 justify-content-evenly">
 
             </div>
-        </section>            
+
+        </section> 
+
 
     </main>
 
