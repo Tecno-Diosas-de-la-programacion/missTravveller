@@ -64,27 +64,9 @@
     font-style: normal;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: lato;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.3em;
-    margin: auto;
-    background: #8AB9B7;
-    height: 4em;
-}
-
 .titulo-registro {
     font-family: 'Lato', sans-serif;
     color: #3a4169;
-}
-
-.nav-item {
-    margin: 30px;
-    font-size: 0.8em;
 }
 
 .lead {
@@ -92,11 +74,6 @@ nav {
     font-weight: 400;
     text-align: center;
     margin-bottom: 0.5em;
-}
-
-#hamburguesa {
-    height: 45px;
-    width: auto;
 }
 
 .foot-item {

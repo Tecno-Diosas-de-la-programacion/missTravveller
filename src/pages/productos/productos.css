@@ -71,20 +71,6 @@
     --color_fieldset:#ffa07a;
   }
   
-  nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
-    display: flex ;/* Se aplica flex al contenedor de nav, lo que permite una distribución flexible de los */
-    justify-content: space-between ;/* Permite que haya espacio entre los elementos */
-    align-items: center ;/* Alineación vertical de los elementos */
-    font-family: lato;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.3em;
-    margin: auto;
-    
-    background: #8AB9B7;
-    height: 4em;
-  }
-  
   h7{
     font-family:lato;
     font-style: italic;
@@ -216,23 +202,13 @@
   -------------------------------------------------- */
   /* Padding below the footer and lighter body text */
   
-  .nav-item{/* Referencia a clases */
-    margin: 30px;
-    font-size: 0.8em;/* Unidad relativa */
-  }
-  
   .lead {
-    font-family: lato;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     text-align: center;
     margin-bottom: 0.5em;
   }
-  
-  #hamburguesa{
-    height: 45px;
-    width: auto;
-  }
-  
+
    /* Featurettes
     ------------------------- */
     .featurette-divider {
@@ -245,7 +221,9 @@
       /* rtl:remove */
       letter-spacing: -.05rem;
       color: black;
+      font-family:  "Lato", sans-serif;
     }
+    
   
     /* CARDS CSS */
   
@@ -620,62 +598,67 @@
   }
   
   /* 
-  Footer content
-  */
-  
-  #footer-instagram {
-    font-size: 35px;
-    color: #8732cc;
+Footer content
+*/
+
+#footer-instagram {
+  font-size: 35px;
+  color: #000000;
 }
 
 #footer-facebook {
-    font-size: 35px;
-    color: #3249cc;
+  font-size: 35px;
+  color: #000000;
 }
 
 #footer-tiktok {
-    font-size: 33px;
-    color: #ff7519;
+  font-size: 33px;
+  color: #000000;
 }
 
+.foot-item {
+  padding: 1em;
+}
 
-  .foot-item {
-    padding: 1em;
-  }
+.container-footer {
+  background-image: url('/public/img/fondoFooter.jpg');
+
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x)* 1);
+  padding-left: calc(var(--bs-gutter-x)* 1);
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
   
-  .container-footer {
-    background-color: #8AB9B7;
+}
+
+.footer-elementos{
+  align-items: center;
+  height: fit-content;
+}
+
+.iconos-redes {
+  width: 35px;
+  height: 35px;
+
+}
+
+.footer-redes {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: polato;
+  color: #afb6c7;
+  margin-left: 2em;
   
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    width: 100%;
-    padding-right: calc(var(--bs-gutter-x)* 5);
-    padding-left: calc(var(--bs-gutter-x)* 1);
-    margin-right: auto;
-    margin-left: auto;
-    
-  }
-  
-  .footer-elementos{
-    align-items: center;
-    height: fit-content;
-  }
-  
-  .iconos-redes {
-    width: 35px;
-    height: 35px;
-  
-  }
-  
-  .footer-redes {
-    display: flex;
-    margin-top: 30px;
-    gap: 30px;
-    cursor: polato;
-    color: #afb6c7;
-    margin-left: 2em;
-    
-  }
+}
+
+.iconstyle {
+  color: black;
+  font-size: 2rem;
+}
 
 /* Productos */
 
@@ -707,4 +690,26 @@
     color: rgb(255 255 255);
     text-decoration: underline;
     text-decoration: none;
+}
+
+.tituloLetras{
+  font-family: Lato;
+  font-size: 4em;
+  text-align: center;
+}
+
+.letrasChiquitas{
+  font-family: Lato;
+  font-size: 1em;
+  text-align: center;
+  font-style: italic;
+}
+
+.cart-image {
+  width: auto; /* Ajusta el ancho de la imagen al contenedor */
+  max-width: 100px; /* Tamaño máximo para la imagen */
+  height: auto; /* Mantiene la relación de aspecto */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  margin-bottom: 20px; /* Espacio debajo de la imagen */
 }

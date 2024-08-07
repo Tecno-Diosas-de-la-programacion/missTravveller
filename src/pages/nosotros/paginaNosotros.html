@@ -20,6 +20,8 @@
     rel="stylesheet">
 
   <!-- Custom styles for this template -->
+
+  <link rel="stylesheet" href="/src/components/navbar/navbar.css">
 </head>
 
 <body>
@@ -27,7 +29,6 @@
   <header id="navbar-app"></header>
 
   <main>
-    <hr class="featurette-divider">
     <br>
     <!-- Marketing messaging and featurettes
   ================================================== -->
@@ -38,23 +39,18 @@
       <!-- START THE FEATURETTES -->
 
       <div class="row featurette">
-        <div id="contorno-MissTravveller" class="col-md-7" >
-          <h3 id="contorno-h3" class="titulo">¿Quién es Miss Travveller?</h3>
+        <div id="contorno-MissTravveller" class="col-md-12" >
+          <h2 class="featurette-heading">¿Quién es Miss Travveller? </h2>
+          <br>
           <p class="lead">Empresa dedicada a la gestión de viajes turísticos alrededor de México. Te aseguramos la mejor
             atención personalizada para hacer de tus experiencias memorables.</p>
-          <img src="/img/tour-guide.png" alt="Icono de persona sosteniendo un mapa" width="120" height="120"
-             >
         </div>
-        <div id="contorno-Patito" class="col-md-5">
-          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-4" width="500"
-            height="500" src="/img/Imagen_Instagram.png"
-            style="border: #FFFFFF; border-color: #FFFFFF; border-style: solid; " role="img"
-            aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#eee" />
-          <h7 style="text-align: center;">
-            Visítanos en instagram y descubre las experiencias de otros viajeros.</h7></img>
-
+        
+        <div style="text-align:center">
+          <a href="https://www.instagram.com/misstraveler.mx?igsh=bnFjbDdsMzkybnVx">
+          <img class="gif-patito" src="/public/img/videou.gif" alt="Imagen"/>
+          <p class="letrasChiquitas">Visítanos en instagram y descubre las experiencias de otros viajeros.</p>
+          </a>
         </div>
       </div>
 
@@ -90,22 +86,22 @@
       <div class="row">
         <div class="container" id="valores">
           <section>
-            <figure><img src="/img/destination.png" alt="icono de localización" width="180" height="180">
+            <figure><img src="/public/img/accecible.jpg" alt="icono de localización" width="180" height="180">
             </figure>
             <h4>Accesibilidad</h4>
           </section>
           <section>
-            <figure><img src="/img/imagenFacilidad.png" alt="icono que muestra pantalla de busqueda" width="180"
+            <figure><img src="/public/img/facilidad.jpg" alt="icono que muestra pantalla de busqueda" width="180"
                 height="180"></figure>
             <h4>Facilidad</h4>
           </section>
           <section>
-            <figure><img src="/img/imagenEficiencia.png" alt="icono de dos turistas" width="180" height="180">
+            <figure><img src="/public/img/eficiencia.jpg" alt="icono de dos turistas" width="180" height="180">
             </figure>
             <h4>Eficiencia</h4>
           </section>
           <section>
-            <figure><img src="/img/imagentransparencia-removebg-preview.png" alt="icono de tiempo y dinero"
+            <figure><img src="/public/img/transparencia.jpg" alt="icono de tiempo y dinero"
                 width="200" height="200"></figure>
             <h4>Transparencia</h4>
           </section>
@@ -285,7 +281,7 @@
 
       </div><!-- /.container -->
     </div>
-      <hr class="featurette-divider">
+    <br>
 
     </main>
 
@@ -322,6 +318,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script type="module" src="/main.js"></script>
+  <script type="module" src="/src/components/navbar/navbarScrolled.js"></script>
 
 
 </body>

@@ -19,89 +19,87 @@
 
   <!-- Custom styles for this template -->
 
-  <link rel="stylesheet" href="paginaContacto.css">
+  <link rel="stylesheet" href="./paginaContacto.css">
+  <link rel="stylesheet" href="/src/components/navbar/navbar.css">
+
 </head>
 
 <body>
 
   <header id="navbar-app"></header>
 
-    <!-- Forms -->
-    <main class="container d-flex align-items-center min-vh-100">
+  <main>
+    <br>
+<!-- ================================================== -->
+    <div style="text-align:center">
+      <h2 class="featurette-heading">Contáctanos </h2>
+      <br>
+      <p class="lead">Si deseas saber más información sobre nuestros servicios, no dudes en solicitar una consultoría gratuita en nuestros canales de comunicación.</p>
+    </div>
+  <br>
+    <div class="container marketing" style="text-align:center">
+      <div>
+          <a href="https://www.instagram.com/misstraveler.mx?igsh=bnFjbDdsMzkybnVx" target="_blank">
+            <i class="bbi bi-instagram"></i>
+          </a>
 
-      <div class="row g-0 mb-5 justify-content-center">
-        <!-- Left -->
-        <h1 id="titulo-contacto">Contáctanos</h1>
-        <div class="col-lg-4 order-1 order-lg-1 offset-lg-1 mx-0 px-0">
-          <div>
-            <p>Si deses saber más información sobre nuestros servicios, no dudes en solicitar una
-              consultoría
-              gratuita en nuestros canales de comunicación</p>
-          </div>
+          <a href="mailto:misstraveller09@gmail.com" target="_blank">
+            <i class="bbi bi-envelope-at-fill"></i>
+          </a>
 
-          <div class="col-lg-4 order-3 order-lg-3 offset-lg-3 mx-0 px-0">
-            <p>
-              <a href="https://www.instagram.com/misstraveler.mx?igsh=bnFjbDdsMzkybnVx" target="_blank">
-                <i class="bi bi-instagram"></i>
-              </a>
+          <a href="https://wa.me/message/CAFVMB36E6BXH1" target="_blank">
+            <i class="bbi bi-whatsapp"></i>
+          </a>
 
-              <a href="mailto:misstraveller09@gmail.com" target="_blank">
-                <i class="bi bi-envelope-at-fill"></i>
-              </a>
+          <a href="https://www.facebook.com/people/Misstraveller69/61559062033043/" target="_blank">
+            <i class="bbi bi-facebook"></i>
+          </a>
 
-              <a href="https://wa.me/message/CAFVMB36E6BXH1" target="_blank">
-                <i class="bi bi-whatsapp"></i>
-              </a>
-
-              <a href="https://www.facebook.com/people/Misstraveller69/61559062033043/" target="_blank">
-                <i class="bi bi-facebook"></i>
-              </a>
-
-              <a href="https://www.tiktok.com/@misstraveler.mx?_t=8nYj7kX7IMI&_r=1" target="_blank">
-                <i class="bi bi-tiktok"></i>
-              </a>
-
-            </p>
-
-          </div>
-        </div>
-        <!-- FORMS -->
-        <div class="col-lg-7 order-1 order-lg-2 mx-0 px-0">
-          <form id="contactForm" class="fondo-formulario">
-            <h1 id="quieres-saber-mas">¿Quieres saber más?</h1>
-            <div class="mb-3">
-              <label for="nombre-completo" class="form-label">Nombre completo*:</label>
-              <input id="nombre-completo" type="text" class="form-control" name="nombre"
-                placeholder="Escribe tu nombre completo" aria-describedby="nombre-completo" required>
-              <span></span>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Correo electrónico*:</label>
-              <input  id="email" type="email" class="form-control" name="correo" placeholder="email@gmail.com"
-                aria-describedby="email" required>
-              <span></span>
-            </div>
-            <div class="mb-3">
-              <label for="numero-telefonico" class="form-label">Número telefónico*:</label>
-              <input id="numero-telefonico" type="tel" class="form-control" name="teléfono" maxlength=10
-                placeholder="XX XX XX XX XX" required>
-              <span></span>
-            </div>
-
-            <div class="mb-3">
-
-                <label for="texto-mensaje" class="form-label">Mensaje*:</label>
-                <textarea id="texto-mensaje" name=mensaje class="form-control" rows="5"></textarea>
-
-              <span></span>
-            </div>
-
-            <button type="submit" class="btn btn-primary boton-">Enviar</button>
-          </form>
-        </div>
+          <a href="https://www.tiktok.com/@misstraveler.mx?_t=8nYj7kX7IMI&_r=1" target="_blank">
+            <i class="bbi bi-tiktok"></i>
+          </a>
+          <br>
       </div>
 
-    </main>
+      <!-- FORMS -->
+      <div>
+        <form class="fondo-formulario">
+          <h2 class="featurette-heading">¿Quieres saber más?</h2>
+          <div class="mb-3">
+            <label for="nombre-completo" class="form-label">Nombre completo*:</label>
+            <input id="nombre-completo" type="text" class="form-control" name="nombre"
+              placeholder="Escribe tu nombre completo" aria-describedby="nombre-completo" required>
+            <span></span>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico*:</label>
+            <input  id="email" type="email" class="form-control" name="correo" placeholder="email@gmail.com"
+              aria-describedby="email" required>
+            <span></span>
+          </div>
+          <div class="mb-3">
+            <label for="numero-telefonico" class="form-label">Número telefónico*:</label>
+            <input id="numero-telefonico" type="tel" class="form-control" name="teléfono" maxlength=10
+              placeholder="XX XX XX XX XX" required>
+            <span></span>
+          </div>
+
+          <div class="mb-3">
+
+              <label for="texto-mensaje" class="form-label">Mensaje*:</label>
+              <textarea id="texto-mensaje" name=mensaje class="form-control" rows="5"></textarea>
+
+            <span></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary boton-">Enviar</button>
+        </form>
+      </div>
+    </div>   
+    <br>      
+
+</main>
+
 
     <!-- FOOTER -->
     <footer class="container-footer">
@@ -143,6 +141,7 @@
 
     <script type="module" src="./validacionFormulario.js"></script>
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/src/components/navbar/navbarScrolled.js"></script>
 
 
 
