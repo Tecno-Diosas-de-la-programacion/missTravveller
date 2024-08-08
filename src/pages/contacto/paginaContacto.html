@@ -19,7 +19,9 @@
 
   <!-- Custom styles for this template -->
 
-  <link rel="stylesheet" href="paginaContacto.css">
+  <link rel="stylesheet" href="./paginaContacto.css">
+  <link rel="stylesheet" href="/src/components/navbar/navbar.css">
+
 </head>
 
 <body>
@@ -30,11 +32,11 @@
     <br>
 <!-- ================================================== -->
     <div style="text-align:center">
-    <h1>Contáctanos</h1>
-
-    <h4>Si deseas saber más información sobre nuestros servicios, no dudes en solicitar una consultoría gratuita en nuestros canales de comunicación</h4>
+      <h2 class="featurette-heading">Contáctanos </h2>
+      <br>
+      <p class="lead">Si deseas saber más información sobre nuestros servicios, no dudes en solicitar una consultoría gratuita en nuestros canales de comunicación.</p>
     </div>
-
+  <br>
     <div class="container marketing" style="text-align:center">
       <div>
           <a href="https://www.instagram.com/misstraveler.mx?igsh=bnFjbDdsMzkybnVx" target="_blank">
@@ -62,7 +64,7 @@
       <!-- FORMS -->
       <div>
         <form class="fondo-formulario">
-          <h1 id="quieres-saber-mas">¿Quieres saber más?</h1>
+          <h2 class="featurette-heading">¿Quieres saber más?</h2>
           <div class="mb-3">
             <label for="nombre-completo" class="form-label">Nombre completo*:</label>
             <input id="nombre-completo" type="text" class="form-control" name="nombre"
@@ -100,33 +102,7 @@
 
 
     <!-- FOOTER -->
-    <footer class="container-footer">
-      <div class="footer-elementos d-flex flex-wrap justify-content-between align-items-center">
-          <a class="nav align-text-left" href="#">
-              <img class="float-end" src="/img/boton_regreso.png" alt="Botón flecha" width="40" height="40">
-          </a>
-
-          <ul class="nav col-md-3.5 justify-content-left">
-              <li class="foot-item">
-                  <a class="footer.redes" href="#">
-                      <i id="footer-facebook" class="bi bi-facebook"></i>
-                  </a>
-              </li>
-              <li class="foot-item">
-                  <a class="footer.redes" href="https://www.instagram.com/misstraveler.mx?igsh=bnFjbDdsMzkybnVx">
-                      <i id="footer-instagram" class="bi bi-instagram" width=""></i>
-                  </a>
-              </li>
-              <li class="foot-item">
-                  <a class="footer.redes" href="#">
-                      <i id="footer-tiktok" class="bi bi-tiktok"></i>
-                  </a>
-              </li>
-          </ul>
-
-          <h4>Miss Travveller</h4>
-      </div>
-  </footer>
+    <footer class="container-footer" id = "footer-app"></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -139,6 +115,7 @@
 
     <script type="module" src="./validacionFormulario.js"></script>
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/src/components/navbar/navbarScrolled.js"></script>
 
 
 

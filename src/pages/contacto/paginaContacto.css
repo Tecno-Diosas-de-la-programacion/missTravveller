@@ -71,20 +71,6 @@
   --color_fieldset:#ffa07a;
 }
 
-nav{/* Utilizamos un selector de tipo, para afectar al contenedir nav */
-  display: flex ;/* Se aplica flex al contenedor de nav, lo que permite una distribución flexible de los */
-  justify-content: space-between ;/* Permite que haya espacio entre los elementos */
-  align-items: center ;/* Alineación vertical de los elementos */
-  font-family: lato;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.3em;
-  margin: auto;
-  
-  background:#f5deb3;
-  height: 4em;
-}
-
 h7{
   font-family:lato;
   font-style: italic;
@@ -129,16 +115,11 @@ h2{
   font-weight: 600;
 }
 body {
-  background-color: #ffffff;
   padding-top: 0;
   padding-bottom: 0;
   color: black;
 }
 
-.nav-item{/* Referencia a clases */
-  margin: 30px;
-  font-size: 0.8em;/* Unidad relativa */
-}
 
 .lead {
   font-family: lato;
@@ -146,10 +127,7 @@ body {
   text-align: center;
   margin-bottom: 0.5em;
 }
-#hamburguesa{
-  height: 45px;
-  width: auto;
-}
+
 /* Featurettes
   ------------------------- */
   .featurette-divider {
@@ -162,8 +140,10 @@ body {
     /* rtl:remove */
     letter-spacing: -.05rem;
     color: black;
+    font-family:  "Lato", sans-serif
   }
 
+  
 input[type=text],[type=email],[type=tel]{
   width: 100%;
   padding: 12px 20px;
