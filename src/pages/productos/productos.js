@@ -69,16 +69,10 @@ document.getElementById('num-people').addEventListener('input', function() {
 document.getElementById('pay-btn').addEventListener('click', function() {
     let total = calculateTotal() * (parseInt(document.getElementById('num-people').value) || 1);
     let paymentLink = `https://link.mercadopago.com.mx/tourvalledebravo?total=${total.toFixed(2)}`;
-<<<<<<< HEAD
-    window.location.href = paymentLink; // Redirigir al enlace de pago
-});
-
-=======
     window.open(paymentLink, '_blank'); // Redirigir al enlace de pago en una nueva pestaña
 });
 
 
->>>>>>> 021d6983c378f240dc4ff0b787be66ed0786ff96
 // Obtener productos desde el archivo JSON y mostrar en la página
 fetch("/db.json")
     .then(response => response.json())
