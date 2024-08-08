@@ -182,7 +182,7 @@ input[type=text],[type=email],[type=tel]{
 }
 
 .fondo-formulario{
-  background-image: url('/public/img/fondoform.jpeg');
+  background-image: url('/img/fondoform.jpeg');
   background-size: cover;
   /* padding: 50px; */
   border-radius: 10px;
@@ -225,7 +225,7 @@ input[type=text],[type=email],[type=tel]{
 }
 
 .container-footer {
-  background-image: url('/public/img/fondoFooter.jpg');
+  background-image: url('/img/fondoFooter.jpg');
 
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
