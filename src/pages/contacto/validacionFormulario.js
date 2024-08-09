@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
             alert("Gracias por tu mensaje");
             document.reset();
           } catch (error) {
-            console.log("Error al enviar a base de datos.");
+            alert(`Hubo un error al subir a base de datos.`);
           }
 
     });
