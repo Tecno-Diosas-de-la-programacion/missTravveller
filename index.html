@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/img/patomar.png">
   <title>Inicio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,36 +17,148 @@
 </head>
 
 <body>
-  <header id="navbar-app"></header>
-  <!-- HERO -->
-  <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
-    <img class="bg-image" src="/img/index-beach.png" alt="">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="text-index fw-semibold display-1">Bienvenidos</h1>
-          <form method="get" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
-            <div class="input-group input-group-lg search-index-input">
-              <span class="input-group-text bi-search" id="icon-search"></span>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <img src="/img/patomar.png" alt="Preloader">
+    <div class="loader"></div>
+  </div>
+  <!--FIN PRELOADER-->
+  <div id="contenido">
+    <header id="navbar-app"></header>
+    <!-- HERO -->
+    <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
+      <img class="bg-image" src="/img/index-beach.png" alt="">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-index fw-semibold display-1">Bienvenidos</h1>
+            <form method="get" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
+              <div class="input-group input-group-lg search-index-input">
+                <span class="input-group-text bi-search" id="icon-search"></span>
 
-              <input name="keyword" type="search" class="form-control" id="keyword"
-                placeholder="¿Cuál es tu siguiente destino?">
+                <input name="keyword" type="search" class="form-control" id="keyword"
+                  placeholder="¿Cuál es tu siguiente destino?">
 
-              <button id="search-index-input-button" type="submit"
-                class="form-control btn btn-primary btn-sm fw-semibold">Buscar</button>
-            </div>
-          </form>
+                <button id="search-index-input-button" type="submit"
+                  class="form-control btn btn-primary btn-sm fw-semibold">Buscar</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ABOUT -->
-  <section id="about-us" class="section-padding pt-5">
-    <div class="container">
+    <!-- ABOUT -->
+    <section id="about-us" class="section-padding pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4 fw-semibold">Sobre nosotros</h1>
+              <p class="text-start p-about-us">Somos una empresa dedicada a la gestión de viajes turísticos alrededor de
+                México. Te
+                aseguramos la mejor atención personalizada para hacer de tus experiencias memorables</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION - Pasos para realizar tu viaje -->
+    <section id="step-travel-planning" class="py-5">
+
+      <div class="container">
+
+        <div class="row justify-content-center text-center mb-4">
+          <div class="section-title">
+            <h1 class="display-4 fw-semibold">Pasos para realizar tu viaje</h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <!-- Step 1 -->
+          <div class="col-md-2">
+            <div class="text-center position-relative">
+              <div
+                class="step-icon mx-auto border rounded-circle d-flex align-items-center justify-content-center circle-steps">
+                <i class="bi bi-binoculars-fill icon-large"></i>
+              </div>
+              <h4 class="mt-3 fs-5">Paso 1</h4>
+              <p class="lead text-muted mt-4 fs-5 px-lg-3 mb-5 mb-lg-0">Busca y elige tu destino.</p>
+              <div class="arrow-icon position-absolute d-none d-lg-block icon-arrow">
+                <i class="bi bi-arrow-right icon-large"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col-md-2">
+            <div class="text-center position-relative">
+              <div
+                class="step-icon mx-auto border rounded-circle d-flex align-items-center justify-content-center circle-steps">
+                <i class="bi bi-envelope-exclamation-fill icon-large"></i>
+              </div>
+              <h4 class="mt-3 fs-5">Paso 2</h4>
+              <p class="lead text-muted mt-4 fs-5 px-lg-3 mb-5 mb-lg-0">Una vez llenado el formulario te contactaremos.
+              </p>
+              <div class="arrow-icon d-none d-lg-block position-absolute icon-arrow">
+                <i class="bi bi-arrow-right icon-large"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-md-2">
+            <div class="text-center position-relative">
+              <div
+                class="step-icon mx-auto border rounded-circle d-flex align-items-center justify-content-center circle-steps">
+                <i class="bi bi-eyeglasses icon-large"></i>
+              </div>
+              <h4 class="mt-3 fs-5">Paso 3</h4>
+              <p class="lead text-muted mt-4 fs-5 px-lg-3 mb-5 mb-lg-0">Afinamos detalles.</p>
+              <div class="arrow-icon d-none d-lg-block position-absolute icon-arrow">
+                <i class="bi bi-arrow-right icon-large"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="col-md-2">
+            <div class="text-center position-relative">
+              <div
+                class="step-icon mx-auto border rounded-circle d-flex align-items-center justify-content-center circle-steps">
+                <i class="bi bi-bookmark-check-fill icon-large"></i>
+              </div>
+              <h4 class="mt-3 fs-5">Paso 4</h4>
+              <p class="lead text-muted mt-4 fs-5 px-lg-3 mb-5 mb-lg-0">Realizamos la reservación.</p>
+              <div class="arrow-icon d-none d-lg-block position-absolute icon-arrow">
+                <i class="bi bi-arrow-right icon-large"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="col-md-2">
+            <div class="text-center position-relative">
+              <div
+                class="step-icon mx-auto border rounded-circle d-flex align-items-center justify-content-center circle-steps">
+                <i class="bi bi-emoji-laughing-fill icon-large"></i>
+              </div>
+              <h4 class="mt-3 fs-5">Paso 5</h4>
+              <p class="lead text-muted mt-4 fs-5 px-lg-3 mb-5 mb-lg-0">Disfrutas tu viaje.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION  Experiencias realizadas -->
+    <section>
       <div class="row">
         <div class="col-12 text-center">
           <div class="section-title">
+            <h1 class="display-4 fw-semibold">Experiencias realizadas</h1>
             <h1 class="display-4 fw-semibold">Sobre nosotros</h1>
             <p class="text-start p-about-us">Somos una empresa dedicada a la gestión de viajes turísticos alrededor de
               México. Te
@@ -187,132 +300,76 @@
         </div>
       </div>
 
-      <!-- Left and right controls/icons -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-  </section>
-
-
-  <!-- SECTION Opiniones Auténticas -->
-  <section id="testimonials" class="p-4 p-md-5 text-center text-lg-start shadow-1-strong rounded">
-    <div class="container">
-      <div class="row justify-content-center text-center mb-4">
-        <div class="section-title">
-          <h1 class="display-4 fw-semibold">Opiniones Auténticas</h1>
-        </div>
-      </div>
-      <!-- ROW for larger screens -->
-      <div class="row d-none d-md-flex">
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body m-3">
-              <div class="row">
-                <div class="col-lg-4 d-flex justify-content-center align-items-center mb-4 mb-lg-0 icon-opinios">
-                  <i class="bi bi-facebook rounded-circle img-fluid shadow-1"></i>
-                </div>
-                <div class="col-lg-8">
-                  <p class="text-muted fw-light mb-4">
-                    ¡Gracias por organizar nuestra semana en México! Gran servicio antes de la salida, obsequios a la
-                    llegada y seguimiento durante toda nuestra estancia. Desde alquiler de coches hasta noches de hotel
-                    y actividades increíbles. Una estancia inolvidable gracias a vuestros consejos y recomendaciones. Lo
-                    recomiendo mucho.
-                  </p>
-                  <p class="fw-bold lead mb-2"><strong>Margaux P.nna Smith</strong></p>
-                  <p class="fw-bold text-muted mb-0">Visita familiar</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
         </div>
 
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body m-3">
-              <div class="row">
-                <div class="col-lg-4 d-flex justify-content-center align-items-center mb-4 mb-lg-0 icon-opinios">
-                  <i class="bi bi-instagram"></i>
-                </div>
-                <div class="col-lg-8">
-                  <p class="text-muted fw-light mb-4">
-                    ¡Gracias por organizar nuestra semana en México! Gran servicio antes de la salida, obsequios a la
-                    llegada y seguimiento durante toda nuestra estancia. Desde alquiler de coches hasta noches de hotel
-                    y actividades increíbles. Una estancia inolvidable gracias a vuestros consejos y recomendaciones. Lo
-                    recomiendo mucho.
-                  </p>
-                  <p class="fw-bold lead mb-2"><strong>Margaux P.</strong></p>
-                  <p class="fw-bold text-muted mb-0">Visita familiar</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body m-3">
-              <div class="row">
-                <div class="col-lg-4 d-flex justify-content-center align-items-center mb-4 mb-lg-0 icon-opinios">
-                  <i class="bi bi-tiktok"></i>
-                </div>
-                <div class="col-lg-8">
-                  <p class="text-muted fw-light mb-4">
-                    ¡Gracias por organizar nuestra semana en México! Gran servicio antes de la salida, obsequios a la
-                    llegada y seguimiento durante toda nuestra estancia. Desde alquiler de coches hasta noches de hotel
-                    y actividades increíbles. Una estancia inolvidable gracias a vuestros consejos y recomendaciones. Lo
-                    recomiendo mucho.
-                  </p>
-                  <p class="fw-bold lead mb-2"><strong>Margaux P.</strong></p>
-                  <p class="fw-bold text-muted mb-0">Visita familiar</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Carousel for small screens -->
-      <div id="testimonialsCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+        <!-- The slideshow/carousel -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="card">
-              <div class="card-body m-3">
-                <div class="row">
-                  <div class="col-lg-4 d-flex justify-content-center align-items-center mb-4 mb-lg-0 icon-opinios">
-                    <i class="bi bi-facebook rounded-circle img-fluid shadow-1"></i>
-                  </div>
-                  <div class="col-lg-8">
-                    <p class="text-muted fw-light mb-4">
-                      ¡Gracias por organizar nuestra semana en México! Gran servicio antes de la salida, obsequios a la
-                      llegada y seguimiento durante toda nuestra estancia. Desde alquiler de coches hasta noches de
-                      hotel y actividades increíbles. Una estancia inolvidable gracias a vuestros consejos y
-                      recomendaciones. Lo recomiendo mucho.
-                    </p>
-                    <p class="fw-bold lead mb-2"><strong>Margaux P.nna Smith</strong></p>
-                    <p class="fw-bold text-muted mb-0">Visita familiar</p>
-                  </div>
-                </div>
-              </div>
+            <img src="/img/10-CERVANTINO.png" alt="Festival Internacional Cervantino" class="d-block"
+              style="width:100%">
+            <div class="carousel-caption">
+              <h3>Festival Internacional Cervantino</h3>
             </div>
           </div>
           <div class="carousel-item">
+            <img src="/img/03-TAXCO.jpeg" alt="Taxco" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+              <h3>Taxco</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/public/img/VERACRUZ.jpeg" alt="Michoacán" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+              <h3>Veracruz</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+    </section>
+
+
+    <!-- SECTION Opiniones Auténticas -->
+    <section id="testimonials" class="p-4 p-md-5 text-center text-lg-start shadow-1-strong rounded">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+          <div class="section-title">
+            <h1 class="display-4 fw-semibold">Opiniones Auténticas</h1>
+          </div>
+        </div>
+        <!-- ROW for larger screens -->
+        <div class="row d-none d-md-flex">
+          <div class="col-md-4 mb-4">
             <div class="card">
               <div class="card-body m-3">
                 <div class="row">
-                  <div class="col-lg-4 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
-                    <i class="bi bi-instagram"></i>
+                  <div class="col-lg-4 d-flex justify-content-center align-items-center mb-4 mb-lg-0 ">
+                    <i class="bi bi-facebook rounded-circle img-fluid shadow-1 icon-opinios"></i>
                   </div>
                   <div class="col-lg-8">
                     <p class="text-muted fw-light mb-4">
                       ¡Gracias por organizar nuestra semana en México! Gran servicio antes de la salida, obsequios a la
                       llegada y seguimiento durante toda nuestra estancia. Desde alquiler de coches hasta noches de
-                      hotel y actividades increíbles. Una estancia inolvidable gracias a vuestros consejos y
-                      recomendaciones. Lo recomiendo mucho.
+                      hotel
+                      y actividades increíbles. Una estancia inolvidable gracias a vuestros consejos y recomendaciones.
+                      Lo
+                      recomiendo mucho.
                     </p>
                     <p class="fw-bold lead mb-2"><strong>Margaux P.</strong></p>
                     <p class="fw-bold text-muted mb-0">Visita familiar</p>
@@ -321,19 +378,46 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+
+          <div class="col-md-4 mb-4">
             <div class="card">
               <div class="card-body m-3">
                 <div class="row">
                   <div class="col-lg-4 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
-                    <i class="bi bi-tiktok"></i>
+                    <i class="bi bi-instagram icon-opinios"></i>
                   </div>
                   <div class="col-lg-8">
                     <p class="text-muted fw-light mb-4">
                       ¡Gracias por organizar nuestra semana en México! Gran servicio antes de la salida, obsequios a la
                       llegada y seguimiento durante toda nuestra estancia. Desde alquiler de coches hasta noches de
-                      hotel y actividades increíbles. Una estancia inolvidable gracias a vuestros consejos y
-                      recomendaciones. Lo recomiendo mucho.
+                      hotel
+                      y actividades increíbles. Una estancia inolvidable gracias a vuestros consejos y recomendaciones.
+                      Lo
+                      recomiendo mucho.
+                    </p>
+                    <p class="fw-bold lead mb-2"><strong>Margaux P.</strong></p>
+                    <p class="fw-bold text-muted mb-0">Visita familiar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body m-3">
+                <div class="row">
+                  <div class="col-lg-4 d-flex justify-content-center align-items-center mb-4 mb-lg-0 ">
+                    <i class="bi bi-tiktok icon-opinios"></i>
+                  </div>
+                  <div class="col-lg-8">
+                    <p class="text-muted fw-light mb-4">
+                      ¡Gracias por organizar nuestra semana en México! Gran servicio antes de la salida, obsequios a la
+                      llegada y seguimiento durante toda nuestra estancia. Desde alquiler de coches hasta noches de
+                      hotel
+                      y actividades increíbles. Una estancia inolvidable gracias a vuestros consejos y recomendaciones.
+                      Lo
+                      recomiendo mucho.
                     </p>
                     <p class="fw-bold lead mb-2"><strong>Margaux P.</strong></p>
                     <p class="fw-bold text-muted mb-0">Visita familiar</p>
@@ -343,28 +427,101 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+
+        <!-- Carousel for small screens -->
+        <div id="testimonialsCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="card-body m-3">
+                  <div class="row">
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center mb-4 mb-lg-0 icon-opinios">
+                      <i class="bi bi-facebook rounded-circle img-fluid shadow-1 icon-opinios-2"></i>
+                    </div>
+                    <div class="col-lg-8">
+                      <p class="text-muted fw-light mb-4">
+                        ¡Gracias por organizar nuestra semana en México! Gran servicio antes de la salida, obsequios a
+                        la
+                        llegada y seguimiento durante toda nuestra estancia. Desde alquiler de coches hasta noches de
+                        hotel y actividades increíbles. Una estancia inolvidable gracias a vuestros consejos y
+                        recomendaciones. Lo recomiendo mucho.
+                      </p>
+                      <p class="fw-bold lead mb-2"><strong>Margaux P.</strong></p>
+                      <p class="fw-bold text-muted mb-0">Visita familiar</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="card-body m-3">
+                  <div class="row">
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                      <i class="bi bi-instagram"></i>
+                    </div>
+                    <div class="col-lg-8">
+                      <p class="text-muted fw-light mb-4">
+                        ¡Gracias por organizar nuestra semana en México! Gran servicio antes de la salida, obsequios a
+                        la
+                        llegada y seguimiento durante toda nuestra estancia. Desde alquiler de coches hasta noches de
+                        hotel y actividades increíbles. Una estancia inolvidable gracias a vuestros consejos y
+                        recomendaciones. Lo recomiendo mucho.
+                      </p>
+                      <p class="fw-bold lead mb-2"><strong>Margaux P.</strong></p>
+                      <p class="fw-bold text-muted mb-0">Visita familiar</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="card-body m-3">
+                  <div class="row">
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                      <i class="bi bi-tiktok"></i>
+                    </div>
+                    <div class="col-lg-8">
+                      <p class="text-muted fw-light mb-4">
+                        ¡Gracias por organizar nuestra semana en México! Gran servicio antes de la salida, obsequios a
+                        la
+                        llegada y seguimiento durante toda nuestra estancia. Desde alquiler de coches hasta noches de
+                        hotel y actividades increíbles. Una estancia inolvidable gracias a vuestros consejos y
+                        recomendaciones. Lo recomiendo mucho.
+                      </p>
+                      <p class="fw-bold lead mb-2"><strong>Margaux P.</strong></p>
+                      <p class="fw-bold text-muted mb-0">Visita familiar</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
 
-  <footer class="container-footer" id = "footer-app"></footer>
+    <footer class="container-footer" id="footer-app"></footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
 
-  <script type="module" src="/main.js"></script>
-  <script type="module" src="/src/components/navbar/navbarScrolled.js"></script>
-
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/src/components/navbar/navbarScrolled.js"></script>
+  </div>
 </body>
 
 </html>

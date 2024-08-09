@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
+    <link rel="icon" href="/img/patomar.png">
     <title>Miss Travveller</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -26,103 +27,113 @@
 </head>
 
 <body>
+     <!-- PRELOADER -->
+  <div id="preloader">
+    <img src="/img/patomar.png" alt="Preloader">
+    <div class="loader"></div>
+  </div>
+  <!--FIN PRELOADER-->
+    <div id="contenido">
+        <header id="navbar-app"></header>
 
-    <header id="navbar-app"></header>
-
-    <main>
-        <!-- <hr class="featurette-divider"> -->
-        <br>
-        <!-- Marketing messaging and featurettes
+        <main>
+            <!-- <hr class="featurette-divider"> -->
+            <br>
+            <!-- Marketing messaging and featurettes
   ================================================== -->
-        <div style="text-align:center">
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-        <h2 class="featurette-heading">¿Necesitas unas vacaciones totalmente planeadas? </h2>
-        <h2 class="featurette-heading">¡Da scroll y nosotros te ayudamos! </h2>
+            <div style="text-align:center">
+                <!-- Wrap the rest of the page in another container to center all the content. -->
+                <h2 class="featurette-heading">¿Necesitas unas vacaciones totalmente planeadas? </h2>
+                <h2 class="featurette-heading">¡Da scroll y nosotros te ayudamos! </h2>
 
-        <img src="/public/img/scroll-down-arrow.gif" class="imgscroll">
+                <img src="/public/img/scroll-down-arrow.gif" class="imgscroll">
 
-        <h4>"Mis aventuras, mis viajes, Miss Travveller"</h4>
-        </div>
+                <h4>"Mis aventuras, mis viajes, Miss Travveller"</h4>
+            </div>
 
-        <div class="container marketing">
+            <div class="container marketing">
 
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/public/img/prod.carousel.grupo1.jpeg" class="d-block w-100 img-fluid" alt="botes estacionados en un puerto en el oceano">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/public/img/prod.carousel.grupo1.jpeg" class="d-block w-100 img-fluid"
+                                alt="botes estacionados en un puerto en el oceano">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/public/img/prod.carousel.grupo2.jpeg" class="d-block w-100 img-fluid"
+                                alt="botellas de licor en una estanteria">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/public/img/VERACRUZ.jpeg" class="d-block w-100 img-fluid"
+                                alt="un pato amarillo con lentes oscuros">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/public/img/prod.carousel.grupo4.jpeg" class="d-block w-100 img-fluid"
+                                alt="un pato amarillo con lentes oscuros">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="/public/img/prod.carousel.grupo2.jpeg" class="d-block w-100 img-fluid" alt="botellas de licor en una estanteria">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- carrito -->
+            <section class="container mt-4">
+                <div id="list-container" class="row g-5 mb-5 justify-content-evenly"></div>
+            </section>
+
+            <div id="cart-container" class="container mt-4">
+                <div id="shopping-cart" class="card p-4">
+                    <img src="/public/img/carrito de compras.png" alt="Imagen del carrito" class="cart-image">
+                    <h1>Carrito de compras</h1>
+                    <div id="cart-items"></div>
+                    <div id="cart-total" class="mt-3">Total: $0.00</div>
+                    <div id="person-count" class="mt-3">
+                        <label for="num-people">Número de personas:</label>
+                        <input type="number" id="num-people" name="num-people" class="form-control" min="1" value="1" />
                     </div>
-                    <div class="carousel-item">
-                        <img src="/public/img/VERACRUZ.jpeg" class="d-block w-100 img-fluid" alt="un pato amarillo con lentes oscuros">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/public/img/prod.carousel.grupo4.jpeg" class="d-block w-100 img-fluid" alt="un pato amarillo con lentes oscuros">
+                    <div class="mt-4">
+                        <button id="cancel-btn" class="btn btn-danger">Cancelar</button>
+                        <button id="pay-btn" class="btn btn-success">Pagar</button>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </div>
+            <!-- carrito -->
 
-<!-- carrito -->
-<section class="container mt-4">
-    <div id="list-container" class="row g-5 mb-5 justify-content-evenly"></div>
-</section>
 
-<div id="cart-container" class="container mt-4">
-    <div id="shopping-cart" class="card p-4">
-        <img src="/public/img/carrito de compras.png" alt="Imagen del carrito" class="cart-image">
-        <h1>Carrito de compras</h1>
-        <div id="cart-items"></div>
-        <div id="cart-total" class="mt-3">Total: $0.00</div>
-        <div id="person-count" class="mt-3">
-            <label for="num-people">Número de personas:</label>
-            <input type="number" id="num-people" name="num-people" class="form-control" min="1" value="1" />
-        </div>
-        <div class="mt-4">
-            <button id="cancel-btn" class="btn btn-danger">Cancelar</button>
-            <button id="pay-btn" class="btn btn-success">Pagar</button>
-        </div>
+            <section class="container mt-4">
+                <div id="list-container" class="row g-5 mb-5 justify-content-evenly">
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+        <footer class="container-footer" id="footer-app"></footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script type="module" src="/main.js"></script>
+        <script type="module" src="./productos.js"></script>
+        <script type="module" src="/src/components/navbar/navbarScrolled.js"></script>
+
     </div>
-</div>
-<!-- carrito -->
-
-
-        <section class="container mt-4">
-            <div id="list-container" class="row g-5 mb-5 justify-content-evenly">
-
-            </div>
-
-        </section> 
-
-
-    </main>
-
-    <footer class="container-footer" id = "footer-app"></footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-    <script type="module" src="/main.js"></script>
-    <script type="module" src="./productos.js"></script>
-    <script type="module" src="/src/components/navbar/navbarScrolled.js"></script>
-
-
 </body>
 
 </html>
