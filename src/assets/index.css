@@ -121,7 +121,7 @@ body {
   }
   
   .container-footer {
-    background-image: url('/public/img/fondoFooter.jpg');
+    background-image: url('/img/fondoFooter.jpg');
   
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
