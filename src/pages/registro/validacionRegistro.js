@@ -1,5 +1,13 @@
+import { postRegisterForm } from "../../components/api/postRegistro.js"
+
 document.addEventListener("DOMContentLoaded", function() {
-    
+   
+    const userNameFiled = document.querySelector("[name=name]");
+    const userFatherLastFiled = document.querySelector("[name=fatherLastName]");
+    const userMotherLasNameFiled = document.querySelector("[name=motherLastName]");
+    const userEmailFiled = document.querySelector("[name=email]");
+    const userPasswordFiled = document.querySelector("[name=password]");
+
     const form = document.getElementById("registerForm");
 
     const setError = (field, message) => {
@@ -68,11 +76,12 @@ document.addEventListener("DOMContentLoaded", function() {
             return true;
         }
     };
-
-    form.addEventListener("submit", (event) => {
+                                   //Aqui el ASYNC
+    form.addEventListener("submit", async (event) => {
         event.preventDefault();
+        
+        
         let valid = true;
-
         const fields = form.querySelectorAll("input");
         fields.forEach((field) => {
             if (field.name === "correo") {
@@ -85,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         if (valid) {
-            //******Local Storage******//
+            /******Local Storage*****
             const newUserData = {
                 "nombre": "",
                 "apeMaterno" : "",
@@ -93,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 "correo" : "",
                 "contraseña" : "",
             };
+            
             // Fill variable newUserData (JSON) with data from html input
             fields.forEach((field) => {
                 if (field.name === "correo") {
@@ -118,11 +128,28 @@ document.addEventListener("DOMContentLoaded", function() {
             userArray.push(newUserData);
             // Put user array with new user into local storage
             // This 0saves all users, and does not overwrite the last user
-            localStorage.setItem("userData" , JSON.stringify(userArray));
+            localStorage.setItem("userData" , JSON.stringify(userArray));*/
+
+            const newUserData = {
+                name: userNameFiled.value,
+                fatherLastName: userFatherLastFiled.value,
+                motherLastName: userMotherLasNameFiled.value,
+                email: userEmailFiled.value,
+                password: userPasswordFiled.value,
+            };
+            
+            //FETCH
+            try {
+                await postRegisterForm(newUserData);
+                document.reset();
+              } catch (error) {
+                console.log("Hubo un error al concectar con database");
+                swal("Hubo un error al concectar con database");
+              }
 
             //redireccionar a login
             swal("Formulario enviado correctamente.").then(function () {window.location.href = "../ingresar/ingresar.html"});
-
+                
         } else {
             swal("Por favor, corrige los errores en el formulario.");
         }

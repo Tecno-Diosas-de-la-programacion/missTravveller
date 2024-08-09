@@ -70,33 +70,33 @@
           <br>
         </div>
 
-        <!-- FORMS -->
-        <div>
-          <form class="fondo-formulario">
-            <h2 class="featurette-heading">¿Quieres saber más?</h2>
-            <div class="mb-3">
-              <label for="nombre-completo" class="form-label">Nombre completo*:</label>
-              <input id="nombre-completo" type="text" class="form-control" name="nombre"
-                placeholder="Escribe tu nombre completo" aria-describedby="nombre-completo" required>
-              <span></span>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Correo electrónico*:</label>
-              <input id="email" type="email" class="form-control" name="correo" placeholder="email@gmail.com"
-                aria-describedby="email" required>
-              <span></span>
-            </div>
-            <div class="mb-3">
-              <label for="numero-telefonico" class="form-label">Número telefónico*:</label>
-              <input id="numero-telefonico" type="tel" class="form-control" name="teléfono" maxlength=10
-                placeholder="XX XX XX XX XX" required>
-              <span></span>
-            </div>
+      <!-- FORMS -->
+      <div>
+        <form id="contactForm" class="fondo-formulario">
+          <h2 class="featurette-heading">¿Quieres saber más?</h2>
+          <div class="mb-3">
+            <label for="nombre-completo" class="form-label">Nombre completo*:</label>
+            <input id="nombre-completo" type="text" class="form-control" name="fullName"
+              placeholder="Escribe tu nombre completo" aria-describedby="nombre-completo" required>
+            <span></span>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico*:</label>
+            <input  id="email" type="email" class="form-control" name="email" placeholder="email@gmail.com"
+              aria-describedby="email" required>
+            <span></span>
+          </div>
+          <div class="mb-3">
+            <label for="numero-telefonico" class="form-label">Número telefónico*:</label>
+            <input id="numero-telefonico" type="tel" class="form-control" name="phone" maxlength=10
+              placeholder="XX XX XX XX XX" required>
+            <span></span>
+          </div>
 
             <div class="mb-3">
 
               <label for="texto-mensaje" class="form-label">Mensaje*:</label>
-              <textarea id="texto-mensaje" name=mensaje class="form-control" rows="5"></textarea>
+              <textarea id="texto-mensaje" name="comments" class="form-control" rows="5"></textarea>
 
               <span></span>
             </div>
@@ -122,11 +122,11 @@
     <!--Personalizacion de alert con libreria Sweet alert https://sweetalert.js.org/-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    <script type="module" src="./validacionFormulario.js"></script>
     <script type="module" src="/main.js"></script>
     <script type="module" src="/src/components/navbar/navbarScrolled.js"></script>
 
 
+    <script type="module" src="./validacionFormulario.js"></script>
   </div>
 </body>
 

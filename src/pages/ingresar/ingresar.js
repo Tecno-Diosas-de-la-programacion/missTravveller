@@ -1,3 +1,5 @@
+import {postIngresar} from "../../components/api/postIngresar.js"
+
 document.addEventListener("DOMContentLoaded", function() {
     
     const form = document.getElementById("registerForm");
@@ -39,12 +41,13 @@ document.addEventListener("DOMContentLoaded", function() {
             return true;
         }
     };
-
-    form.addEventListener("submit", (event) => {
+                            //Aqui ASYNC
+    form.addEventListener("submit", async (event) => {
         event.preventDefault();
         let valid = true;
 
         const fields = form.querySelectorAll("input");
+        
         fields.forEach((field) => {
             if (field.name === "correo") {
                 if (!validateEmailField(field)) valid = false;
@@ -53,11 +56,28 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
+        const userEmailFiled = document.querySelector("[name=email]");
+        const userPasswordFiled = document.querySelector("[name=password]");
+
+        const userLogin = {
+            email: userEmailFiled.value,
+            password: userPasswordFiled.value,
+        };
+
         if (valid) {
-            const userLogin = {
-                "correo" : "",
-                "contraseña" : "",
-            };
+            //FETCH
+            try {
+                await postIngresar(userLogin);
+                swal("¡Bienvenido!").then(function () {window.location.href = "/index.html"});
+
+            /*
+            {
+             "email": "354545@gmail.com",
+            "password": "123"
+             } formData Login
+            */
+
+             /*
             let correoField = null;
             let contraseñaField = null;
 
@@ -100,7 +120,13 @@ document.addEventListener("DOMContentLoaded", function() {
                     setError(correoField, "Correo no registrado") ;
                     setError(contraseñaField, "Contraseña incorrecta") ;
                 }
-            }
+            }*/
+
+        } catch (error) {
+            console.log("");
+            swal("Usuario no encontrado");
+        }
+
         } else {
             swal("Por favor, corrige los errores en el formulario.");
         }
