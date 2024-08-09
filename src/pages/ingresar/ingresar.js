@@ -110,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         } catch (error) {
             console.log("Hubo un error al concectar con database");
+            alert("Hubo un error al concectar con database");
         }
 
         } else {

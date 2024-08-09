@@ -127,6 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 await postRegisterForm(newUserData);
               } catch (error) {
                 console.log("Hubo un error al concectar con database");
+                alert("Hubo un error al concectar con database");
               }
 
             //redireccionar a login
