@@ -6,7 +6,7 @@ const postContactForm = async ( formData ) => {
     const options = {
       method: "POST", // DELETE, PUT, POST, GET
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(FormData),
+      body: JSON.stringify(formData),
     };
   
     const response = await fetch(url, options);
@@ -22,4 +22,4 @@ const postContactForm = async ( formData ) => {
     return registerResult;
   };
   
-  export { postRegisterForm };
+  export { postContactForm };

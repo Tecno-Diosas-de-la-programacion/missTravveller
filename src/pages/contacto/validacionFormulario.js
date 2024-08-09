@@ -1,8 +1,11 @@
+import {postContactForm} from "../../components/api/postContactForm.js";
+
 document.addEventListener('DOMContentLoaded', function () {
-    const userNameFiled = document.querySelector("[name=nombre]");
-    const userEmailFiled = document.querySelector("[name=correo]");
-    const userPhoneFiled = document.querySelector("[name=telefono]");
-    const userMessageFiled = document.querySelector("[name=mensaje]");
+    const userNameFiled = document.querySelector("[name=fullName]");
+    const userEmailFiled = document.querySelector("[name=email]");
+    const userPhoneFiled = document.querySelector("[name=phone]");
+    const userMessageFiled = document.querySelector("[name=comments]");
+    
 
     if (!userNameFiled || !userEmailFiled || !userPhoneFiled || !userMessageFiled) {
         console.error("Uno o más elementos no se encontraron en el DOM.");
@@ -88,10 +91,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Recopilar datos del formulario
         const formData = {
-            nombre: userNameFiled.value,
-            correo: userEmailFiled.value,
-            telefono: userPhoneFiled.value,
-            mensaje: userMessageFiled.value
+            fullName: userNameFiled.value,
+            email: userEmailFiled.value,
+            phone: userPhoneFiled.value,
+            comments: userMessageFiled.value
         };
 
         try {
