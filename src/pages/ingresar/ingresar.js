@@ -1,3 +1,5 @@
+import {postIngresar} from "../../components/api/postIngresar.js"
+
 document.addEventListener("DOMContentLoaded", function() {
     
     const form = document.getElementById("registerForm");
@@ -39,12 +41,13 @@ document.addEventListener("DOMContentLoaded", function() {
             return true;
         }
     };
-
-    form.addEventListener("submit", (event) => {
+                            //Aqui ASYNC
+    form.addEventListener("submit", async (event) => {
         event.preventDefault();
         let valid = true;
 
         const fields = form.querySelectorAll("input");
+        
         fields.forEach((field) => {
             if (field.name === "correo") {
                 if (!validateEmailField(field)) valid = false;
@@ -54,6 +57,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         if (valid) {
+            //FETCH
+            try {
+                await postIngresar(userLogin);
             const userLogin = {
                 "correo" : "",
                 "contraseña" : "",
@@ -101,6 +107,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     setError(contraseñaField, "Contraseña incorrecta") ;
                 }
             }
+
+        } catch (error) {
+            console.log("Hubo un error al concectar con database");
+        }
+
         } else {
             swal("Por favor, corrige los errores en el formulario.");
         }

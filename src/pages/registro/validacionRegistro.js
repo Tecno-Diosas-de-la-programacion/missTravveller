@@ -1,3 +1,5 @@
+import { postRegisterForm } from "../../components/api/postRegistro.js"
+
 document.addEventListener("DOMContentLoaded", function() {
     
     const form = document.getElementById("registerForm");
@@ -68,8 +70,8 @@ document.addEventListener("DOMContentLoaded", function() {
             return true;
         }
     };
-
-    form.addEventListener("submit", (event) => {
+                                   //Aqui el ASYNC
+    form.addEventListener("submit", async (event) => {
         event.preventDefault();
         let valid = true;
 
@@ -119,10 +121,17 @@ document.addEventListener("DOMContentLoaded", function() {
             // Put user array with new user into local storage
             // This 0saves all users, and does not overwrite the last user
             localStorage.setItem("userData" , JSON.stringify(userArray));
+            
+            //FETCH
+            try {
+                await postRegisterForm(newUserData);
+              } catch (error) {
+                console.log("Hubo un error al concectar con database");
+              }
 
             //redireccionar a login
             swal("Formulario enviado correctamente.").then(function () {window.location.href = "../ingresar/ingresar.html"});
-
+                
         } else {
             swal("Por favor, corrige los errores en el formulario.");
         }
