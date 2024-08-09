@@ -95,6 +95,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 "correo" : "",
                 "contraseña" : "",
             };
+            /*
+            {
+    "name" : "Arantxa",
+    "fatherLastName" : "Vazquez",
+    "motherLastName": "Benton",
+    "email": "arantxavazquez177@gmail.com",
+    "password": "123"
+}  formatoData Registro
+            */
             // Fill variable newUserData (JSON) with data from html input
             fields.forEach((field) => {
                 if (field.name === "correo") {

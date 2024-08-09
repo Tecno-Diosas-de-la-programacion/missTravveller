@@ -64,6 +64,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 "correo" : "",
                 "contraseña" : "",
             };
+            /*
+            {
+             "email": "354545@gmail.com",
+            "password": "123"
+             } formData Login
+            */
             let correoField = null;
             let contraseñaField = null;
 
