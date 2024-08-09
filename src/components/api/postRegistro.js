@@ -1,4 +1,4 @@
-import { domainName } from "../../components/api/domainName.js"
+import { domainName } from "./domainName"
 
 const postRegisterForm = async ( newUserData ) => {
     const url = `${domainName()}/api/v1/users`;

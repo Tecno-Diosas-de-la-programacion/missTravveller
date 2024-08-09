@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
             //FETCH
             try {
                 await postIngresar(userLogin);
+                swal("¡Bienvenido!").then(function () {window.location.href = "/index.html"});
 
             /*
             {
@@ -122,8 +123,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }*/
 
         } catch (error) {
-            console.log("Hubo un error al concectar con database");
-            swal("Hubo un error al concectar con database");
+            console.log("");
+            swal("Usuario no encontrado");
         }
 
         } else {

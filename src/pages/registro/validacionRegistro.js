@@ -1,7 +1,13 @@
 import { postRegisterForm } from "../../components/api/postRegistro.js"
 
 document.addEventListener("DOMContentLoaded", function() {
-    
+   
+    const userNameFiled = document.querySelector("[name=name]");
+    const userFatherLastFiled = document.querySelector("[name=fatherLastName]");
+    const userMotherLasNameFiled = document.querySelector("[name=motherLastName]");
+    const userEmailFiled = document.querySelector("[name=email]");
+    const userPasswordFiled = document.querySelector("[name=password]");
+
     const form = document.getElementById("registerForm");
 
     const setError = (field, message) => {
@@ -74,12 +80,6 @@ document.addEventListener("DOMContentLoaded", function() {
     form.addEventListener("submit", async (event) => {
         event.preventDefault();
         
-        const userNameFiled = document.querySelector("[name=name]");
-        const userFatherLastFiled = document.querySelector("[name=fatherLastName]");
-        const userMotherLasNameFiled = document.querySelector("[name=motherLastName]");
-        const userEmailFiled = document.querySelector("[name=email]");
-        const userPasswordFiled = document.querySelector("[name=password]");
-
         
         let valid = true;
         const fields = form.querySelectorAll("input");
@@ -132,8 +132,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
             const newUserData = {
                 name: userNameFiled.value,
-                fatherLastName: userFatherLastFiled,
-                motherLastName: userMotherLasNameFiled,
+                fatherLastName: userFatherLastFiled.value,
+                motherLastName: userMotherLasNameFiled.value,
                 email: userEmailFiled.value,
                 password: userPasswordFiled.value,
             };
@@ -141,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function() {
             //FETCH
             try {
                 await postRegisterForm(newUserData);
+                document.reset();
               } catch (error) {
                 console.log("Hubo un error al concectar con database");
                 swal("Hubo un error al concectar con database");
