@@ -56,20 +56,27 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
+        const userEmailFiled = document.querySelector("[name=email]");
+        const userPasswordFiled = document.querySelector("[name=password]");
+
+        const userLogin = {
+            email: userEmailFiled.value,
+            password: userPasswordFiled.value,
+        };
+
         if (valid) {
             //FETCH
             try {
                 await postIngresar(userLogin);
-            const userLogin = {
-                "correo" : "",
-                "contraseña" : "",
-            };
+
             /*
             {
              "email": "354545@gmail.com",
             "password": "123"
              } formData Login
             */
+
+             /*
             let correoField = null;
             let contraseñaField = null;
 
@@ -112,11 +119,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     setError(correoField, "Correo no registrado") ;
                     setError(contraseñaField, "Contraseña incorrecta") ;
                 }
-            }
+            }*/
 
         } catch (error) {
             console.log("Hubo un error al concectar con database");
-            alert("Hubo un error al concectar con database");
+            swal("Hubo un error al concectar con database");
         }
 
         } else {

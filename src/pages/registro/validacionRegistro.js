@@ -73,8 +73,15 @@ document.addEventListener("DOMContentLoaded", function() {
                                    //Aqui el ASYNC
     form.addEventListener("submit", async (event) => {
         event.preventDefault();
-        let valid = true;
+        
+        const userNameFiled = document.querySelector("[name=name]");
+        const userFatherLastFiled = document.querySelector("[name=fatherLastName]");
+        const userMotherLasNameFiled = document.querySelector("[name=motherLastName]");
+        const userEmailFiled = document.querySelector("[name=email]");
+        const userPasswordFiled = document.querySelector("[name=password]");
 
+        
+        let valid = true;
         const fields = form.querySelectorAll("input");
         fields.forEach((field) => {
             if (field.name === "correo") {
@@ -87,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         if (valid) {
-            //******Local Storage******//
+            /******Local Storage*****
             const newUserData = {
                 "nombre": "",
                 "apeMaterno" : "",
@@ -95,15 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 "correo" : "",
                 "contraseña" : "",
             };
-            /*
-            {
-    "name" : "Arantxa",
-    "fatherLastName" : "Vazquez",
-    "motherLastName": "Benton",
-    "email": "arantxavazquez177@gmail.com",
-    "password": "123"
-}  formatoData Registro
-            */
+            
             // Fill variable newUserData (JSON) with data from html input
             fields.forEach((field) => {
                 if (field.name === "correo") {
@@ -129,14 +128,22 @@ document.addEventListener("DOMContentLoaded", function() {
             userArray.push(newUserData);
             // Put user array with new user into local storage
             // This 0saves all users, and does not overwrite the last user
-            localStorage.setItem("userData" , JSON.stringify(userArray));
+            localStorage.setItem("userData" , JSON.stringify(userArray));*/
+
+            const newUserData = {
+                name: userNameFiled.value,
+                fatherLastName: userFatherLastFiled,
+                motherLastName: userMotherLasNameFiled,
+                email: userEmailFiled.value,
+                password: userPasswordFiled.value,
+            };
             
             //FETCH
             try {
                 await postRegisterForm(newUserData);
               } catch (error) {
                 console.log("Hubo un error al concectar con database");
-                alert("Hubo un error al concectar con database");
+                swal("Hubo un error al concectar con database");
               }
 
             //redireccionar a login
