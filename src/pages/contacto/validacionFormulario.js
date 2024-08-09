@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         try {
-            await postRegisterForm(formData);
+            await postContactForm(formData);
             alert("Gracias por tu mensaje");
             document.reset();
           } catch (error) {
